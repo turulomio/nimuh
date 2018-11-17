@@ -4,7 +4,7 @@ project(nimuh)
 set(prefix "${CMAKE_INSTALL_PREFIX}")
 set(exec_prefix "${CMAKE_INSTALL_PREFIX}/bin")
 
-set(DATA_DIR "${CMAKE_INSTALL_PREFIX}/share/nimuh")
+set(DATA_DIR "${CMAKE_INSTALL_PREFIX}/share/nimuh/data")
 configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
 
 include_directories(src)
@@ -19,6 +19,7 @@ include_directories(${SDL_INCLUDE_DIR})# ${SDLIMAGE_INCLUDE_DIR})
 
 file(GLOB SOURCES "src/*.cpp")
 add_executable(nimuh ${SOURCES})
-
 target_link_libraries(nimuh ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} ${OPENGL_LIBRARIES} ${EXPAT_LIBRARIES} ${SDL_MIXER_LIBRARIES})
-install(DIRECTORY data DESTINATION ${DATA_DIR})
+
+install(TARGETS nimuh DESTINATION ${exec_prefix})
+install(DIRECTORY data DESTINATION ${DATA_DIR}/../)
