@@ -35,7 +35,6 @@ Application::Application(int w, int h, string titleWindow)  : World (w, h, title
 	if (existDataDirectory) {	
 		// configuration files
 		
-	printf("HOLA\n");
 		SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 		SDL_EnableUNICODE(1); 
 		
@@ -87,9 +86,7 @@ Application::Application(int w, int h, string titleWindow)  : World (w, h, title
 		Sounds::GetInstance()->addSoundFromData("beep1", "effect", "sound/beep1.ogg", true);
 		Sounds::GetInstance()->addSoundFromData("click0", "effect", "sound/click0.ogg", true);
 		Sounds::GetInstance()->addSoundFromData("click1", "effect", "sound/click1.ogg", true);
-			
 		// fonts
-	
 		Fonts::GetInstance()->addFontBitMap("font-titles", (string)DATA_DIR + "/fonts/font-titles.png", false);
 		Fonts::GetInstance()->addFontBitMap("font-wall0", (string)DATA_DIR + "/fonts/font-wall0.png", false);
 		Fonts::GetInstance()->addFontBitMap("font-wall1", (string)DATA_DIR + "/fonts/font-wall1.png", false);
@@ -99,8 +96,7 @@ Application::Application(int w, int h, string titleWindow)  : World (w, h, title
 		Fonts::GetInstance()->addFontBitMap("font-wall5", (string)DATA_DIR + "/fonts/font-wall5.png", false);
 		Fonts::GetInstance()->addFontBitMap("font-computer", (string)DATA_DIR + "/fonts/font-computer.png");
 		Fonts::GetInstance()->addFontBitMap("font-texts", (string)DATA_DIR + "/fonts/font-texts.png");
-	
-			
+		
 		TypeObjectsScenary::GetInstance()->load();
 		
 		Language::GetInstance()->setLang(Options::GetInstance()->getValue("lang"));
@@ -124,13 +120,11 @@ Application::Application(int w, int h, string titleWindow)  : World (w, h, title
 		Cursor::GetInstance()->setFontText("font-texts");
 		Cursor::GetInstance()->setScaleAlt(0.8);
 		Cursor::GetInstance()->setSizeBorder(2);
-
 	}
-	
 }
 
 void Application::createStaticsElements_InScene () {
-	char tmp[8];
+	char tmp[200];
 	
 	Scene::hasMsg_bg = true;
 	Scene::hasMsg_title = false;
@@ -160,7 +154,7 @@ void Application::createStaticsElements_InScene () {
 	Scene::msg_text->addFrameText(Fonts::GetInstance()->getDefaultFont(), tmp, ALIGN_CENTER);
 	
 	Scene::posXBAcceptInAlert = 263;
-    Scene::posXBCancelInAlert = 540;
+	Scene::posXBCancelInAlert = 540;
 	
 	Scene::msg_bAccept = new Button();
 	Scene::msg_bAccept->addParameter("type", "accept");
@@ -179,7 +173,6 @@ void Application::createStaticsElements_InScene () {
 	Scene::msg_bAccept->imageOut(Fonts::GetInstance()->getSurface_TextBitMap(Fonts::GetInstance()->getDefaultFont(), ALIGN_CENTER, tmp));
 	Scene::msg_bAccept->setAnimation("out");
 	
-
 	Scene::msg_bCancel = new Button();
 	Scene::msg_bCancel->addParameter("type", "cancel");
 	Scene::msg_bCancel->setScales(0.4, 0.45);
@@ -194,6 +187,7 @@ void Application::createStaticsElements_InScene () {
 	} else {
 		sprintf(tmp, "Cancel");
 	}
+	
 	Scene::msg_bCancel->imageOut(Fonts::GetInstance()->getSurface_TextBitMap(Fonts::GetInstance()->getDefaultFont(), ALIGN_CENTER, tmp));
 	Scene::msg_bCancel->setAnimation("out");
 	
@@ -203,7 +197,6 @@ void Application::createStaticsElements_InScene () {
 	Scene::msg_entry->setY(310);
 	Scene::msg_entry->setActive(true);
 	Scene::msg_entry->setDrawBox(false);
-
 }
 
 void Application::loadScenes() {

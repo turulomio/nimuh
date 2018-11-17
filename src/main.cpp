@@ -40,12 +40,8 @@ using namespace Martian;
 
 int main(int argc, char *argv[])
 {
-	
 	Application *app = new Application(800, 600, "Nimuh en busca del tesoro andaluz");
-		
-	printf("HOLA\n");
 	app->execute();
 	SDL_Quit();
-
 	return 0;
 }
