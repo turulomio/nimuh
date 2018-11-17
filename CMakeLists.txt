@@ -5,7 +5,8 @@ set(prefix "${CMAKE_INSTALL_PREFIX}")
 set(exec_prefix "${CMAKE_INSTALL_PREFIX}/bin")
 
 set(DATA_DIR "${CMAKE_INSTALL_PREFIX}/share/nimuh")
-configure_file( config.h.in src/config.h )
+configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
+
 include_directories(src)
 
 find_package(EXPAT)
