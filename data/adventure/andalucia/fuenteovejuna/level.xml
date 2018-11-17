@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Fuente Ovejuna" province="Córdoba">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Mellarienses.| |El municipio también es llamado Fuenteovejuna, Fuenteobejuna y Fuente Ovejuna, aunque el más utilizado es el de Fuente Obejuna. Esta variedad de nombres se debe a la obra de teatro de Lope de Vega titulada 'Fuenteovejuna', basada en acontecimientos acaecidos en dicho municipio en el siglo XV. El escritor desconocía que el origen etimológico de Fuente Obejuna viene de abeja y no de oveja. Debido a la confusión ortográfica que eso supuso, actualmente se admite escribirlo de cualquiera de las maneras citadas.| |Fuente Obejuna se presta a ser un ejemplo significativo donde se sintetizan los caracteres geográficos más definitorios de la comarca del Valle del Guadiato, se trata, de hecho, del municipio de mayor extensión del territorio." />
+			<information lang="es" button="1" title="Para visitar" text="* La Casa Cardona: Palacete modernista emblema arquitectónico del municipio.| |* El Alcornocal: Por citar alguna de las preciosas aldeas con las que cuenta este pueblo " />
+			<information lang="es" button="2" title="Para disfrutar" text="Senderismo: Fuente Obejuna cuenta con numerosos senderos y caminos rurales desde los tiempos de la Mesta y grandes huellas arqueológicas como acueductos, calzadas romanas, norias y grandes cortijadas." />
+			<information lang="es" button="3" title="Para degustar" text="La cocina tradicional basada en productos derivados de la caza, cerdo ibérico y cordero de pasto (lechón ibérico, conejo al ajillo, lomo de Orza...) acompañados de una copita de Vino de Pitarra." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Mellarienses.| |The municipality is also called Fuenteovejuna, Fuenteobejuna and Fuente Ovejuna, although the most used one is that of Fuente Obejuna. This variety of names is due to the play of Lope de Vega titled 'Fuenteovejuna', based on actual events in this town in the 15th century. The writer didn't know that the etymological origin of Fuente Obejuna comes from bee (abeja) and not of sheep (oveja). Due to the orthographic confusion that it produces, nowadays it is acceptable to write it in any one of four ways.| |Fuente Obejuna combines the most distinctive geographical characters of the region of the Guaditato Valley. It is also the largest town in the area." />
+			<information lang="en" button="1" title="To visit" text="* The Cardona House: modernist mansion, architectural symbol of the municipality.| |* The Alcornocal: It is one of the beautiful villages that surround this town." />
+			<information lang="en" button="2" title="To enjoy" text="* Trekking: Fuente Obejuna has numerous paths and rural roads since the time of the 'Mesta' and important archaeological features such as aqueducts, Roman roads, water wheels and big 'cortijadas'." />
+			<information lang="en" button="3" title="To taste" text="The traditional cooking based on game products, Iberian pork and lamb (Iberian suckling-pig, 'conejo al ajillo' (rabbit in a sauce made with oil, garlic and chilli), loin of 'Orza'...) served with a glass of Pitarra wine." />
+		</town>
+	</data>
+	<board type="7x7" floor="1" wall="2" pavement="1" />
+	<music type="0" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="0" type-wall="0">
+		<object name="window11" x="270" y="-60" scale="0.800000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window11" x="31" y="-154" scale="0.800000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window11" x="-68" y="-143" scale="0.800000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="window11" x="-295" y="-45" scale="0.800000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="column1" x="-5" y="8" scale="1.000000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="column1" x="-5" y="-121" scale="1.000000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="light2" x="222" y="-32" scale="0.600000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="light2" x="347" y="19" scale="0.600000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="light2" x="110" y="-75" scale="0.600000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="light2" x="-152" y="-41" scale="0.600000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="light2" x="-245" y="3" scale="0.600000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="flowerpot1" x="259" y="0" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window6" x="284" y="117" scale="0.600000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window6" x="40" y="6" scale="0.600000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window6" x="160" y="60" scale="0.600000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window6" x="-77" y="27" scale="0.600000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="window6" x="-302" y="132" scale="0.600000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="window6" x="-185" y="79" scale="0.600000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="signal_1" x="110" y="43" scale="0.700000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="flowerpot1" x="-208" y="160" scale="1.000000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="flowerpot2" x="180" y="140" scale="0.700000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="flowerpot2" x="-338" y="44" scale="0.700000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="flowerpot2" x="-283" y="19" scale="0.700000" flip="true" lock="false" origen="game" type="3d" />
+	</scenary>
+	<objects>
+		<trap x="2" y="5" />
+		<key x="6" y="0" />
+		<door-key x="1" y="4" direction="right" />
+	</objects>
+	<position>
+		<exit x="6" y="5" />
+		<player x="6" y="1" />
+		<enemy1 x="2" y="2" />
+		<enemy3 x="5" y="6" />
+	</position>
+	<walls>
+		<wall x="1" y="0" bottom="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="2" y="1" right="true" bottom="true" />
+		<wall x="4" y="1" right="true" />
+		<wall x="5" y="1" bottom="true" />
+		<wall x="6" y="1" bottom="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="2" y="2" right="true" />
+		<wall x="3" y="2" right="true" bottom="true" />
+		<wall x="5" y="2" bottom="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="2" y="3" right="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="4" y="3" right="true" />
+		<wall x="0" y="4" right="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="6" y="4" bottom="true" />
+		<wall x="0" y="5" right="true" bottom="true" />
+		<wall x="2" y="6" right="true" bottom="true" />
+	</walls>
+</level>

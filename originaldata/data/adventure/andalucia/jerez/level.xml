@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Jerez" province="Cádiz">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Jerezanos.| |La Historia de Jerez se remonta a la antigua Tartessos. Hasta sus alrededores llegaron los fenicios hace 3.000 años para fundar la colonia llamada Xera. Bajo dominio romano la ciudad se llamó Seritium y vivio una época de gran prosperidad. Es con la dominación musulmana cuando Sheres o Xeres, durante los periodos almorávide y almohade, se fortifica y se realiza el trazado de sus calles.| |En el siglo XIX la ciudad consolida su principal fuente de ingresos: se potencian los cultivos de la vid en detrimento de otros cultivos y de la ganadería. Sin embargo se conserva y fomenta la cría de caballos." />
+			<information lang="es" button="1" title="Para visitar" text="* Alcázar: Fue construido por los almohades y fue declarado Monumento Histórico Artístico en 1931 y Bien de Interés Cultural con la categoría de Monumento.| |* Catedral de San Salvador: Se alza sobre la primitiva Mezquita Mayor de Jerez y la antigua Iglesia del Salvador; es una construcción del siglo XVII, que aúna los estilos gótico, barroco y neoclásico. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Feria del Caballo: también es conocida como Feria de Mayo, o simplemente Feria de Jerez.| |* Gran Premio de Andalucía, España y Mundial de Motociclismo: Tiene mucha repercusión dentro del mundo del motor y es uno de los que más desean ganar los pilotos.| |* Festival de Flamenco de Jerez: Considerado como el mejor del mundo por varios medios de comunicación." />
+			<information lang="es" button="3" title="Para degustar" text="Los riñones al jerez, berza y alcauciles al jerez, y por supuesto no podíamos olvidar que Jerez es el lugar de excelencia de los finos, amontillados olorosos y mostos en temporada que sirven para aderezar cualquier plato o para acompañarlos." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Jerezanos.| |The History of Jerez goes back to the old Tartessos. The Phoenicians arrived 3.000 years ago founding the Xera colony.  Under Roman rule the city was called Seritium and it prospered.  It is during the period of Muslim rule when Sheres or Xeres, during the Almoravid and Almohad periods, is fortified its street pattern is designed.| |In the XIX century the city consolidated its main source of revenues: the cultivation of wine of the vine is encouraged, to the detriment of other agriculture and of livestock farming. However it is conserved and fostered the breeding of horses." />
+			<information lang="en" button="1" title="To visit" text="* Fortress / Royal Palace: It was built by the Almohad and it was declared 'Historical Artistic Monument' in 1931 and 'Worthy of Cultural Interest' with the category of Monument.| |* Cathedral of St. Salvador: It is built on the primitive Mosque 'Mayor' of Jerez and the Saviour's old Church; it is a construction of the XVII century that joins three styles: Gothic, Baroque and Neoclassicist." />
+			<information lang="en" button="2" title="To enjoy" text="* Festival of the Horse: it is also well known as the May Fair, or simply Fair of Jerez.| |* Grand Prix of Andalusia, Spain and the Motorcycling World Championship: Jerez is an important venue in the world of motorcycling and it is the prize that the riders always want to win.| |* Flamenco Festival of Jerez: It is considered as the best flamenco festival in the world by many connoisseurs." />
+			<information lang="en" button="3" title="To taste" text="Kidneys cooked in sherry, 'Berza' and artichokes with sherry sauce (it is a stew with cabbage, chickpeas, black pudding, highly seasoned pork sausage, ham, and sherry) and artichoke with sherry, and of course we can not forget that Jerez is the place par excellence of the dry sherry, oloroso, amontillados and unfermented grape juice that are good to dress / season any dish or as a fine accompaniment." />
+		</town>
+	</data>
+	<board type="10x10" floor="5" wall="1" pavement="0" />
+	<music type="0" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="15">
+		<object name="bench" x="140" y="-16" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bench" x="-318" y="9" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="terrace" x="120" y="46" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="terrace" x="-77" y="-2" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="tree3" x="208" y="-156" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="tree3" x="-447" y="-64" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="tree4" x="-215" y="-49" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="terrace" x="-300" y="90" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="palmtree2" x="-475" y="26" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="palmtree2" x="256" y="21" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="culvert" x="239" y="157" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="-75" y="89" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="-150" y="121" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="-238" y="159" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="-325" y="199" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="35" y="93" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="112" y="127" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="189" y="161" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="barrel2" x="270" y="193" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="light6" x="161" y="-1" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="light6" x="-189" y="-1" scale="0.600000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="9" y="6" />
+	</objects>
+	<position>
+		<exit x="9" y="7" />
+		<player x="0" y="5" />
+		<enemy2 x="6" y="5" />
+	</position>
+	<walls>
+		<wall x="1" y="0" right="true" bottom="true" />
+		<wall x="2" y="0" right="true" />
+		<wall x="6" y="0" right="true" />
+		<wall x="7" y="0" right="true" />
+		<wall x="9" y="0" right="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="1" y="1" right="true" />
+		<wall x="3" y="1" bottom="true" />
+		<wall x="4" y="1" right="true" />
+		<wall x="5" y="1" right="true" />
+		<wall x="7" y="1" right="true" />
+		<wall x="8" y="1" right="true" />
+		<wall x="9" y="1" right="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="2" y="2" right="true" />
+		<wall x="6" y="2" right="true" />
+		<wall x="8" y="2" right="true" />
+		<wall x="9" y="2" right="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="1" y="3" bottom="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="4" y="3" right="true" />
+		<wall x="5" y="3" right="true" />
+		<wall x="8" y="3" right="true" bottom="true" />
+		<wall x="9" y="3" right="true" />
+		<wall x="0" y="4" right="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="4" y="4" right="true" bottom="true" />
+		<wall x="7" y="4" right="true" bottom="true" />
+		<wall x="9" y="4" right="true" bottom="true" />
+		<wall x="1" y="5" bottom="true" />
+		<wall x="2" y="5" bottom="true" />
+		<wall x="5" y="5" right="true" />
+		<wall x="6" y="5" right="true" />
+		<wall x="8" y="5" right="true" bottom="true" />
+		<wall x="0" y="6" bottom="true" />
+		<wall x="1" y="6" right="true" />
+		<wall x="2" y="6" bottom="true" />
+		<wall x="5" y="6" right="true" />
+		<wall x="6" y="6" right="true" />
+		<wall x="7" y="6" right="true" />
+		<wall x="8" y="6" right="true" />
+		<wall x="0" y="7" right="true" />
+		<wall x="1" y="7" right="true" />
+		<wall x="3" y="7" right="true" />
+		<wall x="4" y="7" right="true" />
+		<wall x="6" y="7" right="true" />
+		<wall x="7" y="7" right="true" />
+		<wall x="8" y="7" bottom="true" />
+		<wall x="0" y="8" bottom="true" />
+		<wall x="3" y="8" right="true" />
+		<wall x="4" y="8" right="true" />
+		<wall x="5" y="8" right="true" />
+		<wall x="1" y="9" right="true" />
+		<wall x="2" y="9" right="true" bottom="true" />
+		<wall x="3" y="9" right="true" />
+		<wall x="4" y="9" bottom="true" />
+		<wall x="8" y="9" right="true" bottom="true" />
+		<wall x="9" y="9" right="true" bottom="true" />
+	</walls>
+</level>

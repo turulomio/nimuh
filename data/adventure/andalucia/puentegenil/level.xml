@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Puente Genil" province="Córdoba">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Pontanés.| |Puente Genil no se entendería sin el río que le da nombre y que, desde la antigüedad, ejerció una influencia clara en todo el territorio.| |Un buen exponente de la arquitectura civil son sus casas señoriales pero es con el barroco cuando adquiere mayor esplendor su arquitectura." />
+			<information lang="es" button="1" title="Para visitar" text="* Castillo Anzur: Atalaya árabe del siglo X, que domina la ciudad y sus contornos.| |* El Puente de Miragenil." />
+			<information lang="es" button="2" title="Para disfrutar" text="Festival de Cante Grande: Es uno de los referentes indispensables de esta manifestación cultural andaluza que es el flamenco." />
+			<information lang="es" button="3" title="Para degustar" text="El Membrillo de Puente Genil, elaborado a base de una fruta parecida a la manzana." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Pontanés.| |Puente Genil would be not understood without the river that gives it name and that, since antiquity, has exerted a clear influence in the whole territory.| |A good exponent of the civil architecture are its stately houses but it is with the Baroque that its architecture acquires greater splendour." />
+			<information lang="en" button="1" title="To visit" text="* Castle Anzur: Arab watchtower, dating from the 10th century, that dominates the city and its surrounding area.| |* The Bridge of Miragenil." />
+			<information lang="en" button="2" title="To enjoy" text="* Festival of 'Cante Grande' (flamenco): It is an indispensable festival of the Andalusian cultural expression that is flamenco." />
+			<information lang="en" button="3" title="To taste" text="The Quince paste of Puente Genil, made with quince, a fruit similar to the apple." />
+		</town>
+	</data>
+	<board type="7x7" floor="3" wall="0" pavement="3" />
+	<music type="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="11" type-wall="0">
+		<object name="fence1" x="290" y="43" scale="0.900000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="fence1" x="182" y="-8" scale="0.900000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="fence1" x="74" y="-59" scale="0.900000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="fence1" x="-34" y="-110" scale="0.900000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="light6" x="311" y="-173" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+	</scenary>
+	<objects>
+		<trap x="0" y="3" />
+		<key x="5" y="4" />
+		<door-key x="5" y="5" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="6" y="4" />
+		<player x="2" y="6" />
+		<enemy1 x="4" y="4" />
+	</position>
+	<walls>
+		<wall x="1" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="3" y="0" right="true" />
+		<wall x="5" y="0" right="true" />
+		<wall x="6" y="0" right="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="3" y="1" bottom="true" />
+		<wall x="4" y="1" right="true" bottom="true" />
+		<wall x="5" y="1" bottom="true" />
+		<wall x="6" y="1" right="true" bottom="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="2" y="2" bottom="true" />
+		<wall x="3" y="2" right="true" />
+		<wall x="5" y="2" bottom="true" />
+		<wall x="6" y="2" bottom="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="2" y="3" bottom="true" />
+		<wall x="4" y="3" bottom="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="3" y="4" right="true" />
+		<wall x="0" y="5" right="true" />
+		<wall x="3" y="5" right="true" bottom="true" />
+		<wall x="0" y="6" right="true" />
+		<wall x="1" y="6" right="true" bottom="true" />
+		<wall x="5" y="6" right="true" bottom="true" />
+	</walls>
+</level>

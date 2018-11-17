@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Sevilla" province="Sevilla">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Sevillanos.| |Muchas y diferentes culturas han estado presentes en la historia de Sevilla. Su legado ha conformado a lo largo de siglos el patrimonio cultural, monumental y artístico que podemos admirar en sus calles y en sus museos. Los oscuros orígenes han dado lugar a las leyendas que atribuyen a Hércules la fundación de Sevilla." />
+			<information lang="es" button="1" title="Para visitar" text="* Torre del Oro: Construida en s. XIII por los almohades, formaba parte del sistema defensivo. Su nombre se debe a que estaba cubierta de azulejos dorados. Hay otra versión que dice que su nombre se debe a que a ella llegaban los barcos procedentes de América cargados de oro y muchas riquezas.| |* La Giralda: Ubicada en el ángulo nordeste del Patio de los Naranjos, era el antiguo alminar de la mezquita musulmana.| |* Plaza de Toros y Museo de la Real Maestranza: Es una de las plazas más antiguas de España. Contiene un museo taurino con colección de trajes, fotografías, cuadros, etc., relacionados con el mundo del toro." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Semana Santa: Popular y en la que un tercio de la población participa en las cofradías como hermanos de luz, costaleros o miembros de una banda.| |* La Feria de Abril: Recinto en el que se instalan un gran numero de casetas, en las que uno se puede relajar comiendo y bebiendo productos típicos de la ciudad al mismo tiempo que se deleita con los cantes y bailes por Sevillanas." />
+			<information lang="es" button="3" title="Para degustar" text="Los dulces típicos, tradicionales sevillanos como la torta de aceite de oliva, los cortadillos de cidra, las torrijas y las yemas de San Leandro." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Sevillanos.| |Many and different cultures have been present in the history of Seville. Its legacy has shaped along centuries the cultural, monumental and artistic patrimony that we can admire in its streets and in its museums. The dark origins have caused the legends that have attributed to Hercules the foundation of Seville." />
+			<information lang="en" button="1" title="To visit" text="* 'Torre del Oro' (Gold Tower): Built in the 13rd. century by the Almohads and it was part of the defensive system. It takes its name from the fact that it was covered with golden tiles. There is another version that says that its name is due to the ships coming from America loaded with gold and the great wealth that was unloaded there.| |* The Giralda: Located in the northeast angle of the Patio of the Orange trees. It was the old minaret of the Muslim mosque.| |* Bull-ring and Museum of the 'Real Maestranza': It is one of the oldest bull-rings in Spain. It contains a bullfighting museum with collection of matador's outfit, pictures, photos, etc., related with the world of the bull-fighting." />
+			<information lang="en" button="2" title="To enjoy" text="* Easter (Holy Week): It is very popular and in it a third of population participates in the brotherhoods like brothers of light, 'costaleros' (loaders) or members of a band.| |* April Fair of Seville: In the enclosure of the fair are settled a lot of tents and marquees, in which you can relax, eating and drinking typical products of the city at the same time that you can enjoy, listening to songs and dancing sevillanas (typical Sevillian dance)." />
+			<information lang="en" button="3" title="To taste" text="The typical and traditional sweets of Seville like the 'torta de aceite' (a kind of pancake made of olive oil), 'cortadillos de cidra' (typical andalusian sweet made of citron), the 'torrijas' (slice of bread coated in batter with egg and fried, then soaked in wine or milk, and sweetened with sugar and cinnamon or syrup) and St. Leandro's yolks (sweet made of sugar and egg yolk)." />
+		</town>
+		<info-tray lang="es" title="Tortas de Aceite" text="Es un dulce de forma redonda, hecho basicamente de trigo, azucar, ajonjolí, matalahuga y por supuesto aceite de oliva. Son muy conocidas las de Castilleja de la Cuesta." />
+		<info-tray lang="en" title="Olive oil cakes" text="It's a rounded shaped sweet, made basically with wheat, sugar, sesame, 'matalahuga' and olive oil, of course. Castilleja de la Cuesta's olive oil cakes are well known." />
+	</data>
+	<board type="7x7" floor="3" wall="3" />
+	<help name="key" />
+	<animation-end fromdata="/endlevel/sevilla" />
+	<music type="3" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="0" ntiles="5" type-terrain="0" type-wall="3">
+		<object name="window7" x="326" y="3" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="window8" x="153" y="-5" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="window8" x="156" y="-150" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="window8" x="-146" y="-6" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="window8" x="-146" y="-152" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="window7" x="0" y="-151" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="window7" x="-2" y="-148" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="window7" x="-326" y="4" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="window7" x="328" y="-215" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="window7" x="-326" y="-216" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="15" y="83" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="151" y="153" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="287" y="215" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="172" y="215" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="172" y="215" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="-149" y="155" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-34" y="155" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-34" y="155" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-282" y="219" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="tree4" x="70" y="14" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="tree4" x="202" y="73" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="tree4" x="-64" y="23" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="tree4" x="-204" y="81" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-9" y="85" scale="0.500000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="0" y="3" />
+		<tray x="3" y="3" />
+		<key x="3" y="1" />
+		<door-key x="1" y="3" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="6" y="0" />
+		<player x="2" y="1" />
+		<enemy1 x="6" y="1" />
+		<enemy3 x="4" y="2" />
+	</position>
+	<walls>
+		<wall x="4" y="0" right="true" />
+		<wall x="6" y="0" bottom="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="2" y="1" right="true" bottom="true" />
+		<wall x="4" y="1" right="true" />
+		<wall x="5" y="1" bottom="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="2" y="2" right="true" />
+		<wall x="3" y="2" bottom="true" />
+		<wall x="5" y="2" bottom="true" />
+		<wall x="6" y="2" bottom="true" />
+		<wall x="2" y="3" right="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="5" y="3" right="true" bottom="true" />
+		<wall x="0" y="4" right="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="2" y="4" right="true" bottom="true" />
+		<wall x="3" y="4" bottom="true" />
+		<wall x="0" y="5" right="true" />
+		<wall x="3" y="5" bottom="true" />
+		<wall x="4" y="5" bottom="true" />
+		<wall x="5" y="5" right="true" />
+		<wall x="0" y="6" right="true" />
+		<wall x="2" y="6" right="true" />
+		<wall x="3" y="6" right="true" />
+	</walls>
+</level>

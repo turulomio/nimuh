@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Nerja" province="Málaga">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Nerjeños.| |Nerja es el municipio más oriental de la Costa del Sol. Se encuentra en las faldas de la Sierra Almijara. Consta de dos núcleos de población: Nerja, que ostenta la capitalidad, y el Señorío de Maro, donde se encuentra ubicada la famosa y monumental Cueva de Nerja." />
+			<information lang="es" button="1" title="Para visitar" text="* Cueva de Nerja: Sus yacimientos arqueológicos están considerados como unos de los más importantes del Mediterráneo occidental. Su arte rupestre abarca desde el Auriñaciense a la Edad del Cobre.| |* Balcón de Europa: Uno de los enclaves urbanos más emblemáticos de la costa oriental. Se trata de un mirador desde donde es posible contemplar la belleza de las playas y los acantilados que conforman el abrupto litoral nerjeño." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Fiesta de San Antón: Comienza con las típicas hogueras que se realizan en la calle, en las puertas de las casas, y a su alrededor se reúnen los vecinos y visitantes a degustar los productos de la zona.| |* Romeria San Isidro." />
+			<information lang="es" button="3" title="Para degustar" text="Maimones con uvas, Emblanco de pescado y calabaza frita con sardinas." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Nerjeños.| |Nerja is the easternmost municipality on the Costa del Sol. It is on the slopes of the Sierra Almijara.  It is composed of two population centres: Nerja that has the capital status and the Dominion of 'Maro', where the famous and monumental Cave of Nerja is located." />
+			<information lang="en" button="1" title="To visit" text="* Cave of Nerja: Its archaeological sites are considered as some of the most important in the western Mediterranean. Its cave art covers from the 'Auriñaciense' to the Copper Age.| |* Balcony of Europe: One of the most emblematic urban enclaves of the east coast. It is a viewpoint from where it is possible to contemplate the beauty of the beaches and the cliffs that shape the rugged coast of 'Nerja'." />
+			<information lang="en" button="2" title="To enjoy" text="* Festivity of St. Antón: It begins with the typical bonfires that are carried out in the street, in the doors of the houses, and the inhabitants and visitors meet around to taste the foodstuffs of the area.| |* 'Romería' of St. Isidro." />
+			<information lang="en" button="3" title="To taste" text="'Maimones' with grapes ('Maimones' is a soup made with fried bread and garlics, then it is covered with water, to add a beaten egg and to season), fish soup and fried pumpkin with sardines." />
+		</town>
+	</data>
+	<board type="9x9" floor="0" wall="10" pavement="2" />
+	<music type="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="6" ntiles="4" type-terrain="0">
+		<object name="hamaca1" x="78" y="-3" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="165" y="34" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="245" y="77" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="hamaca2" x="-154" y="9" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="hamaca1" x="330" y="119" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmtree" x="242" y="-27" scale="0.900000" flip="false" lock="true" origen="game" />
+		<object name="parasol2" x="-361" y="-18" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="parasol2" x="-233" y="-52" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="wood_tables" x="-345" y="50" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="hamaca2" x="-264" y="50" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="parasol2" x="-490" y="11" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="hamaca2" x="-389" y="82" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="palmtree" x="-473" y="-12" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="wood_tables" x="-501" y="128" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="wood_tables" x="-12" y="83" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="wood_tables" x="103" y="141" scale="1.000000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="2" y="6" />
+	</objects>
+	<position>
+		<exit x="8" y="5" />
+		<player x="1" y="1" />
+		<enemy2 x="8" y="5" />
+	</position>
+	<walls>
+		<wall x="1" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="5" y="0" right="true" bottom="true" />
+		<wall x="0" y="1" right="true" bottom="true" />
+		<wall x="4" y="1" right="true" />
+		<wall x="6" y="1" right="true" />
+		<wall x="7" y="1" right="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="3" y="2" bottom="true" />
+		<wall x="4" y="2" bottom="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="6" y="3" bottom="true" />
+		<wall x="7" y="3" bottom="true" />
+		<wall x="8" y="3" bottom="true" />
+		<wall x="0" y="4" bottom="true" />
+		<wall x="1" y="4" bottom="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="6" y="4" right="true" />
+		<wall x="7" y="4" right="true" />
+		<wall x="4" y="5" right="true" />
+		<wall x="6" y="5" bottom="true" />
+		<wall x="7" y="5" right="true" />
+		<wall x="3" y="6" bottom="true" />
+		<wall x="7" y="6" right="true" />
+		<wall x="4" y="7" right="true" />
+		<wall x="0" y="8" right="true" />
+		<wall x="1" y="8" bottom="true" />
+		<wall x="2" y="8" bottom="true" />
+		<wall x="4" y="8" right="true" bottom="true" />
+		<wall x="5" y="8" bottom="true" />
+		<wall x="8" y="8" bottom="true" />
+	</walls>
+</level>

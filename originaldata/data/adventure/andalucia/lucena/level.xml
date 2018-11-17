@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Lucena" province="Córdoba">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Lucentinos.| |Industriosa ciudad de la campiña cordobesa cuyo trazado se localiza en un estrátegico cruce de caminos, en el valle que forman los cerros Hacho, Mataosos y San Cristóbal.| |Lucena ha sido desde muy antiguo y hasta al menos el siglo XII una ciudad judía, aunque en ella llegaron a convivir armoniosamente judíos, árabes y cristianos. En el capítulo artesano caben señalar los objetos decorativos de metal, cobre y latón, donde observa mención especial los 'velones' de Lucena, obra orfebre de gran tradición." />
+			<information lang="es" button="1" title="Para visitar" text="* Castillo del Moral: Ubicado en el coso, es un monumento histórico Nacional que alberga el Museo Arqueológico y Etnológico de la ciudad.| |* Parroquia de San Mateo: Una de las iglesias con más historia de Cordoba, con un importante retablo renacentista." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Fiestas Aracelitanas: En honor a la patrona de Lucena, la Virgen de Araceli.| |* Feria de Ntra. Sra. del Valle: Señala el final del verano, es de las ferias más esperadas de Lucena y a ella acuden multitud de personas de otras localidades." />
+			<information lang="es" button="3" title="Para degustar" text="Recetas campesinas como la 'roña de habicholones', los 'pimientos ajogaos', los potajes de castañas y el 'gazpachuelo' acompañadas de un buen vino del lugar elaborado de la llamada uva Pedro Ximénez." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Lucentinos.| |Industrious city of the Cordovan countryside whose route is located at a strategic crossroads, in the valley that form the hills 'Hacho', 'Mataosos' and St. Christopher.| |Lucena has been since ancient times, and until at least the 12th Century, a Jewish city, although in it, Jews, Arabs and Christians lived together harmoniously.| |As regards the craft industry, it is necessary to point out the metal, bronze and brass ornaments, although the 'Velones' of Lucena deserve a special mention; a goldsmith with a strong tradition of producing fine arts and craft." />
+			<information lang="en" button="1" title="To visit" text="* Castle 'Del Moral': Located in the main street, it is a National historical monument that contains the city's Archaeological and Ethnological Museum.| |* Parish Church of St. Matthew: One of Córdoba's most historic churches, with an important Renaissance altarpiece." />
+			<information lang="en" button="2" title="To enjoy" text="* Aracelitanas festival: In honour of the patron saint of Lucena, Our Lady of Araceli.| |* Festival of Our Lady of the Valley: It indicates the end of the summer. It is one of the most anticipated festivals in Lucena which attracts visitors from all the nearby towns." />
+			<information lang="en" button="3" title="To taste" text="Country recipes such as the 'roña de habicholones', 'pimientos ajogaos' (drowned peppers), Chestnut Stew and the 'gazpachuelo' served with a good local wine, based on the Pedro Ximénez grape." />
+		</town>
+	</data>
+	<board type="7x7" floor="5" wall="7" pavement="3" />
+	<music type="0" />
+	<scenary type="closed" red="244" green="239" blue="181" type-tiled="3" ntiles="2" type-terrain="0" type-wall="5">
+		<object name="herbs" x="98" y="151" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="144" y="171" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="208" y="203" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="174" y="189" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="235" y="223" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-21" y="115" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="51" y="133" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="4" y="112" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="195" y="240" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="195" y="240" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-2" y="99" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-69" y="137" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-184" y="192" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="289" y="238" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="336" y="256" scale="0.400000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-24" y="155" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-24" y="155" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-116" y="152" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-149" y="168" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-108" y="187" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-225" y="207" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-253" y="230" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-286" y="246" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="herbs" x="-326" y="263" scale="0.400000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="bush1" x="18" y="52" scale="0.500000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="bush1" x="296" y="188" scale="0.500000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="bush1" x="-13" y="56" scale="0.500000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="bush1" x="-294" y="178" scale="0.500000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="window14" x="327" y="27" scale="0.900000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="window14" x="-319" y="24" scale="0.900000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="window14" x="-122" y="-65" scale="0.900000" flip="true" lock="false" origen="game" type="3d" />
+		<object name="window14" x="127" y="-63" scale="0.900000" flip="false" lock="false" origen="game" type="3d" />
+	</scenary>
+	<objects>
+		<trap x="6" y="1" />
+	</objects>
+	<position>
+		<exit x="0" y="0" />
+		<player x="2" y="1" />
+		<enemy1 x="5" y="1" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="4" y="0" right="true" />
+		<wall x="6" y="0" right="true" bottom="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="4" y="1" bottom="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="2" y="2" right="true" bottom="true" />
+		<wall x="5" y="2" bottom="true" />
+		<wall x="6" y="3" right="true" bottom="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="3" y="4" right="true" />
+		<wall x="4" y="4" bottom="true" />
+		<wall x="5" y="4" right="true" />
+		<wall x="6" y="4" bottom="true" />
+		<wall x="6" y="5" right="true" bottom="true" />
+		<wall x="0" y="6" right="true" />
+		<wall x="1" y="6" bottom="true" />
+		<wall x="2" y="6" right="true" />
+		<wall x="3" y="6" bottom="true" />
+		<wall x="4" y="6" right="true" bottom="true" />
+	</walls>
+</level>

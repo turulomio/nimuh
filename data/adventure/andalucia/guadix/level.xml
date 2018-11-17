@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Guadix" province="Granada">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Accitanos.| |La Comarca de Guadix se sitúa en un altiplano rodeado de montañas, ofreciendo una amplia diversidad de paisajes y espacios naturales: desde la alta montaña de Sierra Nevada hasta las zonas áridas de los bad-lands." />
+			<information lang="es" button="1" title="Para visitar" text="* El Palacio-Fortaleza de La Calahorra: es uno de los monumentos más emblemáticos de la Comarca y el que protagoniza todos los paisajes del Marquesado.| |* Parque Nacional de Sierra Nevada: Es la joya medioambiental de la Comarca, alberga casi 200 especies endémicas, residuos, muchas de ellas, de la flora y la fauna que ocupó zonas más bajas durante los periodos glaciares." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Fiesta patronal de San Torcuato.| |* Termas: Guadix cuenta con dos balnearios de aguas termales que ofrecen un servicio completo de tratamientos terapéuticos y de relax." />
+			<information lang="es" button="3" title="Para degustar" text="Las gachas, los andrajos, los sustentos y el rin ran." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Accitano.| |The region of Guadix is located on a high plateau surrounded by mountains, offering a wide diversity of landscapes and natural spaces: from the high mountain of 'Sierra Nevada' to the arid areas of the bad-lands." />
+			<information lang="en" button="1" title="To visit" text=" * The fortress-palace of 'La Calahorra': It is one of the most emblematic monuments of the region and the one that dominates the 'Marquesdao' landscape.| |* 'Sierra Nevada' National Park: It is the environmental gem of the region containing almost 200 indigenous species; residues, many of them, of the flora and the fauna that occupied lower areas during the glacial periods." />
+			<information lang="en" button="2" title="To enjoy" text="* Festivity of St. Torcuato| |* Hot baths: Guadix has two hot water spas that offer a complete service of therapeutic and relaxing treatments." />
+			<information lang="en" button="3" title="To taste" text="A type of Porridge , the 'andrajos' (Stew of potatoes, flour, tomatoes, green peppers, red peppers, mushrooms, paprika, pepper, garlic, cumin, mint, clove, oil and onion), the 'sustentos' (sustenances) and the 'rin ran' (A kind of a purée where all the ingredients are pounded, bringing about a kind of a very thick purée. This purée can be made with dry cod, tomato, peppers, garlic, olives, sugar, olive oil and salt although the ingredients can change according to the region)." />
+		</town>
+	</data>
+	<map file-fromdata="/maps/map_granada.jpg">
+		<texts-map lang="es" title-1="Granada" text-1="Poblada desde tiempos íberos formó parte del reino Visigodo en la Edad Media. Fue un importante centro urbano de al-Andalus formando parte del califato de Córdoba. Desde el siglo XIII se describe a Granada como ciudad del conocimiento." title-2="Objetivo" text-2="La Alhambra es el objetivo de esta provincia." distance-second-text="285" />
+		<texts-map lang="en" title-1="Granada" text-1="Inhabited since pre-history, Granada formed part of the Visigoth kingdom in teh middle ages.  It was an important city of al-Andalus, forming part of the Caliphate of Cordoba.  Since the C.18th Granada has been recognised as the City of Knowledge." title-2="Objetive" text-2="The Alhambra is the objective in this province." distance-second-text="285" />
+	</map>
+	<music type="1" />
+	<board type="7x7" floor="3" wall="3" pavement="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="5" ntiles="3" type-terrain="12">
+		<object name="tree5" x="250" y="-62" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="tree5" x="-458" y="-72" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="guadix_chimney1" x="-413" y="76" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="guadix_chimney2" x="242" y="34" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="guadix_chimney3" x="-190" y="-5" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="169" y="91" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-259" y="76" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-404" y="191" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="herbs" x="51" y="-13" scale="0.400000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="2" y="2" />
+	</objects>
+	<position>
+		<exit x="0" y="0" />
+		<player x="2" y="5" />
+		<enemy1 x="4" y="3" />
+	</position>
+	<walls>
+		<wall x="2" y="0" right="true" bottom="true" />
+		<wall x="3" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="5" y="0" bottom="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="1" y="2" right="true" />
+		<wall x="2" y="2" right="true" />
+		<wall x="5" y="2" right="true" bottom="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="4" y="3" bottom="true" />
+		<wall x="5" y="3" right="true" />
+		<wall x="6" y="3" bottom="true" />
+		<wall x="1" y="4" right="true" bottom="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="6" y="4" bottom="true" />
+		<wall x="0" y="5" right="true" />
+		<wall x="4" y="5" right="true" />
+		<wall x="5" y="5" right="true" bottom="true" />
+		<wall x="1" y="6" right="true" />
+		<wall x="3" y="6" right="true" />
+	</walls>
+</level>

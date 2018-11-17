@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Tarifa" province="Cádiz">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Tarifeños.| |La punta más meridional de Europa, con asentamientos desde época prehistórica. Fenicios y romanos, han dejado su huella con importantes ciudades como fueron Julia Traducta o Baelo Claudia, aunque su nombre actual le viene del caudillo bereber Tarif Ibn Malluk quien llegó a estas tierras en el año 711. Su posición fronteriza la mantendría siempre como plaza fuerte defensiva ante diversos avatares como serían los ataques de piratas, la ocupación inglesa de Gibraltar, y el asedio de las tropas napoleónicas durante la Guerra de la Independencia." />
+			<information lang="es" button="1" title="Para visitar" text="* Castillo de Guzmán el Bueno: Construido en el año 960 d.C. por orden del califa Abderramán III y configurándose como el punto más estratégico del Estrecho de Gibraltar.| |* La ciudad Romana Baelo Claudia: En 1917, comenzaron a realizarse las primeras excavaciones en la zona de Bolonia, encontrando los restos de una ciudad próspera, construida según los cánones clásicos de Roma. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Windsurf, kitesurf y surf: gracias a sus continuos vientos de levante y poniente. De hecho muchos consideran que Tarifa es la capital europea del windsurf.| |* Fiesta de la Patrona Ntra. Sra. Virgen de la Luz: El día de la Patrona es el 8 de septiembre y se celebra una romería acompañando a la Virgen desde la ermita, a unos 5 km., hasta la Iglesia Mayor regresando a su ermita a finales del " />
+			<information lang="es" button="3" title="Para degustar" text="Ortigas de mar, caracoles con tomate, berzas de tagarnina, voraz a la sal y dentón asado." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Tarifeño.| |The most southern point in Europe, with settlements from prehistoric time. Phoenicians and Roman have left their trace with important cities like Julia Traducta or Baelo Claudia, although its current name comes from the Berber leader Tarif Ibn Malluk who arrived to these lands in 711. Its border position would always maintain it as defensive stronghold in the face of several ups and downs like the attacks of pirates, the English occupation of Gibraltar, and the siege of the Napoleonic troops during the War of Independence." />
+			<information lang="en" button="1" title="To visit" text="* Castle of Guzmán the Good: Built in 960 A.C. on the order of the Caliph Abderramán III and it domintated the most strategic point in the Straits of Gibraltar.| |* The Roman city, Baelo Claudia: In 1917, the first excavations began to be carried out in the area of 'Bolonia', finding the ruins of a prosperous city, built according to the classic ideal of Rome." />
+			<information lang="en" button="2" title="To enjoy" text="* It is possible to practise windsurf, kitesurf and surf: thanks to its continuous east and west winds. In fact many people consider that 'Tarifa' is the European capital of windsurfing.| |* Festival of the Patron St Our Lady Virgin of the Light: This day is September 8th and is celebrated by a 'romería' accompanying the Virgin from the hermitage, (about 5 kms.), to the 'Mayor' Church returning to her hermitage at the end of September." />
+			<information lang="en" button="3" title="To taste" text="'Ortiguillas' (sea nettles), snails with tomato, stew of 'tagarnina' (a kind of vegetable)  and cabbage, a kind of fish called 'voraz' in salt and roasted 'dentón' (another kind of fish)." />
+		</town>
+	</data>
+	<board type="10x10" floor="0" wall="9" pavement="3" />
+	<music type="0" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="6" ntiles="5" type-terrain="0">
+		<object name="towel" x="121" y="16" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="ball" x="-271" y="83" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="parasol" x="248" y="17" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="castle_0" x="-218" y="26" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="towel" x="-387" y="3" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="-147" y="-19" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="rock1" x="-404" y="128" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="parasol" x="-414" y="-36" scale="0.600000" flip="true" lock="false" origen="game" />
+		<object name="wood_tables" x="221" y="70" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-63" y="15" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="307" y="186" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="123" y="97" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-258" y="93" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-432" y="164" scale="0.500000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="6" y="4" />
+		<key x="4" y="1" />
+		<door-key x="5" y="2" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="9" y="0" />
+		<player x="5" y="3" />
+		<enemy1 x="5" y="1" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="1" y="0" right="true" />
+		<wall x="2" y="0" right="true" />
+		<wall x="5" y="0" right="true" bottom="true" />
+		<wall x="9" y="0" right="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="1" y="1" right="true" />
+		<wall x="5" y="1" bottom="true" />
+		<wall x="9" y="1" right="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="4" y="3" right="true" />
+		<wall x="5" y="3" right="true" />
+		<wall x="8" y="3" bottom="true" />
+		<wall x="1" y="5" bottom="true" />
+		<wall x="2" y="5" right="true" />
+		<wall x="5" y="5" right="true" />
+		<wall x="0" y="6" right="true" />
+		<wall x="1" y="6" bottom="true" />
+		<wall x="2" y="6" bottom="true" />
+		<wall x="3" y="6" right="true" />
+		<wall x="6" y="6" bottom="true" />
+		<wall x="7" y="6" bottom="true" />
+		<wall x="8" y="6" right="true" />
+		<wall x="9" y="6" right="true" bottom="true" />
+		<wall x="4" y="7" bottom="true" />
+		<wall x="6" y="7" bottom="true" />
+		<wall x="8" y="7" right="true" />
+		<wall x="9" y="7" right="true" />
+		<wall x="1" y="8" right="true" />
+		<wall x="2" y="8" bottom="true" />
+		<wall x="4" y="8" bottom="true" />
+		<wall x="5" y="8" right="true" />
+		<wall x="9" y="8" right="true" />
+		<wall x="0" y="9" bottom="true" />
+		<wall x="1" y="9" bottom="true" />
+		<wall x="2" y="9" bottom="true" />
+		<wall x="9" y="9" right="true" bottom="true" />
+	</walls>
+</level>

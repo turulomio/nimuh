@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Baeza" province="Jaén">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Baezanos.| |Situada en lugar dominante de la la Loma y en la margen derecha del Guadalquivir, centro geográfico de la provincia de Jaén. En la actualidad, es conocida por haber sido declarada junto a Ubeda ciudad patrimonio de la humanidad por la UNESCO y ser una de las tres sedes de la Universidad Internacional de Andalucía." />
+			<information lang="es" button="1" title="Para visitar" text="* El Palacio de Jabalquinto: De estilo plateresco, tiene un patio renacentista y una espectacular escalera barroca con estípites, balaustres y volutas.| |* Ayuntamiento: Frente a la casa de Machado, su cornisa está decorada con grandes ovas, sofitos o tableros y con ménsulas de volutas con figuras de niños, enanos, esfinges, quimeras águilas, chivos alados, hojas de acanto. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Feria de Agosto: en honor de la Virgen del Alcázar, patrona de la ciudad, con diversos actos como competiciones deportivas espectáculos taurinos, actos culturales, teatro, conciertos y verbenas populares." />
+			<information lang="es" button="3" title="Para degustar" text="Los 'garbanzos mareados' o 'morrococo': garbanzos cocidos y triturados bien con cebolla o bien con tomate." />
+			<information lang="en" button="0" title="General" text="The Inhabitants are called Baezanos.| |Well located on a hill-side and on the right riverbank of the Guadalquivir, it is the geographical centre of the province of Jaén.  At the present time, it is well-known to have been declared together with Ubeda, a UNESCO World Heritage Site and being one of the three headquarters of the International University of Andalusia." />
+			<information lang="en" button="1" title="To visit" text="* Jabalquinto's Palace: Of plateresque style, it has a Renaissance patio and spectacular Baroque stairs with 'estípites' (a pilaster in the form of a truncated pyramid, with the smallest base down), balustades and scrolls.| |* Town hall: In front of Machado's house, its cornice is decorated with big 'ovas', 'sofitos' (Inferior plane of the projecting of a cornice or of another projecting part) or boards and with 'ménsulas' of scrolls (architectural element that juts out of a vertical plane and it is good to hold something, as the eaves of the roof, the cornice, etc.) with children's figures, midgets, sphinxes, eagles 'quimeras' (imaginary monster with lion head, goat body and dragon tail), winged young goats, acanthus leaves." />
+			<information lang="en" button="2" title="To enjoy" text="* August Fair: in honour of the 'Virgen del Alcázar' (Virgin of the Fortress), patron saint of the city, with several events such as sporting competitions, bullfighting shows, cultural activities, theatre, concerts and 'verbenas' (open-air celebrations on the eve of a saint's day)." />
+			<information lang="en" button="3" title="To taste" text="'Garbanzos mareados' (chickpeas) or 'morrococo': that is cooked chickpeas puréed with onion or tomato." />
+		</town>
+	</data>
+	<board type="8x8" floor="5" wall="6" pavement="3" />
+	<music type="3" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="5" ntiles="0" type-terrain="0" type-wall="5">
+		<object name="door2" x="109" y="-41" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="door2" x="-111" y="-42" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="window12" x="-47" y="7" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="window12" x="-311" y="115" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="window12" x="34" y="4" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window12" x="322" y="123" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="light1" x="282" y="5" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="light1" x="-315" y="25" scale="0.800000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+	</objects>
+	<position>
+		<exit x="7" y="0" />
+		<player x="6" y="6" />
+		<enemy1 x="5" y="4" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="3" y="0" bottom="true" />
+		<wall x="4" y="0" right="true" bottom="true" />
+		<wall x="5" y="0" bottom="true" />
+		<wall x="7" y="0" bottom="true" />
+		<wall x="3" y="1" bottom="true" />
+		<wall x="6" y="1" bottom="true" />
+		<wall x="7" y="1" right="true" bottom="true" />
+		<wall x="2" y="2" right="true" bottom="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="2" y="3" bottom="true" />
+		<wall x="4" y="3" right="true" />
+		<wall x="6" y="3" bottom="true" />
+		<wall x="0" y="4" right="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="5" y="4" bottom="true" />
+		<wall x="6" y="4" right="true" bottom="true" />
+		<wall x="3" y="5" right="true" bottom="true" />
+		<wall x="6" y="5" right="true" />
+		<wall x="1" y="6" bottom="true" />
+		<wall x="2" y="6" right="true" bottom="true" />
+		<wall x="3" y="6" right="true" />
+		<wall x="6" y="7" right="true" />
+		<wall x="7" y="7" right="true" bottom="true" />
+	</walls>
+</level>

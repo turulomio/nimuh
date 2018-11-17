@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<animation>
+
+	<progressbar width="200" height="16" r="255" g="255" b="255" file-bgbar="bg_barprogress.png" x-positionbar="650" y-positionbar="550" text-language="loading" font="font-texts" />
+
+	<debug time="0:0" />
+
+	<sound name="intro" category="music" file="intro.ogg">
+		<actions>
+			<action function="play" time="3:00" para1="1" para2="0" para3="2000" />
+			<action function="stop" time="41:00" para1="1000" />
+		</actions>
+	</sound>
+	<sound name="eureka" category="music" file="eureka.ogg">
+		<actions>
+			<action function="play" time="41:00" para1="6" para2="-1" para3="3000" />
+			<action function="stop" time="69:00" para1="1000" />
+		</actions>
+	</sound>
+
+	<sound name="surprised" category="high_music" file="surprised.ogg">
+		<actions>
+			<action function="play" time="54:00" para1="1" para2="0"/>		
+		</actions>
+	</sound>
+
+	<sound name="victory" category="music" file="victory.ogg">
+		<actions>
+			<action function="play" time="69:00" para1="7" para2="-1" para3="1000" />
+			<action function="stop" time="99:00" para1="2000" />
+		</actions>
+	</sound>
+
+	<sound name="applauseroom" category="high_music" file="applauseroom.ogg">
+		<actions>
+			<action function="play" time="64:00" para1="8" para2="-1" />
+			<action function="stop" time="69:00" para1="1000" />
+		</actions>
+	</sound>
+
+
+	<sound name="applause" category="music" file="applause.ogg">
+		<actions>
+			<action function="play" time="78:00" para1="8" para2="-1" para3="1000" />
+			<action function="stop" time="87:00" para1="1000" />
+		</actions>
+	</sound>
+
+	<sound name="observatory" category="music" file="observatory.ogg">
+		<actions>
+			<action function="play" time="41:00" para1="2" para2="-1" para3="1000" />
+			<action function="stop" time="59:00" para1="1000" />
+		</actions>
+	</sound>
+
+	<sound name="ovni_space" category="music" file="ovni_space.ogg">
+		<actions>
+			<action function="play" time="89:00" para1="3" para2="-1" para3="1000" />
+			<action function="stop" time="99:00" para1="1000" />
+		</actions>
+	</sound>
+
+	<sound name="desert" category="music" file="desert.ogg">
+		<actions>
+			<action function="play" time="100:00" para1="4" para2="-1" para3="1000" />
+			<action function="stop" time="137:00" para1="2000" />
+		</actions>
+	</sound>
+
+	<sound name="write" category="music" file="write.ogg">
+		<actions>
+			<action function="play" time="102:00" para1="5" para2="0" />
+		</actions>
+	</sound>
+
+	<sound name="asteroid" category="music" file="asteroid.ogg">
+		<actions>
+			<action function="play" time="111:00" para1="5" para2="0" />
+		</actions>
+	</sound>
+
+	<sound name="car" category="high_music" file="car.ogg">
+		<actions>
+			<action function="play" time="119:00" para1="9" para2="0" />
+		</actions>
+	</sound>
+
+	<sound name="victory" category="music" file="victory.ogg">
+		<actions>
+			<action function="play" time="118:00" para1="10" para2="0" para3="1000" />
+			<action function="stop" time="137:00" para1="2000" />
+		</actions>
+	</sound>
+
+	<background-stars file="point.png">
+		<visible-stars type="show" time="0:0" />
+		<visible-stars type="hide" time="59:0" />
+		<visible-stars type="show" time="79:0" />
+		<visible-stars type="hide" time="100:0" />
+		<visible-stars type="show" time="108:40" />
+	</background-stars>
+
+	<element name="caninos" align="center" valign="center" x="400" y="220" z-index="1">
+
+		<frames>
+			<frame-file file="caninostudios.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="2:0" />
+			<action function="setfadein" time="2:00" para1="1000" />
+			<action function="setfadeout" time="8:00" para1="1000" />
+			<action function="hide" time="9:00" />
+		</actions>
+
+	</element>
+
+	<element name="junta" align="right" valign="bottom" x="780" y="580" z-index="1">
+
+		<frames>
+			<frame-file file="junta.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="4:0" />
+			<action function="setfadein" time="4:00" para1="1000" />
+			<action function="setfadeout" time="8:00" para1="1000" />
+			<action function="hide" time="9:00" />
+		</actions>
+
+	</element>
+
+	<element name="zergplanet" scale="0.2" align="center" valign="center" x="400" y="190" z-index="1">
+
+		<frames>
+			<frame-file file="zergplanet.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="9:0" />
+			<action function="setfadein" time="9:00" para1="1000" />
+			<action function="setscale" time="9:00" para1="253" para2="243" para3="30000" />
+			<action function="setrotationnormal" time="9:00" para1="20" para2="30000" />
+			<action function="setmovementnormaly" time="9:00" para1="290" para2="30000" />
+			<action function="setfadeout" time="31:00" para1="1000" />
+			<action function="hide" time="32:00" />
+		</actions>
+
+	</element>
+
+	<element name="text1" align="center" valign="center" x="400" y="480" z-index="1">
+
+		<frames>
+			<frame-file file="text_0_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="10:0" />
+			<action function="setfadein" time="10:00" para1="1000" />
+			<action function="setfadeout" time="16:00" para1="1000" />
+			<action function="hide" time="17:00" />
+		</actions>
+
+	</element>
+
+	<element name="text2" align="center" valign="center" x="400" y="480" z-index="1">
+
+		<frames>
+			<frame-file file="text_1_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="17:0" />
+			<action function="setfadein" time="17:00" para1="1000" />
+			<action function="setfadeout" time="23:00" para1="1000" />
+			<action function="hide" time="24:00" />
+		</actions>
+
+	</element>
+
+	<element name="text3" align="center" valign="center" x="400" y="480" z-index="1">
+
+		<frames>
+			<frame-file file="text_2_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="24:0" />
+			<action function="setfadein" time="24:00" para1="1000" />
+			<action function="setfadeout" time="30:00" para1="1000" />
+			<action function="hide" time="31:00" />
+		</actions>
+
+	</element>
+
+	<element name="zergcity" scale="0.9" x="0" y="0" z-index="1">
+
+		<frames>
+			<frame-file file="zergcity.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="31:0" />
+			<action function="setfadein" time="31:00" para1="1000" />
+			<action function="setscale" time="33:00" para1="900" para2="720" para3="10000" />
+			<action function="setmovementnormal" time="33:00" para1="-100" para2="-120" para3="10000" />
+			<action function="setfadeout" time="41:00" para1="1000" />
+			<action function="hide" time="42:00" />
+		</actions>
+
+	</element>
+
+	<element name="zergcity_eye" scale="0.9" x="477" y="207" z-index="2">
+
+		<frames>
+			<frame-range-file name="zergcity_eye" extension="png" begin="0" end="1" />
+		</frames>
+
+		<animations>
+			<animation name="blink" cycles-between-frames="7">
+				<frame-animation from="0" to="1" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="31:0" />
+			<action function="setforceanimation" time="31:00" para1="blink" para2="1" />
+			<action function="setforceanimation" time="34:00" para1="blink" para2="1" />
+			<action function="setforceanimation" time="38:00" para1="blink" para2="1" />
+			<action function="setfadein" time="31:00" para1="1000" />
+			<action function="setscale" time="33:00" para1="111" para2="139" para3="10000" />
+			<action function="setmovementnormal" time="33:00" para1="430" para2="110" para3="10000" />
+			<action function="setfadeout" time="41:00" para1="1000" />
+			<action function="hide" time="42:00" />
+		</actions>
+
+	</element>
+
+	<element name="zergcity_lights" scale="0.9" x="526" y="400" z-index="2">
+
+		<frames>
+			<frame-range-file name="zergcity_lights" extension="png" begin="0" end="3" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="30">
+				<frame-animation from="0" to="3" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="31:0" />
+			<action function="setforceanimation" time="31:00" para1="move" />
+			<action function="setfadein" time="31:00" para1="1000" />
+			<action function="setscale" time="33:00" para1="315" para2="143" para3="10000" />
+			<action function="setmovementnormal" time="33:00" para1="485" para2="325" para3="10000" />
+			<action function="setfadeout" time="41:00" para1="1000" />
+			<action function="hide" time="42:00" />
+		</actions>
+
+	</element>
+
+	<element name="text4" valign="bottom" x="30" y="570" z-index="2">
+
+		<frames>
+			<frame-file file="text_3_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="32:0" />
+			<action function="setfadein" time="32:00" para1="1000" />
+			<action function="setfadeout" time="40:00" para1="1000" />
+			<action function="hide" time="41:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene3_bg" x="0" y="0" z-index="1">
+
+		<frames>
+			<frame-file file="scene3_bg.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="41:0" />
+			<action function="setfadein" time="41:00" para1="1000" />
+			<action function="hide" time="50:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene3_screens" x="800" y="-3" align="right" z-index="3">
+
+		<frames>
+			<frame-range-file name="scene3_screens" extension="png" begin="0" end="2" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="20">
+				<frame-animation from="0" to="2" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="41:0" />
+			<action function="setfadein" time="41:00" para1="1000" />
+			<action function="setforceanimation" time="41:00" para1="move" />
+			<action function="hide" time="50:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene3_dr" x="320" y="220" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene3_dr" extension="jpg" begin="0" end="14" />
+		</frames>
+
+		<animations>
+			<animation name="stop">
+				<frame-animation from="0" />
+			</animation>
+			<animation name="move" cycles-between-frames="7">
+				<frame-animation from="0" to="14" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="41:0" />
+			<action function="setfadein" time="41:00" para1="1000" />
+			<action function="setforceanimation" time="41:00" para1="stop" />
+			<action function="setforceanimation" time="45:00" para1="move" para2="1" />
+			<action function="hide" time="50:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene3_key" x="607" y="148" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene3_key" extension="jpg" begin="0" end="3" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="6">
+				<frame-animation from="0" to="3" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="41:0" />
+			<action function="setfadein" time="41:00" para1="1000" />
+			<action function="hide" time="50:00" />
+		</actions>
+
+	</element>
+
+	<element name="text5" x="30" y="500" z-index="2">
+
+		<frames>
+			<frame-file file="text_4_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="42:0" />
+			<action function="setfadein" time="42:00" para1="1000" />
+			<action function="hide" time="49:00" />
+		</actions>
+
+	</element>
+
+	<element name="map1" x="0" y="0" z-index="3">
+
+		<frames>
+			<frame-file file="map1.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="49:0" />
+			<action function="setfadein" time="49:00" para1="200" />
+			<action function="setmovementnormalx" time="50:00" para1="20" para2="1000" />
+			<action function="setmovementnormalx" time="51:00" para1="0" para2="1000" />
+			<action function="hide" time="53:00" />
+		</actions>
+
+	</element>
+
+	<element name="map0" x="0" y="0" z-index="4">
+
+		<frames>
+			<frame-file file="map0.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="50:0" />
+			<action function="setfadein" time="50:00" para1="200" />
+			<action function="setmovementnormalx" time="50:00" para1="20" para2="1000" />
+			<action function="setmovementnormalx" time="51:00" para1="0" para2="1000" />
+			<action function="hide" time="53:00" />
+		</actions>
+
+	</element>
+
+	<element name="map2" x="0" y="300" valign="center" z-index="5">
+
+		<frames>
+			<frame-file file="map2.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="52:0" />
+			<action function="setfadein" time="52:00" para1="200" />
+			<action function="setscale" time="52:00" para1="1400" para2="1050" para3="1000" />
+			<action function="setmovementnormal" time="52:00" para1="-100" para2="320" para3="1000" />
+			<action function="hide" time="54:00" />
+		</actions>
+
+	</element>
+
+	<element name="map3" x="0" y="0" z-index="5">
+
+		<frames>
+			<frame-file file="map3.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="53:0" />
+			<action function="setfadein" time="53:00" para1="1000" />
+			<action function="setmovementnormalx" time="54:00" para1="-80" para2="6000" />
+			<action function="setfadeout" time="59:00" para1="1000" />
+			<action function="hide" time="60:00" />
+		</actions>
+
+	</element>
+
+	<element name="telescope" x="0" y="0" z-index="6">
+
+		<frames>
+			<frame-range-file name="scene4_telescope" extension="png" begin="0" end="2" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="20">
+				<frame-animation from="0" to="2" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="49:0" />
+			<action function="setforceanimation" time="49:00" para1="move" />
+			<action function="setfadein" time="49:00" para1="200" />
+			<action function="setfadeout" time="59:00" para1="1000" />
+			<action function="hide" time="60:00" />
+		</actions>
+
+	</element>
+
+	<element name="text_surprise" x="770" y="500" align="right" z-index="7">
+
+		<frames>
+			<frame-file file="text_5_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="53:0" />
+			<action function="setfadein" time="53:00" para1="1000" />
+			<action function="hide" time="49:00" />
+			<action function="setfadeout" time="59:00" para1="1000" />
+			<action function="hide" time="60:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene5bg" x="0" y="0" z-index="0">
+
+		<frames>
+			<frame-file file="scene5bg.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene5board" x="350" y="0" z-index="1">
+
+		<frames>
+			<frame-file file="scene5board.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene5board_andalucia" x="370" y="110" z-index="2">
+
+		<frames>
+			<frame-file file="scene5board_andalucia.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setfadeout" time="62:00" para1="1000" />
+			<action function="hide" time="64:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene5board_monument" scale="0.6" x="400" y="65" z-index="3">
+
+		<frames>
+			<frame-file file="scene5board_monument.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setscale" time="62:00" para1="54" para2="159" para3="1000" />
+			<action function="setmovementnormal" time="62:00" para1="430" para2="60" para3="1000" />
+			<action function="setscale" time="64:30" para1="37" para2="110" para3="1000" />
+			<action function="setmovementnormal" time="64:30" para1="440" para2="50" para3="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene5board_zerg" x="381" y="115" z-index="2">
+
+		<frames>
+			<frame-file file="scene5board_zerg.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="64:30" />
+			<action function="setfadein" time="64:30" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene5arrow" x="430" y="40" z-index="4">
+
+		<frames>
+			<frame-file file="scene5arrow.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:30" />
+			<action function="setmlblinking" time="59:00" para1="10000" />
+			<action function="setblinking" time="59:00" para1="20" />
+			<action function="hide" time="62:00" />
+			<action function="setxy" time="65:00" para1="480" para2="35" />
+			<action function="show" time="65:30" />
+			<action function="hide" time="69o:00" />
+		</actions>
+
+	</element>
+
+
+	<element name="scene5board_interference" x="350" y="0" z-index="4">
+
+		<frames>
+			<frame-file file="scene5board_interference.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="drscene5" x="180" y="10" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene5_doctor" extension="png" begin="0" end="5" />
+		</frames>
+
+		<animations>
+			<animation name="talk" cycles-between-frames="12">
+				<frame-animation from="0" to="2" />
+			</animation>
+			<animation name="move" cycles-between-frames="12">
+				<frame-animation from="3" to="5" />
+				<frame-animation from="4" />
+				<frame-animation from="3" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="setforceanimation" time="59:00" para1="talk" />
+			<action function="setforceanimation" time="63:00" para1="move" />
+			<action function="setanimation" time="63:01" para1="talk" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="tablescene5" valign="bottom" x="0" y="600" z-index="3">
+
+		<frames>
+			<frame-file file="scene5_table.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="59:0" />
+			<action function="setfadein" time="59:00" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="text6" align="center" x="400" y="460" z-index="4">
+
+		<frames>
+			<frame-file file="text_6_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="60:0" />
+			<action function="setfadein" time="60:00" para1="1000" />
+			<action function="setfadeout" time="65:00" para1="1000" />
+			<action function="hide" time="66:00" />
+		</actions>
+
+	</element>
+
+	<element name="text7" align="center" x="400" y="460" z-index="4">
+
+		<frames>
+			<frame-file file="text_7_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="65:0" />
+			<action function="setfadein" time="65:00" para1="1000" />
+			<action function="setfadeout" time="69:00" para1="1000" />
+			<action function="hide" time="70:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene6bg" x="0" y="0" z-index="2">
+
+		<frames>
+			<frame-file file="scene6bg.jpg" />
+		</frames>
+
+		<actions>
+			<action function="show" time="69:0" />
+			<action function="setfadein" time="69:00" para1="1000" />
+			<action function="setfadeout" time="79:00" para1="1000" />
+			<action function="hide" time="80:00" />
+		</actions>
+
+	</element>
+
+	<element name="nimuhscene6" scale="0.4" align="center" x="520" y="250" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene6nimuh" extension="png" begin="0" end="7" />
+		</frames>
+
+		<animations>
+			<animation name="walking" cycles-between-frames="8">
+				<frame-animation from="0" to="7" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="69:0" />
+			<action function="setfadein" time="69:00" para1="1000" />
+			<action function="setfadeout" time="79:00" para1="1000" />
+			<action function="setforceanimation" time="69:00" para1="walking" />
+			<action function="setmovementnormal" time="69:00" para1="480" para2="270" para3="10000" />
+			<action function="setscale" time="69:00" para1="241" para2="361" para3="11000" />
+			<action function="hide" time="80:00" />
+		</actions>
+
+	</element>
+
+	<element name="text8" align="center" x="400" y="80" z-index="2">
+
+		<frames>
+			<frame-file file="text_8_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="71:0" />
+			<action function="setfadein" time="71:00" para1="1000" />
+			<action function="setfadeout" time="78:00" para1="1000" />
+			<action function="hide" time="79:00" />
+		</actions>
+
+	</element>
+
+
+	<element name="scene7_00" x="0" y="0" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene7_00" extension="png" begin="0" end="2" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="8">
+				<frame-animation from="0" to="2" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="78:0" />
+			<action function="setfadein" time="78:00" para1="1000" />
+			<action function="setfadeout" time="88:00" para1="1000" />
+			<action function="hide" time="89:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene7_01" x="454" y="0" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene7_01" extension="png" begin="0" end="1" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="40">
+				<frame-animation from="0" to="1" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="78:0" />
+			<action function="setfadein" time="78:00" para1="1000" />
+			<action function="setfadeout" time="88:00" para1="1000" />
+			<action function="hide" time="89:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene7_10" x="0" y="318" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene7_10" extension="png" begin="0" end="2" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="24">
+				<frame-animation from="0" to="2" />
+				<frame-animation from="1" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="78:0" />
+			<action function="setfadein" time="78:00" para1="1000" />
+			<action function="setfadeout" time="88:00" para1="1000" />
+			<action function="hide" time="89:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene7_11" x="454" y="318" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene7_11" extension="png" begin="0" end="2" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="16">
+				<frame-animation from="0" to="2" />
+				<frame-animation from="1" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="78:0" />
+			<action function="setfadein" time="78:00" para1="1000" />
+			<action function="setfadeout" time="88:00" para1="1000" />
+			<action function="hide" time="89:00" />
+		</actions>
+
+	</element>
+
+	<element name="text9" align="right" x="770" y="30" z-index="2">
+
+		<frames>
+			<frame-file file="text_9_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="81:0" />
+			<action function="setfadein" time="81:00" para1="1000" />
+			<action function="setfadeout" time="88:00" para1="1000" />
+			<action function="hide" time="89:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene8_rock" x="40" y="200" z-index="1">
+
+		<frames>
+			<frame-range-file name="scene8_rock" extension="png" begin="0" end="1" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="30">
+				<frame-animation from="0" to="1" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="87:0" />
+			<action function="setmovementnormaly" time="87:00" para1="220" para2="4000" />
+			<action function="setmovementnormaly" time="91:00" para1="200" para2="4000" />
+			<action function="setmovementnormaly" time="95:00" para1="220" para2="4000" />
+			<action function="setmovementnormaly" time="99:00" para1="200" para2="4000" />
+			<action function="setforceanimation" time="87:00" para1="move" />
+			<action function="setfadein" time="87:00" para1="1000" />
+			<action function="setfadeout" time="100:00" para1="1000" />
+			<action function="hide" time="101:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene8_earth" x="650" y="80" z-index="1">
+
+		<frames>
+			<frame-file file="scene8_earth.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="88:0" />
+			<action function="setfadein" time="88:00" para1="1000" />
+			<action function="setfadeout" time="100:00" para1="1000" />
+			<action function="hide" time="101:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene8" x="150" y="800" z-index="2">
+
+		<frames>
+			<frame-range-file name="scene8_ovni" extension="png" begin="0" end="1" />
+		</frames>
+
+		<animations>
+			<animation name="fly" cycles-between-frames="8">
+				<frame-animation from="0" to="1" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="89:0" />
+			<action function="setfadeout" time="99:30" para1="500" />
+			<action function="setforceanimation" time="89:00" para1="fly" />
+			<action function="setscale" time="95:00" para1="80" para2="50" para3="7000" />
+			<action function="setmovementnormal" time="89:00" para1="300" para2="600" para3="2000" />
+			<action function="setmovementnormal" time="91:00" para1="250" para2="500" para3="2000" />
+			<action function="setmovementnormal" time="93:00" para1="350" para2="400" para3="4000" />
+			<action function="setmovementnormal" time="97:00" para1="600" para2="100" para3="3000" />
+			<action function="hide" time="100:00" />
+		</actions>
+
+	</element>
+
+	<element name="textdesert" align="center" valign="center" x="400" y="520" z-index="0">
+
+		<frames>
+			<frame-range-file name="desert_$lang$" extension="png" begin="0" end="23" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="6">
+				<frame-animation from="0" to="23" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="102:0" />
+			<action function="setforceanimation" time="102:00" para1="move" para2="1" />
+			<action function="setfadeout" time="108:00" para1="1000" />
+			<action function="hide" time="109:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene9desert" x="0" y="0" z-index="2">
+
+		<frames>
+			<frame-file file="scene9desert.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="108:0" />
+			<action function="setfadein" time="108:00" para1="200" />
+			<action function="setfadeout" time="118:30" para1="500" />
+			<action function="hide" time="119:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene9moon" x="550" y="0" z-index="0">
+
+		<frames>
+			<frame-file file="scene9moon.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="108:0" />
+			<action function="setfadein" time="108:00" para1="1000" />
+			<action function="setfadeout" time="118:00" para1="1000" />
+			<action function="hide" time="119:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene9part" x="-150" y="50" z-index="0">
+
+		<frames>
+			<frame-range-file name="scene9_part" extension="png" begin="0" end="2" />
+		</frames>
+
+		<animations>
+			<animation name="move" cycles-between-frames="5">
+				<frame-animation from="0" to="2" />
+			</animation>
+		</animations>
+
+		<actions>
+			<action function="show" time="108:0" />
+			<action function="setfadeout" time="118:00" para1="1000" />
+			<action function="setmovementnormal" time="111:00" para1="800" para2="180" para3="4000" />
+			<action function="hide" time="119:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene9desert_explode" x="800" y="0" align="right" z-index="1">
+
+		<frames>
+			<frame-file file="scene9desert_explode.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="114:30" />
+			<action function="setfadein" time="114:30" para1="500" />
+			<action function="setfadeout" time="116:00" para1="500" />
+			<action function="hide" time="117:00" />
+		</actions>
+
+	</element>
+
+	<element name="text11" align="right" valign="bottom" x="770" y="570" z-index="2">
+
+		<frames>
+			<frame-file file="text_10_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="108:0" />
+			<action function="setfadein" time="108:00" para1="1000" />
+			<action function="setfadeout" time="113:00" para1="1000" />
+			<action function="hide" time="114:00" />
+		</actions>
+
+	</element>
+
+	<element name="scene10bg" x="0" y="0" z-index="1">
+
+		<frames>
+			<frame-file file="scene10bg.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="118:0" />
+			<action function="setfadein" time="118:00" para1="1000" />
+		</actions>
+
+	</element>
+
+	<element name="scene10daise" x="0" y="0" z-index="5">
+
+		<frames>
+			<frame-file file="scene10daise.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="118:0" />
+			<action function="setfadein" time="118:00" para1="500" />
+			<action function="setmovementnormal" time="122:00" para1="-800" para2="0" para3="2000" />
+		</actions>
+
+	</element>
+
+	<element name="scene10enemies" align="center" valign="bottom" x="400" y="535" z-index="4">
+
+		<frames>
+			<frame-file file="scene10_enemies.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="118:30" />
+			<action function="setfadein" time="118:30" para1="1000" />
+		</actions>
+
+	</element>
+
+	<element name="text12" align="right" x="770" y="30" z-index="2">
+
+		<frames>
+			<frame-file file="text_11_$lang$.png" />
+		</frames>
+
+		<actions>
+			<action function="show" time="122:0" />
+			<action function="setfadein" time="122:00" para1="1000" />
+			<action function="gotoscene" time="137:00" para1="nextscene" para2="2000" />
+		</actions>
+
+	</element>
+
+</animation>

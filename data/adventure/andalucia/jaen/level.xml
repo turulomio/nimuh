@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Jaén" province="Jaén">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Jienenses, Jaeneros o Jaenés.| |La ciudad de Jaén se alza al pie del Cerro de Santa Catalina, calles empinadas y de pronunciadas pendientes definen su urbanismo, ensanchándose hacia las zonas más llanas y amplias de los nuevos barrios y bulevares.| |En sus alrededores abundan fértiles tierras de cultivo y extensos olivares que buscan el descanso del Valle del Guadalquivir. Hacia el sur y el sureste se encuentran las Sierras de Jaén y Jabalcuz que abrigan a la ciudad y al norte se abre el llano del río Guadalbullón, que pasa a muy corta distancia de la ciudad." />
+			<information lang="es" button="1" title="Para visitar" text="* Los Baños Arabes: los mayores de Europa, construidos en el período de Abd-Al-Rahman II, bajo el Palacio de Villardompardo.| |* La Catedral: declarada Monumento Histórico-Cultural y propuesta a Patrimonio Mundial, del más puro estilo Renacentista." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Feria de San Lucas: Esta feria suele tener una gran actividad, siendo costumbre las corridas taurinas, conciertos de artistas de fama nacional, así como el acudir al recinto de La Vestida para montar en las atracciones o bailar en las casetas.| |* La Semana Santa de Jaén: Con procesiones tan reconocidas como la de Nuestro Padre Jesús Nazareno, más conocida como El Abuelo, veneradísmo en Jaén." />
+			<information lang="es" button="3" title="Para degustar" text="En Jaén está muy arraigada la cultura del tapeo, y existen numerosos bares donde por el precio de una caña, le ofreceran por persona una tapa de gran tamaño como puede ser un pincho, un plato de patatas fritas cortadas gruesamente con alioli, un bocata de lomo o una hamburguesa.| |Uno de los platos mas destacado es la pipirrana y el Ajo Blanco de Jaen uno de sus exquisitos postres." />
+			<information lang="en" button="0" title="General" text="The Inhabitants are called Jienenses, Jaeneros o Jaenés.| |The city of Jaén rises at the foot of Santa Catalina's Hill. Steep streets and slopes define its town planning, expanding itself toward the more spacious and flat areas in the new neighborhoods and boulevards. In its surroundings there are expanses of fertile agricultural land and extensive olive groves that continue for the rest of the Guadalquivir Valley. Toward the south and the southeast we find the Mountains of Jaén and Jabalcuz that shelter the city and toward the north, the plain of the river Guadalbullón clears and passes very close to the city." />
+			<information lang="en" button="1" title="To visit" text="* The Arab Baths: they are the biggest of Europe, built in the period of Abd-Al-Rahman II, under the Palace of Villardompardo.| |* The Cathedral: of Renaissance style was declared Historical-cultural Monument and proposed as a World Heritage Site." />
+			<information lang="en" button="2" title="To enjoy" text="* St. Lucas' Fair: This fair is usually full of activity. The custom is: the bull fights, concerts by nationally famous artists, as well as to go to the fairground of 'La Vestida' to ride the attractions or to dance in the tents and marquees.| |* Easter (Holy Week) of Jaén: With processions so famous and important as that of Our Father Jesus of Nazareth, more well-known as The Grandfather, very venerated in Jaén." />
+			<information lang="en" button="3" title="To taste" text="In Jaén the 'tapa' culture of snacking ('tapeo') is a strong tradition, and there are a lot of bars where for the price of a small glass of beer, they will offer you a surprisingly large snack maybe a 'pincho' (a portion of something, omelette for example), a plate of alioli (garlic mayonnaise) potatoes, a pork loin sandwich or a hamburger.| |One of the more famous dishes is the 'pipirrana' and the 'Ajo Blanco' (cold garlic soup) of Jaén, one of its delicious desserts." />
+		</town>
+		<info-tray lang="es" title="Pipirrana" text="Plato elaborado con tomates, ajo, pimientos, miga de pan, huevo duro, aceite, vinagre y sal. Exquisito en los meses de verano." />
+		<info-tray lang="en" title="Pipirrana" text="This dish is made with tomatoes, garlic, peppers, bread, boiled eggs, olive oil, vinegar and salt. Exquisite in summertime." />
+	</data>
+	<board type="8x8" floor="5" wall="1" pavement="0" />
+	<music type="0" />
+	<animation-end fromdata="/endlevel/jaen" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="14">
+		<object name="flowerpot3" x="189" y="-22" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot3" x="-185" y="-148" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot3" x="-464" y="-16" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="trash_bin2" x="333" y="131" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="trash_bin2" x="-396" y="143" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="bench5" x="165" y="75" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="bench5" x="-301" y="75" scale="0.600000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="-1" y="89" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="41" y="107" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="89" y="128" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="134" y="147" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="171" y="170" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="212" y="194" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="249" y="206" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="286" y="226" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="325" y="242" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-93" y="85" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-144" y="107" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-190" y="129" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="-227" y="148" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-277" y="165" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-326" y="186" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="-381" y="217" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-416" y="230" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="light6" x="-333" y="-13" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="light6" x="-141" y="-100" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="light6" x="115" y="-104" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="light6" x="303" y="-13" scale="0.600000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="4" y="5" />
+		<tray x="4" y="6" />
+	</objects>
+	<position>
+		<exit x="0" y="6" />
+		<player x="1" y="5" />
+		<enemy1 x="1" y="6" />
+		<enemy2 x="3" y="7" />
+		<enemy3 x="5" y="4" />
+	</position>
+	<walls>
+		<wall x="1" y="0" right="true" />
+		<wall x="3" y="0" right="true" />
+		<wall x="5" y="0" right="true" />
+		<wall x="7" y="0" right="true" />
+		<wall x="1" y="1" bottom="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="3" y="1" bottom="true" />
+		<wall x="4" y="1" bottom="true" />
+		<wall x="0" y="2" bottom="true" />
+		<wall x="1" y="2" right="true" />
+		<wall x="3" y="2" right="true" />
+		<wall x="5" y="2" right="true" />
+		<wall x="6" y="2" bottom="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="1" y="4" bottom="true" />
+		<wall x="2" y="4" right="true" bottom="true" />
+		<wall x="6" y="4" right="true" />
+		<wall x="0" y="5" bottom="true" />
+		<wall x="1" y="5" right="true" />
+		<wall x="1" y="6" right="true" bottom="true" />
+		<wall x="3" y="6" right="true" bottom="true" />
+		<wall x="0" y="7" right="true" />
+		<wall x="2" y="7" right="true" />
+		<wall x="5" y="7" bottom="true" />
+		<wall x="6" y="7" bottom="true" />
+	</walls>
+</level>

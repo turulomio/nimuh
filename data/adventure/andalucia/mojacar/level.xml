@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Mojácar" province="Almería">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Mojaqueros.| |En el transcurso de unos 4000 años de su larga historia, fueron los fenicios, cartagineses y romanos los que dejaron sus huellas en un sitio entonces llamado 'Munsaqar' por los árabes que vivieron ahí hasta que el pueblo fue ocupado por los cristianos en 1488." />
+			<information lang="es" button="1" title="Para visitar" text="* Torre del Peñón: También llamada del Perulico u Horadada, de origen nayarita, fue habitada por guardas vigías y torreros hasta principios del siglo XIX.| |* Mirador de la Plaza Nueva: Con vistas al denominado 'Valle de las Pirámides', en el que la distribución de colinas nos recrea esa imagen." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Móros y Cristiános: Fiesta en la segunda semana de junio. La de mayor auge de sus características en el sudeste.| |* Romería de San Isidro." />
+			<information lang="es" button="3" title="Para degustar" text="El Ajo colorao, el pollo a la mojaquera y las migas cortijeras." />
+			<information lang="en" button="0" title="General" text="The inhabitants are called 'Mojaqueros'.| |In the course of about 4000 years of its long history, the Phoenicians, Carthaginians and Romans left their mark in a place then called 'Munsaqar' by the Arabs who lived there until the town was occupied by the Christians in 1488." />
+			<information lang="en" button="1" title="To visit" text="* Tower of the wall of Rock: Also called of the 'Perulico' or 'Horadada' (pierced), of origin nayarita. It was inhabited by watchmen and lighthouse keepers until the beginning of the 19th Century.| |* Enclosed balcony of the Plaza Nueva (New Square): With a view to the 'Valley of the Pyramids', in which the formation of hills resemble pyramids." />
+			<information lang="en" button="2" title="To enjoy" text="* Moors and Christians: This traditional Spanish festival involving mock battles between Moors and Christians, falls in the second week of June. It is the most popular festival of its type in the southeast.| |* 'Romería' of St. Isidro." />
+			<information lang="en" button="3" title="To taste" text="The 'Ajo colorao' (red garlic): It is a stew made with: potatoes, dry red peppers, tomato, ray, garlic, paprika, saffron, olive oil, cumin and salt.| |Chicken Mojácar style and  Farm-style fried breadcrumbs. (This dish is made with traditional village bread, bacon, garlic and salt.) " />
+		</town>
+	</data>
+	<board type="9x9" floor="2" wall="5" pavement="3" />
+	<music type="1" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="1">
+		<object name="herbs" x="102" y="62" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="262" y="-3" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="herbs" x="277" y="164" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-422" y="160" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-196" y="60" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-121" y="0" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="wood_tables" x="-482" y="43" scale="0.900000" flip="true" lock="true" origen="game" />
+		<object name="wood_tables" x="97" y="34" scale="0.900000" flip="false" lock="true" origen="game" />
+	</scenary>
+	<objects>
+		<blackhole0 x="8" y="6" />
+		<blackhole1 x="0" y="7" />
+		<trap x="7" y="4" />
+	</objects>
+	<position>
+		<exit x="0" y="8" />
+		<player x="2" y="4" />
+		<enemy1 x="3" y="5" />
+	</position>
+	<walls>
+		<wall x="0" y="0" bottom="true" />
+		<wall x="1" y="0" bottom="true" />
+		<wall x="3" y="0" right="true" bottom="true" />
+		<wall x="5" y="0" right="true" />
+		<wall x="7" y="0" bottom="true" />
+		<wall x="1" y="1" right="true" />
+		<wall x="6" y="1" right="true" bottom="true" />
+		<wall x="5" y="2" bottom="true" />
+		<wall x="8" y="2" right="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="1" y="3" bottom="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="4" y="3" right="true" />
+		<wall x="5" y="3" bottom="true" />
+		<wall x="6" y="3" bottom="true" />
+		<wall x="7" y="3" bottom="true" />
+		<wall x="8" y="3" right="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="3" y="4" right="true" bottom="true" />
+		<wall x="2" y="5" right="true" />
+		<wall x="3" y="5" bottom="true" />
+		<wall x="6" y="5" bottom="true" />
+		<wall x="0" y="6" bottom="true" />
+		<wall x="1" y="6" bottom="true" />
+		<wall x="2" y="6" bottom="true" />
+		<wall x="1" y="7" right="true" />
+		<wall x="7" y="7" right="true" />
+		<wall x="1" y="8" right="true" />
+		<wall x="3" y="8" bottom="true" />
+		<wall x="4" y="8" bottom="true" />
+		<wall x="7" y="8" right="true" />
+		<wall x="8" y="8" bottom="true" />
+	</walls>
+</level>

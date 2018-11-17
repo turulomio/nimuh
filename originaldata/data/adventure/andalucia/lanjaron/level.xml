@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Lanjarón" province="Granada">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Lanjaronense o cañonero.| |Lanjarón se encuentra en la provincia de Granada, en la ladera sur de Sierra Nevada, en la comarca de Las Alpujarras, junto al Valle de Lecrín. Está a mitad de camino entre Granada y la Costa Tropical granadina. Es famoso especialmente por la calidad de sus aguas, así como por su balneario. Su nombre parece proceder de la voz prerromana 'lanchar', que significa lugar abundante en aguas.| |Curiosidad: Tuvo una destacada participación durante la guerra de la Independencia contra los franceses; desde entonces a sus habitantes se les conoce también con el gentilicio de 'cañoneros', por el eficaz uso que hicieron de un antiguo mortero contra las tropas napoleónicas." />
+			<information lang="es" button="1" title="Para visitar" text="* El balneario: Construcción de primera mitad del siglo XX en estilo neomudéjar.| |* La iglesia: Construida para sustituir a la anteriormente incendiada. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Fiestas de San Juan: Al contrario que en el resto del país que se celebra con fuego, en Lanjaron se celebra con agua, su famosa carrera del agua es lo verdaderamente tradicional de estas fiestas.| |* Fiestas patronales de San Sebastian. " />
+			<information lang="es" button="3" title="Para degustar" text="El remojón, el ajopollo de bretones y el revuelto de ajetes. Por supuesto saciando la sed con el agua de gran pureza de esta tierra." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Lanjaronense o cañonero.| |Lanjarón is in the province of Granada, on the southern hillsides of 'Sierra Nevada', in the region of 'Las Alpujarras', next to the Valley of Lecrín. It is halfway between Granada and its tropical coast. It is famous for the quality of its mineral waters, and spa. It is said that its name comes from the pre-Roman voice 'lanchar' that means place with abundant waters.| |Curiosity: Lanjaron had an outstanding participation during the War of Independence against the French, since then its inhabitants have been known as 'cañoneros', due to the effective use that they made of an old mortar against the Napoleonic troops.  " />
+			<information lang="en" button="1" title="To visit" text="* The spa: Construction from the first half of the XX century in neo-Mudéjar style.| |* The church: Built to replace to the previous church that burned down." />
+			<information lang="en" button="2" title="To enjoy" text="* Festival of St. John: In the rest of Spain this festival is celebrated with fire but here in Lanjaron is celebrated with water and what it is really traditional in this festival is famous water race.| |* Festivities of the Patron Saint Sebastian." />
+			<information lang="en" button="3" title="To taste" text="The 'remojón' (It is a typical dish with oranges, onions, black olives, cod, hard-boiled eggs and olive oil), the 'ajopollo de bretones' and a mixed dish of spring onion.  And for drinking, of course, the pure local mineral water." />
+		</town>
+	</data>
+	<music type="1" />
+	<board type="8x8" floor="0" wall="3" pavement="2" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="3">
+		<object name="herbs" x="-264" y="116" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="tree0" x="-374" y="-138" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="bush0" x="-347" y="138" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="tree5" x="-512" y="-44" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="tree5" x="11" y="-154" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="327" y="200" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="tree5" x="-264" y="-162" scale="1.000000" flip="true" lock="true" origen="game" />
+		<object name="herbs" x="136" y="72" scale="0.600000" flip="true" lock="false" origen="game" />
+		<object name="tree5" x="-182" y="-203" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="tree5" x="164" y="-1" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="herbs" x="-396" y="207" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-152" y="95" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="rock0" x="74" y="145" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="rock0" x="200" y="208" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="herbs" x="101" y="159" scale="0.600000" flip="false" lock="true" origen="game" />
+		<object name="rock0" x="211" y="260" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="rock0" x="-205" y="169" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-35" y="113" scale="0.600000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="5" y="3" />
+	</objects>
+	<position>
+		<exit x="7" y="1" />
+		<player x="7" y="7" />
+		<enemy1 x="7" y="3" />
+	</position>
+	<walls>
+		<wall x="1" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="3" y="1" right="true" />
+		<wall x="6" y="1" right="true" />
+		<wall x="0" y="2" bottom="true" />
+		<wall x="2" y="2" right="true" />
+		<wall x="3" y="2" right="true" bottom="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="6" y="2" right="true" />
+		<wall x="0" y="3" right="true" />
+		<wall x="2" y="3" bottom="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="4" y="3" right="true" />
+		<wall x="7" y="3" bottom="true" />
+		<wall x="0" y="4" bottom="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="3" y="4" right="true" bottom="true" />
+		<wall x="4" y="4" right="true" bottom="true" />
+		<wall x="0" y="5" bottom="true" />
+		<wall x="2" y="5" right="true" />
+		<wall x="3" y="5" bottom="true" />
+		<wall x="0" y="6" bottom="true" />
+		<wall x="1" y="6" right="true" />
+		<wall x="3" y="6" bottom="true" />
+		<wall x="4" y="6" right="true" />
+		<wall x="5" y="6" right="true" bottom="true" />
+		<wall x="3" y="7" right="true" />
+	</walls>
+</level>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Baena" province="Córdoba">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Baenenses.| |Municipio de la provincia de Córdoba. La economía de Baena está basada en la agricultura y el olivo.| |Numerosos testimonios arqueológicos ponen de manifiesto el asentamiento humano en la zona desde tiempos prehistóricos, destacando los yacimientos procedentes de la Edad de los Metales, además del legado cultural dejado por los íberos, con numerosos hallazgos religioso-funerarios, entre los que se encuentra la llamada leona de Baena conservada en el Museo Arqueológico Nacional." />
+			<information lang="es" button="1" title="Para visitar" text="* El Castillo: Data del s.IX| |* El Museo arqueológico en el interior de la Casa del Monte.| |* El Museo del Olivar y el Aceite." />
+			<information lang="es" button="2" title="Para disfrutar" text="* La fiesta del Aceite| |* Feria Real" />
+			<information lang="es" button="3" title="Para degustar" text="El revoltijo Baenense, las habas en cazuela, las naranjas en aceite y los panetillos de cortijo hechos con amendras, azucar y ralladura de limón. Aunque el municipio forma parte de la zona de producción de dos productos que sobresalen por su calidad: el vino y el Aceite de Oliva Virgen Extra." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Baenenses.| |Municipality of the province of Córdoba. The economy of Baena is based on agriculture and the olive tree.| |Archaeological evidence shows human inhabitation in the area since prehistoric times, highlighting the sites that come from the bronze and iron ags, besides the cultural legacy that the iberian left, with numerous religious-funeral discoveries, among which we can find the so-called lioness of Baena preserved in the National Archaeological Museum." />
+			<information lang="en" button="1" title="To visit" text="* The Castle: It dates back to the 9th. century.| |* The archaeological Museum inside the House of the Mountain.| |* The Museum of the Olive grove and Olive Oil." />
+			<information lang="en" button="2" title="To enjoy" text="* The olive oil festival| |* Royal Fair" />
+			<information lang="en" button="3" title="To taste" text="The Baenense jumble, bean casserole, oranges in olive oil and farmhouse 'panetillos' made with almonds, sugar and grated lemon rind. The municipality is part of the area of production of two products that is renowned for quality: the wine and the extra pure olive oil." />
+		</town>
+	</data>
+	<map file-fromdata="/maps/map_cordoba.jpg">
+		<texts-map lang="es" title-1="Córdoba" text-1="Capital de provincia romana que contó con tantos edificios entonces que la misma Roma. Obtuvo un gran apogeo en el siglo X siendo la ciudad más grande del mundo. El casco histórico de córdoba ha sido declarado Patrimonio de la Humanidad por la UNESCO." title-2="Objetivo" text-2="La Mezquita de Córdoba es el objetivo de esta provincia." distance-second-text="285" />
+		<texts-map lang="en" title-1="Córdoba" text-1="A roman provincial capital, that boasted as many buildings as Rome itself. In the C.10th it ranked as the largest city in the world.  The historic centre of Cordoba is a UNESCO World Heritage Site." title-2="Objetive" text-2="The old Cordoba Mosque is the objective in this province." distance-second-text="250" />
+	</map>
+	<board type="7x7" floor="1" wall="1" pavement="0" />
+	<help name="blackhole" />
+	<music type="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="10" type-wall="0">
+		<object name="light6" x="-103" y="-306" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="bench3" x="218" y="159" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="bench3" x="-46" y="27" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="bench3" x="-279" y="-85" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="stick1" x="-102" y="57" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="stick1" x="-236" y="-6" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="stick1" x="-357" y="-63" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="stick1" x="-398" y="193" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+		<object name="light6" x="153" y="-179" scale="1.000000" flip="false" lock="false" origen="game" type="3d" />
+	</scenary>
+	<objects>
+		<blackhole0 x="0" y="0" />
+		<blackhole1 x="0" y="4" />
+		<trap x="6" y="0" />
+	</objects>
+	<position>
+		<exit x="0" y="5" />
+		<player x="6" y="2" />
+		<enemy1 x="5" y="6" />
+		<enemy3 x="2" y="5" />
+	</position>
+	<walls>
+		<wall x="1" y="0" bottom="true" />
+		<wall x="1" y="1" right="true" bottom="true" />
+		<wall x="4" y="1" right="true" bottom="true" />
+		<wall x="4" y="2" bottom="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="0" y="4" bottom="true" />
+		<wall x="1" y="4" bottom="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="6" y="4" bottom="true" />
+	</walls>
+</level>

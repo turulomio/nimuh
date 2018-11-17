@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Ronda" province="Málaga">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Rondeños.| |Es una de las ciudades más antiguas de España. Sus orígenes se remontan al Neolítico, destacando las pinturas rupestres de la Cueva de la Pileta." />
+			<information lang="es" button="1" title="Para visitar" text="* Puente Nuevo sobre el Tajo: Constituye, junto con la Plaza de Toros de la Real Maestranza de Caballería de Ronda, el símbolo y el alma de la ciudad.| |* Puerta de Almocabar: La Puerta de Almocabar y sus murallas separan el Barrio de San Francisco de el de la Ciudad, dando acceso a la alcazaba y a la ciudad. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Feria y Fiestas de Pedro Romero: En ella tiene lugar el Pregón de la Feria, la presentación de las Damas Goyescas - verdaderas protagonistas de la Feria-, el Festival de Cante Grande, torneos, la Tradicional Corrida Goyesca, Concurso de Enganches y la Corrida Rondeña de Rejones. " />
+			<information lang="es" button="3" title="Para degustar" text="El Rabo de Toro a la Rondeña, el Gazpacho a la serrana o el conejo a la rondeña. En el ámbito repostero los gañotes y las yemas del Tajo." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Rondeños.| |It is one of the oldest cities in Spain. Its origins go back to the Neolithic, shown by the cave paintings of the Cave of the 'Pileta'." />
+			<information lang="en" button="1" title="To visit" text="* New Bridge over the 'Tajo' river: It constitutes, together with the bull-ring of the Real Maestranza of mount of Ronda, the symbol and the soul of the city.| |* Door of Almocabar: The Door of Almocabar and its walls, separates the neighbourhood of St. Francisco of that of the City, giving access to the citadel and the city." />
+			<information lang="en" button="2" title="To enjoy" text="* Fair and festival of 'Pedro Romero': In it takes place the opening speech of the festival, the presentation of the 'Goyescas' Ladies (relating to Goya), the festival of 'Cante Grande' (flamenco singing), tournaments, the traditional Goyesca bull fight, competition of 'enganches' (This competition consists of several exercises in carriages, drawn by one, two or four horses) and the bull fight of Ronda of 'rejones' (type of 'banderilla' used by a bull-fighter on horse-back)." />
+			<information lang="en" button="3" title="To taste" text="Ronda-Style Oxtail, 'Gazpacho a la serrana' or rondeña-style rabbit. As regards the confectionery, the 'gañotes' (sweet made of flour, aniseed, lemon, milled cloves, anisette, salt, wine, oil, cinnamon and sugar) and the Tajo egg yolks." />
+		</town>
+	</data>
+	<board type="9x9" floor="1" wall="2" pavement="0" />
+	<map file-fromdata="/maps/map_malaga.jpg">
+		<texts-map lang="es" title-1="Málaga" text-1="Fundada por los fenicios, fué también griega, cartaginesa, árabe y romana. El turismo es una de sus fuentes más importantes de ingresos." title-2="Objetivo" text-2="La Catedral de Málaga es el objetivo de esta provincia." distance-second-text="210" />
+		<texts-map lang="en" title-1="Málaga" text-1="Founded by the Phonicians, it has also been Greek, Carthegenian, Arabic and Roman.  Tourismo is one of its most important sources of income." title-2="Objetive" text-2="Malaga Cathedral is the objective in this province." distance-second-text="210" />
+	</map>
+	<music type="2" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="0">
+		<object name="ronda_wall.png" x="-1" y="-10" scale="1.000000" flip="true" lock="true" origen="personal" />
+		<object name="light1" x="0" y="-7" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window11" x="44" y="-46" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window11" x="155" y="2" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window11" x="271" y="47" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="light1" x="313" y="106" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window1" x="44" y="64" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window1" x="157" y="113" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window1" x="273" y="169" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-45" y="106" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="window11" x="277" y="-87" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-3" y="91" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="plaque" x="348" y="184" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-205" y="191" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-106" y="147" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-80" y="112" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-171" y="166" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-150" y="153" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-13" y="92" scale="0.400000" flip="true" lock="true" origen="game" />
+		<object name="stick_chain" x="-101" y="135" scale="0.400000" flip="true" lock="true" origen="game" />
+		<object name="bush1" x="-295" y="229" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-258" y="201" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-347" y="243" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-192" y="179" scale="0.400000" flip="true" lock="true" origen="game" />
+		<object name="stick_chain" x="-282" y="222" scale="0.400000" flip="true" lock="true" origen="game" />
+		<object name="stick_chain" x="-190" y="222" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="plaque" x="7" y="37" scale="0.700000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="1" y="1" />
+		<key x="3" y="4" />
+		<door-key x="5" y="3" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="2" y="8" />
+		<player x="4" y="2" />
+		<enemy1 x="6" y="7" />
+		<enemy3 x="2" y="8" />
+	</position>
+	<walls>
+		<wall x="0" y="0" bottom="true" />
+		<wall x="1" y="0" right="true" />
+		<wall x="2" y="0" right="true" />
+		<wall x="3" y="0" right="true" />
+		<wall x="7" y="0" right="true" />
+		<wall x="7" y="1" right="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="6" y="3" bottom="true" />
+		<wall x="7" y="3" bottom="true" />
+		<wall x="8" y="3" bottom="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="1" y="5" right="true" />
+		<wall x="5" y="5" bottom="true" />
+		<wall x="6" y="5" right="true" />
+		<wall x="3" y="6" right="true" />
+		<wall x="5" y="6" right="true" bottom="true" />
+		<wall x="6" y="6" bottom="true" />
+		<wall x="8" y="6" bottom="true" />
+		<wall x="3" y="7" bottom="true" />
+		<wall x="0" y="8" bottom="true" />
+		<wall x="1" y="8" right="true" />
+		<wall x="3" y="8" right="true" />
+	</walls>
+</level>

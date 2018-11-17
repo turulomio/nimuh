@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Ecija" province="Sevilla">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Astigitanos.| |Desde la antiguedad tuvo gran importancia mercantil y social, por su excelente posición topográfica, convirtiéndola los griegos en un gran centro comercial de extensa zona, favoreciéndola su gran vía fluvial para comunicarla con los demás pueblos, a cuyo puerto afluían los distintos productos de su comercio, por las aguas de legendario y caudaloso Genil. Llamada la ciudad del sol, entre perpetua verdura, extensa campiña y pintorescas huertas, dista a 83 km de la capital de provincia." />
+			<information lang="es" button="1" title="Para visitar" text="* Miradores de Peñaflor y de Benamejí: Pertenecían a las casas señoriales de Peñaflor y Benamejí para presenciar las fiestas y espectáculos que se celebraban en la plaza. Corresponden al siglo XVIII.| |* Plaza de Santa Cruz: Plaza de bellas fachadas, con su monumento central de mármol a la cruz, de afiligranada forja. Rodeada de naranjos y presidida por la episcopal Iglesia de Sta.Cruz.| |* Mosaicos Romanos: Constituyen uno de los conjuntos más significativos de la Hispania romana entre los que pueden encontrarse el del 'Don del Vino', el 'Triunfo de Baco' o el 'mosaico del Oceano'." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Semana Santa: Declarada de Interés Turístico Nacional.| |* Noche Flamenca Ecijana: De gran solera en Andalucía, donde intervienen las máximas figuras del Flamenco." />
+			<information lang="es" button="3" title="Para degustar" text="Sopa de Gato: Derivada de la 'sopa de ajo' pero añadiendo al refrito de ajo, tomates pelados y pimientos verdes." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Astigitanos.| |Since antiquity it had great mercantile and social importance, thanks to its excellent topographical position, the Greeks transformed it into a commercial center for the area, having in its favour its waterway, communicating the village with the trade of other towns via the legendary River Genil.| |Called the city of the sun, with perpetual vegetation, extensive countryside and picturesque vegetable gardens, it is 83 km from the capital, Seville." />
+			<information lang="en" button="1" title="To visit" text="* 'Enclosed balconies of Peñaflor and Benamejí': They are of the 18th. century and they belonged to the noble houses of Peñaflor and Benamejí to see the festivities and shows that were taking place in the square. Square of Santa Cruz: Square of beautiful façades, with a marble cross with filigreed forge in the middle. Surrounded of orange trees and presided over by the Episcopal Church of St.Cross.| |* Roman mosaics: They constitute one of the most significant groups in the Roman Hispania. Among those we can find the 'Gift of the Wine', the 'Victory of Bacchus' or the 'mosaic of the Ocean'." />
+			<information lang="en" button="2" title="To enjoy" text="* Easter (Holy Week): Declared of National Tourist Interest.| |* Ecijana Flamenco night: Of very important tradition in Andalusia, where Flamenco's top figures participate." />
+			<information lang="en" button="3" title="To taste" text="Soup of Cat: Derived from garlic soup but with fried tomatoes and green peppers added." />
+		</town>
+	</data>
+	<board type="6x6" floor="0" wall="1" />
+	<help name="enemy2" />
+	<music type="2" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="4" ntiles="4" type-terrain="0">
+		<object name="window3" x="32" y="-28" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="window3" x="290" y="96" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="window3" x="153" y="29" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="garagedoor" x="-212" y="18" scale="0.900000" flip="true" lock="false" origen="game" />
+		<object name="signal_1" x="-122" y="1" scale="1.000000" flip="true" lock="false" origen="game" />
+		<object name="window3" x="-37" y="-22" scale="0.700000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="4" y="3" />
+	</objects>
+	<position>
+		<exit x="2" y="0" />
+		<player x="2" y="5" />
+		<enemy2 x="4" y="3" />
+	</position>
+	<walls>
+		<wall x="3" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="2" y="1" bottom="true" />
+		<wall x="3" y="2" bottom="true" />
+		<wall x="0" y="3" right="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="5" y="3" bottom="true" />
+		<wall x="0" y="4" bottom="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="3" y="4" right="true" />
+		<wall x="1" y="5" right="true" />
+		<wall x="4" y="5" right="true" />
+	</walls>
+</level>

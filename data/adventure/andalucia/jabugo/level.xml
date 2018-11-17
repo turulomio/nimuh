@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Jabugo" province="Huelva">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Jabugueños.| |Situada a 680 metros de altitud, en plena Sierra de Aracena, dentro del Partido Judicial de Aracena, dista de la capital 110 kilómetros. El nombre de Jabugo es conocido en el mundo entero gracias a la fama que tiene su Jamón. Este nombre proviene de la palabra 'SABUGO' de la lengua leonesa. Cuenta la leyenda que el jamón surge cuando un cerdo cayó a un arroyo y se ahogó. Las aguas de este arroyo tenían una alta concentración de sal. Unos pastores cogieron el cerdo y lo asaron, descubriendo que tenía un sabor agradable, sobre todo el pernil. Más tarde comprobarían que salando el jamón se conservaba más tiempo sin perder sabor. Perfeccionando este método que ha llegado hasta nuestros días hace que a Jabugo se le conozca como 'cuna del jamón'." />
+			<information lang="es" button="1" title="Para visitar" text="* Iglesia de San Miguel Arcángel: con estilo de tradición mudéjar, construida durante los siglos del XVI hasta el XVIII.| |* Cueva de la Mora: Constituye el yacimiento de mayor significación geoarqueológica de la Sierra por los importantísimos restos del Paleolítico Medio.| |* Tiro Pichón: Característico edificio de la arquitectura andaluza de principios del siglo XX donde se combinan la piedra y el ladrillo en la fachada." />
+			<information lang="es" button="2" title="Para disfrutar" text="Este municipio cuenta con numerosas y alegres fiestas repartidas entre Jabugo y sus aldeas, estas famosas en toda la sierra, se suelen celebrar en los meses de verano para divertimento de todos los visitantes. Destacan las Fiestas de Ntra. Sra. de los Remedios, las de San Miguel Arcángel y las de San Juan Butista." />
+			<information lang="es" button="3" title="Para degustar" text="Los derivados del cerdo ibérico son los productos estrella de esta localidad, jamones, cañas de lomo, embuchados, morcilla, chorizos, morcones... pero tambien son platos típicos el gazpacho de culantro, las migas con panceta y los adobaos." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Jabugueño.| |Is located at an altitude of 680 meters, in the 'Sierra de Aracena', within the boundaries of Aracena. It is 110 kilometres  from the capital.| |The name of Jabugo is known throughout the world, thanks to its renowned ham. This name comes from the word 'SABUGO' of the Leonese language.| |The legend says that the ham arises when a pig fell into a stream and he drowned. The waters of this stream had a high concentration of salt.| |Some shepherds caught the pig and they roasted it, discovering that he had a pleasant taste, mainly the leg of ham. Later they found that, that if they cured the ham, it would conserve for longer without losing its flavour.| |This method has been perfected over the years so that now Jabugo is known as the 'Cradle of Ham'." />
+			<information lang="en" button="1" title="To visit" text="* Church of St. Michael Archangel: with style of Mudejar tradition, built from the 16th. century to the 18th. century.| |* Moor's Cave: It constitutes the most significant geo-archaeological site of the mountains ('Sierra') because of the important remains dating from the Mid Paleolithic.| | * 'Tiro Pichón': Typical building of the Andalusian architecture of the beginning of the 20th. century combining a stone and brick facade." />
+			<information lang="en" button="2" title="To enjoy" text="This municipality has numerous and cheerful festivals distributed between Jabugo and its small villages, which are famous throughout the mountains. These festivals usually take place in summer for the visitors' entertainment. The most outstanding festivities are: Those of Our Lady of Los Remedios, St. Michael Archangel and St. John the Baptist." />
+			<information lang="en" button="3" title="To taste" text="The Iberian pork products are the star products of this town: hams, caña de lomo (loin), embuchados (cured cold meats), morcillas (black pudding), pork sausages, morcones (big blood sausage)... but there are also typical plates as the 'gazpacho de culantro' (gazpacho: Andalusian soup made of tomatoes, peppers, cucumbers and bread, served chilled), and the 'migas' (fried breadcrumbs) with bacon and marinades." />
+		</town>
+		<info-tray lang="es" title="Jamón de Jabugo" text="Delicioso y afamado por todo el mundo. Destaca por la cantidad de grasa entreverada, que le proporciona un aspecto marmóreo, aunque fundente en el paladar." />
+		<info-tray lang="en" title="Jabugo jam" text="Delicious and famed all around the world. The meat is marbled with fat,  a treat for the palate." />
+	</data>
+	<board type="6x6" floor="3" wall="3" />
+	<help name="tray" />
+	<music type="0" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="7" ntiles="2" type-terrain="8">
+		<object name="herbs" x="202" y="13" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="tree2" x="225" y="-145" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="235" y="168" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="tree2" x="-408" y="-241" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="tree2" x="278" y="-20" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="172" y="-18" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="93" y="-39" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-154" y="34" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-375" y="-3" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="tree2" x="-505" y="-123" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="bush0" x="-379" y="193" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-189" y="67" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-234" y="113" scale="0.600000" flip="true" lock="false" origen="game" />
+		<object name="herbs" x="-302" y="151" scale="0.600000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="4" y="4" />
+		<tray x="4" y="2" />
+	</objects>
+	<position>
+		<exit x="4" y="0" />
+		<player x="2" y="2" />
+		<enemy1 x="0" y="0" />
+	</position>
+	<walls>
+		<wall x="2" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="4" y="1" bottom="true" />
+		<wall x="0" y="2" bottom="true" />
+		<wall x="2" y="2" bottom="true" />
+		<wall x="3" y="2" right="true" />
+		<wall x="4" y="2" bottom="true" />
+		<wall x="0" y="3" right="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="0" y="4" right="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="2" y="5" right="true" />
+	</walls>
+</level>

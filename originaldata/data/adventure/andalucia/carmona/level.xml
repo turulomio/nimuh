@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Carmona" province="Sevilla">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Carmonés o carmonenses.| |Sus orígenes se remontan al Neolítico, habiéndose encontrado en sus alrededores ricos yacimientos prehistóricos. Los romanos la llamaron 'CARMO', y los árabes 'QARMUNA'. En el año 206 a. C., Carmona es conquistada por el Imperio Romano; fue intensamente romanizada y se convirtió en uno de los núcleos urbanos más importantes de la Bética." />
+			<information lang="es" button="1" title="Para visitar" text="* Necrópolis romana: Descubierta casualmente en 1.868, esta Necrópolis fue usada en los siglos I a.C. al IV d.C.| |* Alcázar del Rey Don Pedro: Situado al oeste del recinto amurallado y en el punto más alto de Carmona. Desde la terraza se tiene una fabulosa vista de la Vega de Carmona.| |* Puerta de Sevilla: Es uno de los elementos más representativos del amplio y rico conjunto arquitectónico de Carmona. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Carnaval: Fiesta de gran arraigo en esta localidad, recuperada desde 1.984 tras la censura del régimen anterior.| |* Feria: Destaca por el tamaño y suntuosidad de sus casetas fijas. Existe gran afición por parte de las mujeres a vestirse de flamenca lo que da a la fiesta un colorido muy similar a los de la feria de abril de Sevilla.| |* Romería de San Mateo: En la que se conmemora la conquista de Carmona en el 1.247 por el rey cristiano Fernando III el Santo. " />
+			<information lang="es" button="3" title="Para degustar" text="El cultivo de verduras y hortalizas proporciona las materias primas que son la base de esta cocina tradicional y popular, alboronías, espinacas, aliños, escarolas con pimiento molido, sopa de tomate, tallos esparragados, 'papa' en amarillo con bacalao, gazpacho, migas, gachas, espárragos trigueros con huevo cuajado, cocido con tagarninas, el potaje de chícharos, las manitas de cerdo y una crujiente 'tostá' con manteca colorá y tropezones de lomo." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Carmonés o carmonenses.| |Its origins go back to the Neolithic, in the surrounding areas have been found rich prehistoric sites. 
+The Romans called it 'CARMO', and the Arabs 'QARMUNA'.| |In the year 206 B. C., Carmona was conquered by the Roman Empire. It was intensely romanized and it became one of the most important urban nucleus in Andalusia." />
+			<information lang="en" button="1" title="To visit" text="* Roman necropolis: Discovered accidentally in 1868, this Necropolis was used from the 1st. to the 4th. centuries AD.| |* Fortress of the King 'Don Pedro' is located to the west of the walled enclosure and in the highest point of Carmona. From the terrace one has a fabulous view of 'la Vega de Carmona'.| |* Door of Seville: It is one of the most representative elements in the wide and rich architecture of Carmona." />
+			<information lang="en" button="2" title="To enjoy" text="* Carnival: Celebration deeply rooted in this town, recovered since 1984 after the censorship of the francoist regime.| |* Festival: It stands out because of the size and sumptuousness of its fixed booths. The women are fond of wearing flamenco dresses what gives to the festival a very similar feeling to the April Fair of Seville.| |* 'Romería of St. Matthew', in which is commemorated the conquest of Carmona in 1247 by the Christian King, Fernando III 'the Holy'." />
+			<information lang="en" button="3" title="To taste" text="The growing of vegetables provides the raw material that are the base of this traditional and popular cooking, 'alboronías', spinach, dressings, endives with paprika, tomato soup, asparagus, potatoes in yellow sauce with cod, gazpacho, fried breadcrumbs, porridge, wild asparagus with set egg, stew with 'tagarninas', the vegetable stew of peas, pig's trotters and a crispy 'tostá' (toast) with 'manteca colorá' (red dripping) and small chunks of loin." />
+		</town>
+	</data>
+	<map file-fromdata="/maps/map_sevilla.jpg">
+		<texts-map lang="es" title-1="Sevilla" text-1="Tiene un importante interés turístico por sus monumentos y ha sido sede de grandes eventos como, en 1992 la Exposición Universal. Importante también por sus Astilleros fundados en 1953 y por su puerto a 80 km de la desembocadura del río Guadalquivir." title-2="Objetivo" text-2="La Giralda es el objetivo de esta provincia." distance-second-text="300" />
+		<texts-map lang="en" title-1="Sevilla" text-1="Its buildings and monuments attract tourism it has also been the base for major events, such as the International EXPO in 1992. It is also rocognised for its shipyards, founded in 1953 and its port, 50 miles (80km) from the mouth of the Guadalquivir River." title-2="Objetive" text-2="The Giralda Tower is the objective in this Province." distance-second-text="300" />
+	</map>
+	<music type="1" />
+	<board type="6x6" floor="0" wall="2" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="3" ntiles="4" type-terrain="0">
+		<object name="window1" x="33" y="-28" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="window1" x="268" y="74" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="window1" x="-68" y="-7" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="window1" x="-287" y="82" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="light1" x="137" y="-32" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="light1" x="-316" y="26" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="signal_3" x="347" y="147" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="3" y="90" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="41" y="102" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="79" y="126" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="117" y="141" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="154" y="157" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="188" y="176" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="222" y="190" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="342" y="252" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="260" y="210" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="308" y="234" scale="1.100000" flip="false" lock="false" origen="game" />
+		<object name="flowerpot1" x="-6" y="92" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-51" y="116" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-94" y="139" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-140" y="164" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-189" y="185" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-231" y="205" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-278" y="224" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="flowerpot1" x="-324" y="245" scale="1.100000" flip="true" lock="false" origen="game" />
+		<object name="draw1" x="-197" y="61" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="light1" x="-165" y="-34" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="light1" x="306" y="26" scale="0.800000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="1" y="2" />
+	</objects>
+	<position>
+		<exit x="0" y="2" />
+		<player x="1" y="5" />
+		<enemy1 x="0" y="1" />
+		<enemy3 x="2" y="0" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="3" y="0" bottom="true" />
+		<wall x="4" y="0" right="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="2" y="2" right="true" bottom="true" />
+		<wall x="3" y="2" right="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="4" y="3" right="true" bottom="true" />
+		<wall x="0" y="4" right="true" bottom="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="2" y="5" right="true" />
+		<wall x="3" y="5" right="true" />
+	</walls>
+</level>

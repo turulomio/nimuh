@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Granada" province="Granada">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Granadinos.| |Capital del antiguo reino nazarí, al pie de Sierra Nevada, en el límite con 'la Vega de Granada', atravesada por el río Genil y el río Darro, que la recorre por su centro separando las colinas de la Alhambra y del Albayzín y se unen al sur. Fue un importante centro urbano de Al-Andalus, su nombre le fue dado en referencia a la fruta del mismo nombre que abundaba en la región." />
+			<information lang="es" button="1" title="Para visitar" text="* La Alhambra y el Generalife: Declarado patrimonio cultural de la humanidad, fue Palacio, ciudadela y fortaleza de los nazaríes.| |* Albaicín: Antigua ciudad medieval musulmana.| |* La abadía del Sacromonte: Templo fundado en el s. XVII. Debajo de la iglesia se encuentran las catacumbas, donde sufrió martirio San Cecilio, primer obispo y hoy Patrón de Granada." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Semana Santa: Declarada de interés turístico Nacional.| |* EL Día de la toma: Celebrado el 2 de Enero, se recuerda el día en el que los Reyes Católicos tomaron posesión de la Alhambra." />
+			<information lang="es" button="3" title="Para degustar" text="La olla de San Antón, las Saladillas con habas y el remojón granadino de bacalao y naranja." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Accitano.| |Capital of the nazarí old Kingdom, at the foot of 'Sierra Nevada', on the edge of the 'Vega of Granada' (Granada Plain), crossed by the Genil river and the Darro river, that crosses its center, separating the hills of the Alhambra and of the Albayzín, which join together in the south.| |It was an important urban center of Al-Andalus, The city was named after the abundant local fruit 'Granada', known in English as the pomegranate." />
+			<information lang="en" button="1" title="To visit" text="* The 'Alhambra' and the 'Generalife': Declared a World Heritage Site, it was a Palace, a citadel and fortress of the Nasrid dynasty.| |* 'Albaicín': Old medieval Muslim city.| |* The abbey of the Sacromonte: Temple founded in the 17th. Century. Under the church are the catacombs, where St. Cecilio suffered martyrdom, who was first bishop and today, the patron saint of Granada." />
+			<information lang="en" button="2" title="To enjoy" text="* Holy Week: Declared of National Tourist Interest.| |* The day of the capture: falls on 2nd. January. The day is remembered, in which the Spanish Catholic Monarchs took possession of the Alhambra." />
+			<information lang="en" button="3" title="To taste" text="The pot of St. Antón (typical stew of this zone), the 'Saladillas' with beans and the 'remojón granadino' made from cod and orange." />
+		</town>
+		<info-tray lang="es" title="Olla de San Anton" text="Exquisito plato del lugar, elaborado mayormente con judias, habas secas, morcilla, patatas, espinazo, hueso de jamon, rabo, careta, orejas, hinojos y arroz." />
+		<info-tray lang="en" title="Ollation San Anton" text="Exquisite local dish, mostly made with beans, 'morcilla' black pudding sausage, potatoes, pig's backbone, ham bone, tail, cheek, ears, 'hinojos' and rice." />
+	</data>
+	<board type="9x9" floor="0" wall="3" pavement="3" />
+	<music type="2" />
+	<animation-end fromdata="/endlevel/granada" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="7">
+		<object name="alhambra2" x="-185" y="-204" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-242" y="-176" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-298" y="-150" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-355" y="-120" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="58" y="-207" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="-411" y="-91" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-467" y="-63" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-69" y="-202" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-126" y="-174" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-182" y="-146" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-238" y="-118" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-295" y="-90" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-350" y="-62" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-408" y="-33" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="-465" y="-5" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="alhambra2" x="116" y="-178" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="173" y="-150" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="230" y="-122" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="286" y="-94" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="344" y="-66" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="-3" y="-177" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="55" y="-148" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="112" y="-119" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="169" y="-91" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="226" y="-63" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="284" y="-35" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra2" x="340" y="-7" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra1" x="79" y="-24" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="alhambra1" x="-323" y="-23" scale="0.700000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="3" y="1" />
+		<tray x="6" y="3" />
+	</objects>
+	<position>
+		<exit x="6" y="8" />
+		<player x="0" y="2" />
+		<enemy1 x="4" y="6" />
+		<enemy2 x="8" y="4" />
+	</position>
+	<walls>
+		<wall x="0" y="0" bottom="true" />
+		<wall x="1" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="5" y="0" bottom="true" />
+		<wall x="6" y="0" bottom="true" />
+		<wall x="7" y="0" bottom="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="1" y="1" right="true" />
+		<wall x="5" y="1" right="true" />
+		<wall x="7" y="1" right="true" bottom="true" />
+		<wall x="8" y="1" bottom="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="2" y="2" bottom="true" />
+		<wall x="3" y="2" right="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="5" y="2" right="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="4" y="3" bottom="true" />
+		<wall x="5" y="3" right="true" />
+		<wall x="7" y="3" bottom="true" />
+		<wall x="1" y="4" bottom="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="3" y="4" right="true" />
+		<wall x="5" y="4" bottom="true" />
+		<wall x="7" y="4" right="true" bottom="true" />
+		<wall x="0" y="5" bottom="true" />
+		<wall x="3" y="5" right="true" />
+		<wall x="4" y="5" right="true" />
+		<wall x="5" y="5" bottom="true" />
+		<wall x="7" y="5" right="true" bottom="true" />
+		<wall x="1" y="6" right="true" bottom="true" />
+		<wall x="2" y="6" right="true" />
+		<wall x="3" y="6" right="true" />
+		<wall x="4" y="6" right="true" />
+		<wall x="6" y="6" bottom="true" />
+		<wall x="7" y="6" right="true" />
+		<wall x="1" y="7" right="true" bottom="true" />
+		<wall x="3" y="7" right="true" />
+		<wall x="4" y="7" right="true" />
+		<wall x="5" y="7" bottom="true" />
+		<wall x="6" y="7" right="true" bottom="true" />
+		<wall x="0" y="8" right="true" />
+		<wall x="7" y="8" right="true" />
+	</walls>
+</level>

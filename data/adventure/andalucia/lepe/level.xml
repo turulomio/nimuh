@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Lepe" province="Huelva">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Leperos.| |Por restos encontrados en el Cabezo de la Tinajita, se tiene constancia de que Lepe fue fundada por los fenicios, hace aproximadamente 24 siglos. Leptis, Laepa, Lepa, o Laipe Megale son los posibles nombres del asentamiento original sobre el que se construyó lepe allá por el siglo IV a.C. Situado en el interfluvio Guadiana-Piedras, los yacimientos originales que dieron lugar al pueblo de lepe se encontraban en El Terrón, la Torre del Catalán y en el cabezo de La Tiñosa. También las culturas musulmana y judía estuvieron presentes hasta el siglo XV. Lepe es famoso por ser la capital de las fresas de España, y a otro nivel también es conocida por la cantidad de chistes que se hacen a costa de sus oriundos. Sin embargo, se trata de un pueblo de carácter eminentemente abierto en el que se puede disfrutar de buenas playas y parajes naturales." />
+			<information lang="es" button="1" title="Para visitar" text="* Iglesia Parroquial Santo Domingo de Guzmán: Declarada monumento histórico-artístico que destaca además por su rico ajuar litúrgico, con piezas bajo-renacentistas del siglo XVI.| |* Torre del Catalán: Torre de almenara construida dentro del plan defensivo de Felipe II para proteger la costa de los ataques turco-berberiscos.| |* Ajimez: Se trata de una ventana partida por un parteluz que es un claro ejemplo del auge que la arquitectura mudéjar tuvo en la provincia de Huelva desde la segunda mitad del siglo XIV hasta los siglos XV y XVI." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Semana Santa: Cabe destacar la 'Madrugá' del Viernes Santo, donde se lee 'la sentencia de Cristo', cantes en forma de saeta que vecinos de la localidad elegidos por sus dotes artísticas dedican a las imágenes.| |* Islantilla: Una de las playas más demandadas por los turistas centro y norteuropeos por la amplia variedad de actividades que se pueden realizar en ella como el windsurf, la vela, el senderismo, el golf, etc." />
+			<information lang="es" button="3" title="Para degustar" text="Los dulces, elaborados a base de harina, huevos y almendras, entre otros ingredientes.| |Destacan la coca, la torta, el dulce de cidra con almendras, el dulce de calabaza y la perrunilla." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Lepero.| |Thanks to remains found in the 'Cabezo de la Tinajita', there is certainty that Lepe was founded by the Phoenicians, approximately 24 centuries ago.| |Located between Guadiana-Piedras, the original sites that give rise to the Lepe town were located in 'El Terrón', 'La Torre del Catalán' and in 'El Cabezo de la Tinñosa'. The Muslim and Jewish cultures were also present until the 15th. century.| |Lepe is famous in order to be the capital of the strawberries of Spain, and at another level it is also known for the quantity of jokes that the rest of Spain makes at the expense of the 'Leperos'. However, it is a town of eminently open character in which one can enjoy good beaches and natural places." />
+			<information lang="en" button="1" title="To visit" text="* Parish church 'Santo Domingo de Guzmán': It has been declared historical-artistic monument that is noted for its rich liturgical endowment, with lower-Renaissance pieces from the 16th. century.| |* Torre del Catalán: This Beacon tower was built as part of the defensive plan that Phillip II planned to protect the coast from attack by the Turks and Berbers.| |* Ajimez: It is mullioned window. This window is a good example of the boom in Mudejar architecture in the Province of Huelva from the second half of the 14th. century and through the 15th. and 16th. centuries." />
+			<information lang="en" button="2" title="To enjoy" text="* Easter: It is necessary to point out 'La Madrugá' on Good Friday, where Christ's sentence is read, and the 'Saetas' (flamenco-style song, sung on religious occasions) that inhabitants of the town, chosen for their artistic qualities, dedicate to the Images.| |* Islantilla: Is one of the more requested beaches by the tourists of Central and Northern Europe, thanks to the wide variety of activities on offer such as windsurfing, sailing, trekking, golf, etc." />
+			<information lang="en" button="3" title="To taste" text="Sweets and pastries, for example the coca, cake, citron pastry with almonds, the pumpkin pie and the 'perrunilla'." />
+		</town>
+	</data>
+	<board type="6x6" floor="3" wall="2" />
+	<help name="trap" />
+	<music type="0" />
+	<scenary type="closed" red="255" green="255" blue="255" type-tiled="5" ntiles="0" type-terrain="0">
+		<object name="door" x="119" y="15" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="lepe_church.png" x="-20" y="-203" scale="1.000000" flip="true" lock="" origen="personal" />
+		<object name="light2" x="237" y="61" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window6" x="28" y="-15" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="light2" x="82" y="-9" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="window6" x="289" y="106" scale="0.600000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="5" y="2" />
+	</objects>
+	<position>
+		<exit x="0" y="0" />
+		<player x="1" y="4" />
+		<enemy1 x="1" y="1" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="5" y="0" bottom="true" />
+		<wall x="1" y="1" bottom="true" />
+		<wall x="3" y="1" bottom="true" />
+		<wall x="1" y="2" right="true" />
+		<wall x="2" y="2" bottom="true" />
+		<wall x="3" y="2" right="true" bottom="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="1" y="3" bottom="true" />
+		<wall x="2" y="3" right="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="4" y="3" bottom="true" />
+		<wall x="1" y="4" right="true" bottom="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="3" y="4" right="true" bottom="true" />
+	</walls>
+</level>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="El Ejido" province="Almería">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Ejidenses.| |El territorio por su situación geográfica es una autentica solana, encuadrada dentro del gran dominio de los climas mediterráneos. Se localiza en el suroeste de la provincia de Almería, en la llanura existente entre la vertiente sur de la sierra de Gádor y el mar Mediterráneo." />
+			<information lang="es" button="1" title="Para visitar" text="* Daymún: Se trata de un mausoleo edificado a finales del siglo III o principios del IV, para albergar en su interior a los miembros fallecidos de una acomodada familia hispano-romana.| |* Castillo de guardias Viejas: Estuvo destinado a proteger la costa de las frecuentes correrías de piratas que amenazaban la seguridad de la población y los navegantes." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Playas: Entre las que destacan Almerimar, La ensenada de San Miguel y Guardas Viejas.| |* San Marcos: Desfiles de carrozas y fiesta de las habas, vino y tocino." />
+			<information lang="es" button="3" title="Para degustar" text="Los platos elaborados con hortalizas y frutas de la zona." />
+			<information lang="en" button="0" title="General" text="The inhabitants are called 'Ejidenses'.| |The territory, due to its geographical situation, is a real sunny spot, framed inside the great domain of the Mediterranean climates. It is located in the Southwest of the province of Almería, in the existent plain between the south slope of the mountains of Gádor and the Mediterranean Sea.  " />
+			<information lang="en" button="1" title="To visit" text="* Daymún: It is a mausoleum built at the end of the 3rd. Century or beginning of the 4th. Century to accommodate members of a well-off Hispanic-Roman family.| |* Old guards' castle: It was dedicated to protect the coast of the frequent foraies of pirates, who threatened the population and navigators' security." />
+			<information lang="en" button="2" title="To enjoy" text="* Beaches:  Those that stand out are Almerimar, La ensenada de San Miguel and Guardas Viejas.| |* San Marcos (St. Mark)  Carnival parade and a festival of beans, wine and bacon." />
+			<information lang="en" button="3" title="To taste" text="Dishes using the local produce of fruit and vegetables" />
+		</town>
+	</data>
+	<board type="9x9" floor="3" wall="3" pavement="2" />
+	<music type="0" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="7" ntiles="6" type-terrain="1">
+		<object name="plastic" x="18" y="-73" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="125" y="-23" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="235" y="28" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="-90" y="-122" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="-204" y="-178" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="-416" y="18" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="-524" y="-34" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="plastic" x="-635" y="-80" scale="1.000000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="8" y="6" />
+	</objects>
+	<position>
+		<exit x="4" y="8" />
+		<player x="6" y="5" />
+		<enemy2 x="5" y="5" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="4" y="0" right="true" />
+		<wall x="6" y="0" right="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="2" y="1" bottom="true" />
+		<wall x="4" y="1" right="true" />
+		<wall x="6" y="1" right="true" />
+		<wall x="0" y="2" right="true" bottom="true" />
+		<wall x="1" y="2" right="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="7" y="2" right="true" />
+		<wall x="1" y="3" right="true" bottom="true" />
+		<wall x="5" y="3" right="true" bottom="true" />
+		<wall x="7" y="3" right="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="5" y="4" right="true" />
+		<wall x="6" y="4" right="true" />
+		<wall x="0" y="5" right="true" />
+		<wall x="1" y="5" right="true" />
+		<wall x="8" y="5" bottom="true" />
+		<wall x="3" y="6" right="true" />
+		<wall x="6" y="6" bottom="true" />
+		<wall x="0" y="7" bottom="true" />
+		<wall x="1" y="7" bottom="true" />
+		<wall x="2" y="7" bottom="true" />
+		<wall x="4" y="7" bottom="true" />
+	</walls>
+</level>

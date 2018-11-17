@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Andújar" province="Jaén">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Andujareños o Iliturgianos.| |De origen íbero y conocida como Isturgi bajo la denominación romana, a orillas del 'Betis' romano o 'Guad-el-kebir' árabe y al pie de Sierra Morena. Sus fértiles tierras alternan el cultivo de hortalizas, frutales, cereales y leguminosas con grandes extensiones de olivos y pastos en los que pace principalmente ganado vacuno y en especial toros de lidia." />
+			<information lang="es" button="1" title="Para visitar" text="* La iglesia de Santa María la Mayor: del sXV, en su interior se expone el cuadro La Oración en el Huerto.| |*El puente romano: de importante carácter histórico datado en el siglo I.| |* Parque Natural Sierra de Andújar: oasis de paz en el corazón de la Sierra morena jiennense, posee unos relieves ondulados en el centro del territorio, paisajes abruptos en el curso de algunos ríos y arroyos, y relieves quebrados en toda la franja norte. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Romería de la Virgen de la Cabeza.| |*  Verbena de la divina pastora: la ciudadanía vive de forma lúdica y festiva el acontecer primaveral dotando a esta típica verbena de gran solera y tipicidad andaluza." />
+			<information lang="es" button="3" title="Para degustar" text="El alda de choto, el flamenquín y los cantos, a base de pan, tomate y bacalao, regado todo ello con aceite de oliva y acompañado de aceitunas." />
+			<information lang="en" button="0" title="General" text="The Inhabitants are called Andujareños o Iliturgianos.| |The city is of Iberian origin and well-known as Isturgi by the Romans, on the banks of the Roman 'Betis' river or the Arabic 'Guad-el-kebir' and at the foot of 'Sierra Morena' mountains.| |Its fertile lands produce vegetables, fruit trees, cereals and legumes together with large expanses of olive trees and pastures where the cattle and especially fighting bulls graze." />
+			<information lang="en" button="1" title="To visit" text="* Church of 'St. María la Mayor': dates from the XV century. Inside is exhibited the picture 'The prayer in the orchard'.| |* The Roman bridge: a historically important feature dating from the first century.| |* Sierra of Andújar nature reserve: oasis of peace in the middle of the jiennense 'Sierra Morena'. It has some undulating scenery in the center of the territory, rugged landscapes along the watercourse of the rivers and streams, and broken ranges along the whole northern side." />
+			<information lang="en" button="2" title="To enjoy" text="* Romería of the Virgin of the Head.| |* The divine shepherdess 'verbena' (open-air celebration on the eve of a saint's day): the locals live for pleasure and in a spirit of festivity during spring, endowing this typical verbena with an important Andalusian tradition and making it particularly picturesque." />
+			<information lang="en" button="3" title="To taste" text="'Alda de choto', the 'flamenquín' (sausage covered with cheese and boiled ham, coated in bread crumbs and fried), and the 'cantos', made by means of bread, tomato and cod, all seasoned with olive oil and served with olives." />
+		</town>
+	</data>
+	<board type="8x8" floor="5" wall="0" pavement="0" />
+	<music type="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="15">
+		<object name="culvert" x="-382" y="30" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="culvert" x="300" y="23" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmpot2" x="-442" y="68" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmpot2" x="-281" y="-9" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmpot2" x="-70" y="-62" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmpot2" x="151" y="-5" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmpot2" x="316" y="76" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="41" y="71" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="170" y="136" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="293" y="196" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="stick_chain" x="-154" y="67" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-278" y="130" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="stick_chain" x="-401" y="190" scale="0.500000" flip="true" lock="false" origen="game" />
+	</scenary>
+	<objects>
+	</objects>
+	<position>
+		<exit x="0" y="0" />
+		<player x="6" y="2" />
+		<enemy2 x="4" y="2" />
+	</position>
+	<walls>
+		<wall x="6" y="0" right="true" bottom="true" />
+		<wall x="0" y="1" right="true" bottom="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="3" y="1" bottom="true" />
+		<wall x="6" y="1" right="true" />
+		<wall x="7" y="1" right="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="7" y="2" right="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="7" y="3" right="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="5" y="4" bottom="true" />
+		<wall x="5" y="5" right="true" />
+		<wall x="1" y="6" bottom="true" />
+		<wall x="6" y="6" right="true" />
+		<wall x="7" y="6" right="true" />
+		<wall x="0" y="7" right="true" />
+		<wall x="4" y="7" bottom="true" />
+		<wall x="5" y="7" bottom="true" />
+		<wall x="7" y="7" right="true" bottom="true" />
+	</walls>
+</level>

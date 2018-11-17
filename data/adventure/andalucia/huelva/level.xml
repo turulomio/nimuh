@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Huelva" province="Huelva">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Onubenses.| |La población de Huelva se remonta a épocas prehistóricas, con asentamientos Paleolíticos y Neolíticos, aunque es en la Edad del Bronce cuando empiezan a existir abundantes testimonios en la zona, adquiriendo su auge con la civilización tartésica. Las principales actividades económicas de la ciudad son las relacionadas con la Industria Química y la Pesca. Envía pescado a todos los mercados españoles y sus mariscos gozan de una especial predilección." />
+			<information lang="es" button="1" title="Para visitar" text="* Catedral: También conocida como Iglesia de la Merced, en la que destaca su elegante fachada con órdenes superpuestos y su interior con la talla del Cristo de Jerusalén.| |* Monumento a Cristobal Colón: A pesar de ser reciente, es uno de los símbolos de la ciudad. Iglesia de San Pedro: La iglesia más antigua de la ciudad.| |* Monasterio de Santa María de la Rábida: Situado frente a la Punta de Sebo en la desembocadura del río Tinto. La iglesia es de estilo gótico-mudéjar y conserva un crucificado del siglo XV." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Festividad de San Sebastián: En honor del patrón de la villa. Se celebra el 20 de Enero, y se come el tradicional palmito.| |* Fiestas Colombinas: Celebradas en la primera semana de Agosto, en conmemoración de la salida de las carabelas.|Semana Santa: desfile de tipo barroco de 23 cofradías. " />
+			<information lang="es" button="3" title="Para degustar" text="En Huelva podemos encontrar reunidas todas las especialidades de la provincia. Las cigalas a la plancha o las gambas cocidas de la costa, los gurumelos a la plancha, el solomillo ibérico de la sierra, los guisos marineros, los típicos chocos, las coquinas, la gamba blanca o el jamón de pata negra." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Onubense.| |The inhabitation of Huelva goes back to prehistoric times, with Paleolithic and Neolithic settlements, although it is in the Bronze Age when we begin to see a lot of archaeological evidence, peaking during the Tartesian period.| |The main economic activities of the city are those related with the Chemical Industry and Fishing.| |Huelva sends fish to all the Spanish markets and its shellfish enjoys a particular cache." />
+			<information lang="en" button="1" title="To visit" text="* Cathedral: Also well-known as Church of 'la Merced', in which is important to point out its elegant façade with superimposed orders and the carving of Christ from Jerusalem.| |* Monument to Christopher Columbus: despite being recent, it is one of the symbols of the city.
+Church of St. Peter: The oldest church in the city.| |* Monastery of St. Mary of the Rábida: Located opposite 'La Punta del Sebo' at the mouth of the 'Tinto' river. The church is of Gothic-Mudejar style and keeps a crucified Image (the 15th. century).  " />
+			<information lang="en" button="2" title="To enjoy" text="* Festivity of St. Sebastian, in honour of the patron of the small town, falls on 20th. January and this day is eaten the traditional palm heart.| |* Christopher Columbus Festival: they have taken place in the first week of August, in commemoration of the departure of the caravels.| |* Easter (Holy Week): Baroque procession of 23 brotherhoods." />
+			<information lang="en" button="3" title="To taste" text="In Huelva we can find together all the specialties of the province, that is: The grilled Norway langostines or the boiled coastal prawns, grilled 'gurumelos', Iberian Mountain sirloin, seafood stews, the typical cuttlefish, 'coquinas' (mollusc), the white prawn or 'pata negra' ham  (a type of top-quality cured ham)." />
+		</town>
+	</data>
+	<animation-end fromdata="/endlevel/huelva" />
+	<music type="1" />
+	<board type="6x6" floor="3" wall="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="1" type-terrain="5">
+		<object name="bush1" x="112" y="125" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="palmtree" x="-23" y="-133" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="bush1" x="205" y="126" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="colon.png" x="137" y="-2" scale="0.700000" flip="false" lock="true" origen="personal" />
+		<object name="palmtree" x="-467" y="-2" scale="0.900000" flip="true" lock="false" origen="game" />
+		<object name="palmtree" x="246" y="1" scale="0.900000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="52" y="117" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="240" y="142" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="211" y="186" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="253" y="162" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="248" y="213" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="269" y="227" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="310" y="246" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="348" y="261" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="10" y="103" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-72" y="85" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="palmtree" x="-260" y="-88" scale="0.900000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="42" y="93" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-20" y="80" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-117" y="106" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-151" y="129" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-220" y="162" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-180" y="145" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-265" y="181" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-302" y="204" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-341" y="222" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-391" y="240" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-434" y="266" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="96" y="116" scale="0.300000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="4" y="2" />
+	</objects>
+	<position>
+		<exit x="5" y="5" />
+		<player x="0" y="3" />
+		<enemy1 x="5" y="5" />
+		<enemy3 x="1" y="5" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="4" y="0" bottom="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="3" y="1" right="true" bottom="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="2" y="2" bottom="true" />
+		<wall x="4" y="2" right="true" bottom="true" />
+		<wall x="1" y="3" bottom="true" />
+		<wall x="2" y="3" bottom="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="2" y="4" bottom="true" />
+		<wall x="4" y="4" bottom="true" />
+		<wall x="1" y="5" right="true" />
+		<wall x="3" y="5" right="true" />
+	</walls>
+</level>

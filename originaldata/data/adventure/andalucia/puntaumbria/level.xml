@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Punta Umbria" province="Huelva">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Puntaumbrieños.| |Situado en el meridiano de la Costa de la Luz, su riqueza natural está representada por las Marismas de Odiel, la Laguna Portil y el Paraje Natural de los Enebrales, consideradas todas zonas protegidas. Fenicios, griegos y romanos fueron los primeros pobladores de Punta Umbría y entre su arquitectura destaca el Yacimiento Romano del Eucaliptal, la Iglesia de Nuestra Señora de Lourdes, la Torre Almenara y el Casco Antiguo." />
+			<information lang="es" button="1" title="Para visitar" text="* Torre Almenara o Torre Umbría: Construida sobre el año 1577 por orden del rey Felipe III para vigilar la costa del ataque de los piratas.| |* Casa Museo de los Ingleses: Reproducción de las antiguas viviendas inglesas en la playa que muestra las raices de Punta Umbría con la llegada de los primeros turistas procedentes de Inglaterra.| |* Parque arqueológico El Eucaliptal: Yacimiento con restos de estructuras industriales, anforas y una necrópolis romana que forma parte del Catalogo General del Patrimonio Hitórico Andaluz." />
+			<information lang="es" button="2" title="Para disfrutar" text="* La Verdigoná: Reunión gastronomico-festiva de degustación del verdigón, un molusco muy apreciado en la costa onubense amenizada por las agrupaciones carnavalescas que participan en el concurso de esta localidad.| |* Romería de Santa Cruz: Fiesta en la que se unen la convivencia, los cantes y la devoción a la Santa Cruz.| |* Playas: Punta Umbría goza de trece kilómetros de playas de arenas finas, doradas y limpias, que son su principal atractivo turístico." />
+			<information lang="es" button="3" title="Para degustar" text="Hablar de gastronomía en Punta Umbría es hablar del mar, pero la gamba de Huelva, la coquina y la chirla son los productos típicos que son elaborados por la misma naturaleza que circunda a la localidad." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Puntaumbrieño.| |Located on the meridian of the 'Costa de la Luz'. Its natural wealth is represented by the Swamps of Odiel, the Portil Lagoon and the Enebrales Nature Reserve, considered all of them protected areas.| |Phoenicians, Greeks and Romans were the first settlers of 'Punta Umbria' and among its architecture it is important to point out the Roman Site of the Eucaliptal, the Church of Our Lady of Lourdes, the Almenara Tower and the Old town." />
+			<information lang="en" button="1" title="To visit" text="* Almenara Tower or Umbría Tower: Built about the year 1577 by order of the King Philip III to watch the coast for pirates' attacks.| |* Englishmen Museum: Reproduction of the old English housings in the beach that shows the roots of Punta Umbría with the arrival of the first tourists coming from England.| |* Archaeological park The Eucaliptal: Site with remains of industrial structures, amphoras and a Roman necropolis, which is part of the General Catalogue of the Andalusian Historical Patrimony." />
+			<information lang="en" button="2" title="To enjoy" text="* Verdigoná': Gastronomic-festival meeting for the tasting of the 'verdigón', a mollusc very appreciated in the onubense coast livened up by the carnival groups that participate in the town's competition.| |* 'Romería de Santa Cruz': Open-air festival, which unite coexistence, songs and devotion to the Holy Cross.| |* Beaches: Punta Umbría has thirteen kilometers of beaches with fine, golden and clean sands that are its main tourist attraction." />
+			<information lang="en" button="3" title="To taste" text="To talk about gastronomy in Punta Umbría means to talk about the sea, but the Huelvan Prawn, the coquina and the chirla (small clam) are the typical products that are produced by the same nature that surrounds the town." />
+		</town>
+	</data>
+	<board type="6x6" floor="3" wall="5" />
+	<help name="enemy3" />
+	<music type="1" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="7" ntiles="0" type-terrain="0">
+		<object name="towel" x="-384" y="48" scale="0.900000" flip="true" lock="false" origen="game" />
+		<object name="towel" x="-233" y="-116" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="wood_tables" x="-624" y="96" scale="1.000000" flip="true" lock="true" origen="game" />
+		<object name="herbs" x="160" y="147" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-206" y="132" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="parasol" x="-377" y="-4" scale="0.800000" flip="true" lock="true" origen="game" />
+		<object name="castle_0" x="294" y="78" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="herbs" x="146" y="-2" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="palmtree" x="-263" y="-125" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="herbs" x="224" y="175" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="palmtree" x="110" y="-80" scale="1.000000" flip="false" lock="true" origen="game" />
+	</scenary>
+	<objects>
+		<trap x="3" y="3" />
+	</objects>
+	<position>
+		<exit x="0" y="4" />
+		<player x="5" y="1" />
+		<enemy1 x="0" y="1" />
+		<enemy3 x="2" y="1" />
+	</position>
+	<walls>
+		<wall x="4" y="0" bottom="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="1" y="1" right="true" />
+		<wall x="3" y="1" right="true" />
+		<wall x="4" y="1" bottom="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="3" y="2" bottom="true" />
+		<wall x="4" y="2" bottom="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="2" y="4" right="true" bottom="true" />
+		<wall x="0" y="5" right="true" />
+		<wall x="1" y="5" right="true" />
+	</walls>
+</level>

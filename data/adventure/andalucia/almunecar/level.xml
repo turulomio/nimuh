@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Almuñecar" province="Granada">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como sexitanos.| |El nombre antiguo del municipio es Sexi nombre de la ciudad como colonia fenicia y que se mantuvo como nombre bajo dominio romano. El actual nombre procede de Hins-al-Monacar ('Rodeada de Montañas') que fue el nombre que le dieron los musulmanes al volver a levantarla de sus ruinas en el siglo VIII.| |Su clima tropical la convierte en centro turístico y su costa esta repleta de hermosas playas.| |Curiosidad: El escudo de armas de la ciudad, constituido por las cabezas de tres piratas berberiscos, que flotan en el mar, fue un regalo del emperador Carlos III." />
+			<information lang="es" button="1" title="Para visitar" text="* Cueva de los Siete Palacios: Construcción romana subterránea formada por siete salas abovedadas donde hoy en día se aloja el Museo Arqueológico de la población.| |* Castillo de San Miguel: Es el monumento más importante de Almuñécar, símbolo de la Ciudad. " />
+			<information lang="es" button="2" title="Para disfrutar" text="* Playas - La costa de Almuñécar está salpicada por más de 19 kilómetros de hermosas playas y calas, con aguas tranquilas y cristalinas, especialmente indicadas para los deportes náuticos, destacando el submarinismo.| |* Fiestas patronales: en honor a la Virgen de la Antigua con una procesión de profundo cariz marinero. El recinto ferial cuenta con actuaciones gratuitas y numerosas atracciones para los pequeños." />
+			<information lang="es" button="3" title="Para degustar" text="Las frutas subtrópicales como el mango, el aguacate, la papaya, el babaco o la carambola." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as sexitano.| |The old name of the municipality is Sexi, as named when the city was a Phoenician colony and this name continued under Roman rule. The present name comes from Hins-al-Monacar ('Surrounded of Mountains') that it was the name that the Muslims gave it when they rebuilt it of its ruins in the 8th. Century.| |Its tropical climate transforms it into tourist center and its coast is full of beautiful beaches.| |Curiosity: The coat of arms of the city, consisting of the heads of three Berber pirates who float in the sea, was a present from the emperor Carlos III." />
+			<information lang="en" button="1" title="To visit" text="* Cave of the Seven Palaces: Underground Roman construction formed by seven arched rooms which nowadays serves as the town's Archaeological Museum.| |* Castle of St. Michael: It is the most important monument in Almuñécar, the symbol of the City." />
+			<information lang="en" button="2" title="To enjoy" text="* Beaches - The coast of Almuñécar is dotted with beautiful beaches and coves for more than 19 kilometers, with calm and crystalline waters, especially suitable for water sports, particularly skin-diving.| |* Patron Saint's Festivals: in honour of the Virgin from the 'Antigua' with a carnival procession on a deep sea theme. In the fairground there are free performances and a lot of attractions for the children." />
+			<information lang="en" button="3" title="To taste" text="Subtropical fruits such as mango, avocado, papaya, 'babaco' or the 'carambola'." />
+		</town>
+	</data>
+	<board type="8x8" floor="3" wall="9" pavement="0" />
+	<music type="2" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="6" ntiles="4" type-terrain="0">
+		<object name="parasol2" x="-186" y="-44" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="parasol2" x="-347" y="-112" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="-303" y="54" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="parasol2" x="-432" y="75" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="262" y="108" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="castle_0" x="-404" y="23" scale="0.600000" flip="true" lock="false" origen="game" />
+		<object name="hamaca1" x="161" y="60" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="55" y="10" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="313" y="-47" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="hamaca1" x="218" y="-91" scale="0.800000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<key x="1" y="5" />
+		<door-key x="3" y="6" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="1" y="0" />
+		<player x="1" y="4" />
+		<enemy1 x="1" y="0" />
+		<enemy3 x="4" y="6" />
+	</position>
+	<walls>
+		<wall x="0" y="0" bottom="true" />
+		<wall x="2" y="0" right="true" bottom="true" />
+		<wall x="4" y="0" right="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="1" y="1" bottom="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="1" y="2" right="true" />
+		<wall x="3" y="2" bottom="true" />
+		<wall x="5" y="2" right="true" />
+		<wall x="6" y="2" right="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="1" y="3" bottom="true" />
+		<wall x="3" y="3" right="true" />
+		<wall x="4" y="3" bottom="true" />
+		<wall x="6" y="3" bottom="true" />
+		<wall x="0" y="4" bottom="true" />
+		<wall x="1" y="4" bottom="true" />
+		<wall x="4" y="4" bottom="true" />
+		<wall x="2" y="5" bottom="true" />
+		<wall x="3" y="5" right="true" />
+		<wall x="4" y="5" bottom="true" />
+		<wall x="0" y="6" right="true" />
+		<wall x="2" y="6" right="true" />
+		<wall x="4" y="6" right="true" bottom="true" />
+		<wall x="0" y="7" right="true" />
+		<wall x="1" y="7" right="true" />
+	</walls>
+</level>

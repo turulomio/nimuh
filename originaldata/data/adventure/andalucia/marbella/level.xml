@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Marbella" province="Málaga">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Marbellíes.| |Marbella es una de las ciudades turísticas más importantes de la Costa del Sol española y durante la mayor parte del año es centro de atracción del turismo internacional a causa principalmente de su clima benigno, sus infraestructuras, su cualificada dotación de establecimientos de industria hotelera y sus estupendos y reconocidos campos de Golf." />
+			<information lang="es" button="1" title="Para visitar" text="* Puerto José Banús: puerto deportivo de lujo, situado en la zona denominada 'San Pedro de Alcántara'. Su excepcional localización geográfica y la visita de numerosos personajes populares la convierten en un atractivo destino veraniego, especialmente nocturno.| |* Basílica Paleocristiana Vega del Mar: Considerada un importante yacimiento de restos históricos, es una de las muestras más importantes en España de la Epoca Paleocristiana (siglo IV)." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Verbenas Populares: Fiestas que durante unos días animan la actividad de la zona con bailes, concursos y otras actividades organizadas por las asociaciones del barrio. Entre las más conocidas: Santa Marta, Salto del Agua, Leganitos, Divina Pastora, Plaza de Toros y Miraflores.| |* Romería a la Virgen del Carmen, Patrona de los marinero celebrada el 16 de Julio." />
+			<information lang="es" button="3" title="Para degustar" text="La sopa de maíz, el bacalao con almejas o la sopa de tomate con chumbos." />
+			<information lang="en" button="0" title="General" text="Inhabitants are known as Marbellíes.| |Marbella is one of the most important tourist cities on the Costa del Sol and during most of the year it is a centre for international tourism because of its mild benign climate, its infrastructure, its network of high quality hotel establishments and its fantastic and famous Golf courses." />
+			<information lang="en" button="1" title="To visit" text="* Port 'José Banús': deluxe marina, located in area 'San Pedro de Alcántara'. Its location and the patronage of numerous popular celebrities convert it into an attractive summer destination, especially at night.| |* Early Christian basilica 'Vega del Mar': It is considered an important site of historical ruins. It is one of the most important exhibitions in Spain of the Early Christian era (4th. century)." />
+			<information lang="en" button="2" title="To enjoy" text="* Popular open air celebrations: Celebrations that encourage the activity of the area with dances, competitions and other activities organized by the local residents'  associations.  Among the most well-known ones: St. Marta, Waterfall, 'Leganitos', 'Divina Pastora', Bull-ring and 'Miraflores'.| |* 'Romería' to the Carmen Virgin, the Patron Saint of sailors whose festivity is celebrated on 16th. July." />
+			<information lang="en" button="3" title="To taste" text="Maize soup, cod with clams or tomato soup with prickly pear." />
+		</town>
+	</data>
+	<board type="9x9" floor="3" wall="3" pavement="0" />
+	<music type="2" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="5">
+		<object name="herbs" x="-244" y="83" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-383" y="82" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="golf_hole" x="189" y="33" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="herbs" x="-376" y="129" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="palmtree" x="-509" y="-116" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="palmtree" x="-442" y="-107" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="palmtree" x="-387" y="-151" scale="1.000000" flip="false" lock="true" origen="game" />
+		<object name="bush1" x="-220" y="-24" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-459" y="99" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-308" y="39" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-407" y="162" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-295" y="121" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="-368" y="87" scale="0.600000" flip="false" lock="false" origen="game" />
+		<object name="herbs" x="-341" y="158" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="rock2" x="-222" y="136" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="rock2" x="-264" y="177" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="rock2" x="-336" y="199" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="rock2" x="-406" y="197" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="rock1" x="-231" y="157" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="rock1" x="-300" y="196" scale="0.300000" flip="true" lock="false" origen="game" />
+		<object name="rock1" x="-371" y="200" scale="0.300000" flip="false" lock="false" origen="game" />
+		<object name="tree2" x="270" y="-156" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-163" y="-46" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="115" y="-76" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="tree2" x="-175" y="-189" scale="1.000000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<key x="5" y="5" />
+		<door-key x="2" y="4" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="0" y="0" />
+		<player x="1" y="5" />
+		<enemy1 x="4" y="0" />
+	</position>
+	<walls>
+		<wall x="1" y="0" right="true" />
+		<wall x="0" y="1" right="true" />
+		<wall x="7" y="1" bottom="true" />
+		<wall x="8" y="1" bottom="true" />
+		<wall x="0" y="2" right="true" />
+		<wall x="3" y="2" right="true" />
+		<wall x="8" y="2" right="true" />
+		<wall x="1" y="3" right="true" />
+		<wall x="0" y="4" right="true" bottom="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="1" y="5" right="true" />
+		<wall x="3" y="5" right="true" />
+		<wall x="5" y="5" right="true" />
+		<wall x="6" y="5" bottom="true" />
+		<wall x="3" y="6" bottom="true" />
+		<wall x="4" y="6" bottom="true" />
+		<wall x="6" y="6" right="true" />
+		<wall x="0" y="8" bottom="true" />
+		<wall x="5" y="8" bottom="true" />
+		<wall x="6" y="8" bottom="true" />
+		<wall x="8" y="8" right="true" />
+	</walls>
+</level>

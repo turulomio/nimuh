@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Roquetas de Mar" province="Almería">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Roqueteros.| |Es el destino turístico más importante de la provincia de Almería, lo que hace que durante la época estival duplique su población real. Su litoral está formado por 16 km continuos de playas de arena natural. Roquetas de Mar ha sabido combinar a la perfección el desarrollo de dos actividades que poco tienen en común, el turismo y la agricultura." />
+			<information lang="es" button="1" title="Para visitar" text="* El Castillo de Santa Ana o de Las Roquetas: Fortificación del siglo XVII, que durante años sirvió de refugio a los escasos habitantes con que contaba el municipio en aquella época.| |* El Faro de Roquetas: edificación historica que se ha convertido en una auténtica sala de exposiciones que alberga durante todo el año, normalmente en periodos de 15 días, todo tipo de exposiciones y muestras." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Las playas: Particularmente bellas son las de Buenavista, Cerrillos, la urbanización Playa Serena Sur, las Palmerillas y los acantilados de Aguadulce.| |* Golf: Roquetas de Mar y la Urbanización de Playa Serena han estado siempre vinculadas al golf, su campo tiene gran solera y se han realizado varias pruebas del circuito nacional." />
+			<information lang="es" button="3" title="Para degustar" text="El arroz aparte, plato tradicional marinero, el escabechado de pescado y los gurullos con bogavante." />
+			<information lang="en" button="0" title="General" text="The inhabitants are called 'Roquetero'.| |It is the most important tourist destination in the province of Almería, with it's population doubling during the summer months. Its coast is formed by 16 continuous kilometres of natural sandy beaches. Roquetas de Mar has known how to combine perfectly the development of two activities that do not have much in common, tourism and agriculture." />
+			<information lang="en" button="1" title="To visit" text="* Santa Ana's Castle or Castle of The Roquetas: A fortification from the 17th. century that for years was used as refuge by the few inhabitants that the municipality had in that time.| |* Roquetas Lighthouse: a historic building that has become a genuine exhibition venue that exhibits throughout the year, usually for periods of 15 days, all kinds of exhibitions and trade fairs." />
+			<information lang="en" button="2" title="To enjoy" text="* The beaches: Particularly beautiful are those of 'Buenavista', 'Cerrillos', the estate 'Playa Serena Sur', the 'Palmerillas' and the cliffs of 'Aguadulce'.| |* Golf: Roquetas de Mar and the estate of 'Playa Serena' have always been linked to golf, its golf course has a great tradition and it has been host to several tournaments on the national tour." />
+			<information lang="en" button="3" title="To taste" text="The 'arroz aparte', traditional seafood dish, (It is a fish paella for the connoisseur,  requiring great care in the cooking to be sure that the fish stock and rice are cooked to perfection simultaneously. Ensuring that the rice grains are served soft without turning mushy.| |Long ago the rice was served separate from the fish. The broth made during the cooking of the fish was then used to cook the rice. This is where the name 'arroz aparte' comes from:  'rice apart'.| |Marinated fish and 'gurullos' (Paste of flour, water and oil that is crumbled forming pellets or grains) with lobster." />
+		</town>
+	</data>
+	<map file-fromdata="/maps/map_almeria.jpg">
+		<texts-map lang="es" title-1="Almería" text-1="Son muchas poblaciones íberas y colonias fenicias y carteginesas las que cobraron importancia en Almería en la época clásica. En la Edad Media era una población radicalmente islámica. Descrita a veces como 'un impresionante museo natural'" title-2="Objetivo" text-2="La Alcazaba es el objetivo de esta provincia." distance-second-text="285" />
+		<texts-map lang="en" title-1="Almería" text-1="Numerous indigenous settlements, Phonician and Carthenesian colonies gave Almeria an important role prior to the moorish invasion. During the middle ages it was a radically islamic centre.  Often described as an impressive natual museum." title-2="Objetive" text-2="The Alcazaba is the objective in this province." distance-second-text="285" />
+	</map>
+	<music type="0" />
+	<board type="9x9" floor="3" wall="3" pavement="2" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="5">
+		<object name="bush1" x="-318" y="-50" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="font" x="82" y="-68" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="bush2" x="-225" y="166" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-343" y="10" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bush2" x="-58" y="89" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-390" y="11" scale="0.400000" flip="false" lock="true" origen="game" />
+		<object name="bush2" x="1" y="93" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush2" x="198" y="176" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="palmtree" x="-464" y="-75" scale="0.800000" flip="false" lock="true" origen="game" />
+		<object name="palmtree3" x="28" y="-25" scale="0.500000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-239" y="-47" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="rock1" x="-239" y="6" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bench4" x="-373" y="182" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-197" y="-17" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="flowers" x="-229" y="25" scale="0.800000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-288" y="1" scale="0.400000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-55" y="-33" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="palmtree3" x="313" y="100" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="flowers" x="-310" y="44" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="rock1" x="-350" y="78" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="rock1" x="-138" y="7" scale="0.400000" flip="false" lock="false" origen="game" />
+		<object name="bench4" x="-192" y="92" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="bench4" x="270" y="196" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="palmtree" x="-169" y="-173" scale="0.800000" flip="false" lock="false" origen="game" />
+		<object name="bush2" x="-405" y="248" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush2" x="357" y="254" scale="0.500000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<key x="4" y="1" />
+		<door-key x="5" y="5" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="6" y="0" />
+		<player x="2" y="5" />
+		<enemy1 x="4" y="0" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="3" y="0" right="true" />
+		<wall x="4" y="0" right="true" />
+		<wall x="6" y="0" bottom="true" />
+		<wall x="8" y="0" right="true" />
+		<wall x="0" y="1" bottom="true" />
+		<wall x="1" y="1" right="true" />
+		<wall x="2" y="1" right="true" />
+		<wall x="5" y="1" right="true" />
+		<wall x="7" y="1" right="true" />
+		<wall x="8" y="1" right="true" />
+		<wall x="2" y="2" right="true" />
+		<wall x="3" y="2" right="true" bottom="true" />
+		<wall x="4" y="2" right="true" />
+		<wall x="5" y="2" right="true" />
+		<wall x="0" y="3" bottom="true" />
+		<wall x="2" y="3" right="true" />
+		<wall x="4" y="3" right="true" bottom="true" />
+		<wall x="7" y="3" right="true" />
+		<wall x="0" y="4" right="true" />
+		<wall x="4" y="4" right="true" />
+		<wall x="5" y="4" bottom="true" />
+		<wall x="6" y="4" right="true" />
+		<wall x="0" y="5" right="true" />
+		<wall x="2" y="5" bottom="true" />
+		<wall x="6" y="5" bottom="true" />
+		<wall x="7" y="5" right="true" />
+		<wall x="8" y="5" right="true" bottom="true" />
+		<wall x="0" y="6" right="true" bottom="true" />
+		<wall x="2" y="6" right="true" />
+		<wall x="5" y="6" right="true" />
+		<wall x="1" y="7" right="true" />
+		<wall x="2" y="7" bottom="true" />
+		<wall x="4" y="7" bottom="true" />
+		<wall x="0" y="8" bottom="true" />
+		<wall x="1" y="8" bottom="true" />
+		<wall x="5" y="8" bottom="true" />
+		<wall x="6" y="8" bottom="true" />
+		<wall x="8" y="8" right="true" />
+	</walls>
+</level>

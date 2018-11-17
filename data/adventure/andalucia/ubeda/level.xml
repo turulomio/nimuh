@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+	<multilanguage value="true" />
+	<data>
+		<town name="Ubeda" province="Jaén">
+			<information lang="es" button="0" title="General" text="Los habitantes son conocidos como Ubetenses o Ubedeños.| |Situada en la fértil comarca jiennense de La Loma. La ciudad está declarada Patrimonio Cultural de la Humanidad por la UNESCO, debido a la conservación de sus buenos y numerosos edificios renacentistas así como todo su singular entorno urbanístico." />
+			<information lang="es" button="1" title="Para visitar" text="* Plaza Vázquez de Molina: corazón monumental de Ubeda donde se encuentra la Sacra Capilla del Salvador, monumento mas representativo de Ubeda.| |* La muralla: nombrada monumento nacional." />
+			<information lang="es" button="2" title="Para disfrutar" text="* Feria de San Miguel: En honor al patron de la ciudad.| |* Fiestas de San Antón: donde se enciende una lumbre en la Plaza Primero de Mayo. Es típico saltar sobre el fuego, así como la toma de churros con chocolate. " />
+			<information lang="es" button="3" title="Para degustar" text="Las tortas de 'masaceite' con matalahúva, el ochío o las tortas de Candearia." />
+			<information lang="en" button="0" title="General" text="The Inhabitants are called Ubetenses o Ubedeños.| |Is located in the fertile jiennense region of 'The Hill'. The city is declared a World Hertiage Site by UNESCO, due to the conservation of its fine and numerous Renaissance buildings as well as all its peculiar town-planning surroundings." />
+			<information lang="en" button="1" title="To visit" text="* 'Vázquez de Molina' Square: monumental centre of Ubeda where it is Saviour's Holy Chapel, the most representative monument of Ubeda.| |* The wall: declared a national monument." />
+			<information lang="en" button="2" title="To enjoy" text="* St. Michael's Fair: In honour to the patron saint of the city.| |* Festivities of St. Anton: where on the first of May a fire is lit in the Square. It is traditional to jump on the fire, as well as to eat 'churros' (dough formed into sticks or rings and fried in oil) with chocolate." />
+			<information lang="en" button="3" title="To taste" text="The 'masaceite' cakes with 'matalahúga' (aniseed), the 'ochío' or Candearia pancakes." />
+		</town>
+	</data>
+	<board type="8x8" floor="6" wall="1" pavement="0" />
+	<music type="3" />
+	<scenary type="opened" red="255" green="255" blue="255" type-tiled="0" ntiles="0" type-terrain="14">
+		<object name="bush1" x="276" y="-37" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="tree3" x="-183" y="-173" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="tree3" x="177" y="-98" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="-387" y="-45" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="tree3" x="-350" y="-96" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="bench4" x="-225" y="86" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="tree3" x="13" y="-174" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="bench4" x="125" y="85" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="bench4" x="301" y="174" scale="0.700000" flip="false" lock="false" origen="game" />
+		<object name="tree3" x="-83" y="-225" scale="1.000000" flip="false" lock="false" origen="game" />
+		<object name="bench4" x="-397" y="167" scale="0.700000" flip="true" lock="false" origen="game" />
+		<object name="bush1" x="-448" y="-23" scale="0.500000" flip="false" lock="false" origen="game" />
+		<object name="bush1" x="329" y="-19" scale="0.500000" flip="false" lock="false" origen="game" />
+	</scenary>
+	<objects>
+		<key x="7" y="7" />
+		<door-key x="2" y="4" direction="bottom" />
+	</objects>
+	<position>
+		<exit x="0" y="0" />
+		<player x="5" y="2" />
+		<enemy1 x="0" y="1" />
+		<enemy3 x="1" y="3" />
+	</position>
+	<walls>
+		<wall x="0" y="0" right="true" />
+		<wall x="1" y="0" right="true" />
+		<wall x="2" y="0" bottom="true" />
+		<wall x="3" y="0" bottom="true" />
+		<wall x="7" y="0" right="true" />
+		<wall x="2" y="1" bottom="true" />
+		<wall x="3" y="1" right="true" bottom="true" />
+		<wall x="4" y="1" bottom="true" />
+		<wall x="5" y="1" right="true" />
+		<wall x="6" y="1" bottom="true" />
+		<wall x="0" y="2" bottom="true" />
+		<wall x="1" y="2" bottom="true" />
+		<wall x="5" y="2" bottom="true" />
+		<wall x="6" y="2" right="true" />
+		<wall x="7" y="2" bottom="true" />
+		<wall x="3" y="3" bottom="true" />
+		<wall x="7" y="3" bottom="true" />
+		<wall x="1" y="4" right="true" />
+		<wall x="2" y="4" right="true" />
+		<wall x="3" y="4" right="true" />
+		<wall x="4" y="4" right="true" bottom="true" />
+		<wall x="1" y="5" bottom="true" />
+		<wall x="3" y="5" right="true" />
+		<wall x="4" y="5" bottom="true" />
+		<wall x="2" y="6" bottom="true" />
+		<wall x="7" y="6" right="true" bottom="true" />
+		<wall x="3" y="7" right="true" />
+	</walls>
+</level>
