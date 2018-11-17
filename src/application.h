@@ -30,6 +30,8 @@
 #ifndef APPLICATION_H_
 #define APPLICATION_H_
 
+#include "config.h"
+
 #include <SDL.h>
 #include <SDL_mixer.h>
 #include "martian.h"
