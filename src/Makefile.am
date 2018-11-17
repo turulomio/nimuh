@@ -1,5 +1,5 @@
 bin_PROGRAMS=nimuh
-INCLUDES = $(AM_CFLAGS) -DDATA_DIR=\""$(nimuhdir)/data"\" -ggdb3 -Wall
+AM_CPPFLAGS = $(AM_CFLAGS) -DDATA_DIR=\""$(nimuhdir)/data"\" -ggdb3 -Wall
 nimuh_LDADD = $(AM_LDFLAGS)
 
 nimuhdir = $(datadir)/nimuh

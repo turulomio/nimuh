@@ -28,7 +28,7 @@ AC_CHECK_HEADER(expat.h,, [AC_MSG_ERROR([C compiler can't find <expat.h>])])
 
 
 
-AM_CXXFLAGS="$AM_CFLAGS $SDL_CFLAGS"
+AM_CXXFLAGS="$AM_CFLAGS $SDL_CFLAGS -g3 -O0"
 AM_LDFLAGS="$AM_LDFLAGS $SDL_LIBS -lSDL_mixer -lSDL_image -lexpat -lGL -lGLU"
 
 dnl LIBS="$LIBS $SDL_LIBS -lSDL_image -lSDL_mixer"
