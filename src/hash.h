@@ -20,6 +20,7 @@
 #ifndef HASH_H_
 #define HASH_H_
 
+#include "config.h"
 #include <SDL.h>
 #include <SDL_mixer.h>
 #include <expat.h>

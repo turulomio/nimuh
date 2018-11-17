@@ -20,6 +20,7 @@
 #ifndef SOUND_H_
 #define SOUND_H_
 
+#include "config.h"
 #include <SDL.h>
 #include <SDL_mixer.h>
 #include <expat.h>
