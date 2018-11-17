@@ -35,6 +35,7 @@ Application::Application(int w, int h, string titleWindow)  : World (w, h, title
 	if (existDataDirectory) {	
 		// configuration files
 		
+	printf("HOLA\n");
 		SDL_EnableKeyRepeat(SDL_DEFAULT_REPEAT_DELAY, SDL_DEFAULT_REPEAT_INTERVAL);
 		SDL_EnableUNICODE(1); 
 		

@@ -90,23 +90,26 @@ namespace Martian {
 	
 	void Hash::loadFromConfDirectory(string f) { 
 		if (Hash::pathData=="") {
-			char *directory = NULL;
-			char tmp_dir[128];
+			char *home = NULL;
+			char directory[128];
+			char command[128];
 			if (getenv("HOME") != NULL) {
-				directory = getenv("HOME");
-				sprintf (tmp_dir, "mkdir %s/.%s", directory, CONFIG_DIR_UNIX);
-				system(tmp_dir);
-				sprintf (directory, "%s/.%s/", directory, CONFIG_DIR_UNIX);
+				home = getenv("HOME");
+				sprintf (directory, "%s/.%s/", home, CONFIG_DIR_UNIX);
+				sprintf (command, "mkdir %s", directory);
+				system(command);
+				printf("TMPDIR: %s\n",directory);
 			} else {
-				directory = "./data/";
+				sprintf(directory, "%s", "./data/");
 			}
 			Hash::pathData = directory;
 		}
-        file = Hash::pathData + f; 
-		
+        file = Hash::pathData +   f; 
         FILE *c = fopen((char*)file.c_str(), "r");
+	printf("FILE: '%s'\n", file.c_str());
         if(!c) save();
         parseHashXML((char*)file.c_str(), this); 
+	printf("AQUI\n");
     }
 	
 	void Hash::loadFromDataDirectory(string f) { 
@@ -126,11 +129,13 @@ namespace Martian {
 		
 		sprintf (tmp_val, "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<items>\n");
 		fwrite(tmp_val, strlen(tmp_val), 1, f);
+		printf("ALLA %s: %s\n", (char*) file.c_str(),tmp_val);
 		
 		int i;
 		for (i=0; i<(int)items.size(); i++) {
 			sprintf (tmp_val, "\t<item name=\"%s\" value=\"%s\" />\n", items[i].name.c_str(), items[i].value.c_str());
 			fwrite(tmp_val, strlen(tmp_val), 1, f);
+			printf("ALLA %s: %s\n", (char*) file.c_str(),tmp_val);
 		}
 		
 		sprintf (tmp_val, "</items>\n");
