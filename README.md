@@ -7,3 +7,5 @@ This work is licensed under a Creative Commons Attribution-Noncommercial-Share A
 It was developed originally by the people in AUTHORS. It's last versión was 1.02 and was developed en 2008-02-23.
 
 This fork was made to solve problems compiling in Linux and to recover this good game. If you like it, you can help improving this game.
+
+You can see Doxygen code documentation in http://turulomio.users.sourceforge.net/doxygen/nimuh/index.html
