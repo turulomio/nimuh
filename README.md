@@ -47,10 +47,10 @@ Changelog
 
 1.0.2
 -----
-- solve problem with joystick
-- solve error in the third level (english version)
+- Solve problem with joystick
+- Solve error in the third level (english version)
 
 1.0.0
 -----
-stable version
+- Stable version
 
