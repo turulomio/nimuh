@@ -33,3 +33,24 @@ Execute the game with:
 Code documentation
 ==================
 We have generated a [Doxygen code documentation](http://turulomio.users.sourceforge.net/doxygen/nimuh/index.html).
+
+Changelog
+=========
+1.0.4
+-----
+- Added desktop file for UNIX installation in CMakeList.txt
+
+1.0.3
+-----
+- Sourceforge project forket in GitHub
+- Changed autotools to CMake
+
+1.0.2
+-----
+- solve problem with joystick
+- solve error in the third level (english version)
+
+1.0.0
+-----
+stable version
+
