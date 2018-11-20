@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Nimuh
+Type=Application
+Comment=Nimuh is a game about Andalucía
+Exec=nimuh
+TryExec=nimuh
+Icon=/usr/share/nimuh/data/nimuh.png
+Categories=Game;LogicGame;
