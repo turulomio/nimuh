@@ -192,9 +192,9 @@ namespace Martian {
 		msg_bAccept->setY(420);
 		
 		if (Language::GetInstance()->getText("accept")!="-") {
-			sprintf(tmp, Language::GetInstance()->getText("accept").c_str());
+			sprintf(tmp, "%s", Language::GetInstance()->getText("accept").c_str());
 		} else {
-			sprintf(tmp, "Accept");
+			sprintf(tmp, "%s", "Accept");
 		}
 		msg_bAccept->imageOut(Fonts::GetInstance()->getSurface_TextBitMap(Fonts::GetInstance()->getDefaultFont(), ALIGN_CENTER, tmp));
 		msg_bAccept->setAnimation("out");
@@ -209,7 +209,7 @@ namespace Martian {
 		msg_bCancel->setY(420);
 		
 		if (Language::GetInstance()->getText("cancel")!="-") {
-			sprintf(tmp, Language::GetInstance()->getText("cancel").c_str());
+			sprintf(tmp, "%s", Language::GetInstance()->getText("cancel").c_str());
 		} else {
 			sprintf(tmp, "Cancel");
 		}
