@@ -10,11 +10,11 @@ It was developed originally by the people in AUTHORS. It's last versión was 1.0
 
 This fork was made to solve problems compiling in Linux and to recover this good game. If you like it, you can help improving this game.
 
-Installation
-============
+Installation in Linux
+=====================
 If you use Gentoo, you can use this [ebuild](https://github.com/Turulomio/myportage/blob/master/games-puzzle/nimuh).
 
-If you use other Linux distribution or Windows (not tested) you must write on the code main directory and write:
+If you use other Linux distribution you must write on the code main directory and write:
 
 `mkdir build`
 
@@ -29,6 +29,16 @@ If you use other Linux distribution or Windows (not tested) you must write on th
 Execute the game with:
  
 `nimuh`
+
+Installation in Windows
+=======================
+Download and execute the CMake Win32 Installer. Make sure to set the PATH variable during installation
+
+Download and install mingw-w64. The default options work
+
+Add the mingw-w64 programs to the system PATH variable (eg. append this string C:\Program Files (x86)\mingw-w64\i686-4.9.2-posix-dwarf-rt_v4-rev2\mingw32\bin)
+
+Execute the same commands that in Linux installation
 
 Code documentation
 ==================
