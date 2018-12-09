@@ -100,7 +100,7 @@ namespace Martian {
 	
 	void Sounds::init()
 	{
-		if (Mix_OpenAudio (44100, AUDIO_S16, 2, 4096) < 0) {
+		if (Mix_OpenAudio (44100, AUDIO_S16, 2, 12288) < 0) {
 			printf ("Can't open SDL_MIXER: %s\n", SDL_GetError());
 		}
 		Mix_AllocateChannels(16);
