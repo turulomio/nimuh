@@ -34,11 +34,27 @@ Installation in Windows
 =======================
 Download and execute the CMake Win32 Installer. Make sure to set the PATH variable during installation
 
-Download and install mingw-w64. The default options work
+Windows:
 
-Add the mingw-w64 programs to the system PATH variable (eg. append this string C:\Program Files (x86)\mingw-w64\i686-4.9.2-posix-dwarf-rt_v4-rev2\mingw32\bin)
+    7 / 8 / 10
+    Visual Studio 2017
+        Desktop development with C++
+        Windows 10 SDK (10.0.14393.0)
+    SDL
+    SDL_mixer
+    yaml-cpp
 
-Execute the same commands that in Linux installation
+Compiling and running Windows:
+------------------------------
+    Check out the repository. This can be done using GitHub Desktop or other tools.
+    Install dependencies using vcpkg or use the nuget package.
+    Open a new Developer Command Prompt for VS 2017, then navigate to the repository (e.g. cd C:\GitHub\OpenRCT2).
+    Run msbuild openloco.sln
+    Run mklink /D bin\data ..\data or xcopy data bin\data /EIY
+    Run the game, bin\openloco
+
+
+
 
 Code documentation
 ==================
