@@ -20,6 +20,7 @@
 #ifndef WORLD_H_
 #define WORLD_H_
 
+#include <ctime>
 #include <SDL.h>
 #include <SDL_mixer.h>
 #include "defines.h"
