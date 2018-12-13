@@ -56,7 +56,7 @@ namespace Martian {
 	     }
 	 }
 
-	bool Score::save() {
+	void Score::save() {
 		
 		orderByScore();
 		FILE *f;
@@ -69,18 +69,15 @@ namespace Martian {
 		
 		int i;
 		for (i=0; i<items.size(); i++) {
-            if (i<nPlayers) {
+			if (i<nPlayers) {
 			   sprintf (tmp_val, "\t<item name=\"%s\" value=\"%s\" />\n", items[i].name.c_str(), items[i].value.c_str());
 			   fwrite(tmp_val, strlen(tmp_val), 1, f);
-            }
+			}
 		}
 		
 		sprintf (tmp_val, "</items>\n");
 		fwrite(tmp_val, strlen(tmp_val), 1, f);
 		
 		fclose(f);
-	
-		
 	}
-		
 }

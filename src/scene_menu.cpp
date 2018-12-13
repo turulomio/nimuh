@@ -1,6 +1,6 @@
 /*
  * DESCRIPCION DEL JUEGO
- * Copyright (C) 2007  Javier Pérez Pacheco
+ * Copyright (C) 2007  Javier PÃ©rez Pacheco
  *
  * Este juego tienen licencia Creative Commons y se permite
  * su modificacion y utilizacion libremente siempre y cuando se
@@ -11,7 +11,7 @@
  * http://creativecommons.org/licenses/by-nc-sa/2.0/es/
  *
  * PROGRAMADOR
- * Javier Pérez Pacheco
+ * Javier PÃ©rez Pacheco
  * Cadiz (Spain)
  * javielinux@gmail.com
  *
@@ -734,7 +734,7 @@ void SceneMenu::load() {
 
 	bAccept->OnClick = bAccept_SceneMenu_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("accept").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("accept").c_str());
 	bAccept->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bAccept->setAnimation("out");
 	
@@ -750,7 +750,7 @@ void SceneMenu::load() {
 	
 	bCancel->OnClick = bCancel_SceneMenu_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("cancel").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("cancel").c_str());
 	bCancel->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bCancel->setAnimation("out");
 	
@@ -763,9 +763,9 @@ void SceneMenu::load() {
 	nameUser->setY(40);
 	nameUser->hide();
 	if (Users::GetInstance()->getCurrentUser()==NULL) {
-		sprintf(tmp, Language::GetInstance()->getText("nouser").c_str());
+		sprintf(tmp, "%s", Language::GetInstance()->getText("nouser").c_str());
 	} else {
-		sprintf(tmp, Users::GetInstance()->getCurrentUser()->getName().c_str());
+		sprintf(tmp, "%s", Users::GetInstance()->getCurrentUser()->getName().c_str());
 	}
 
 	nameUser->addFrameSurface(Fonts::GetInstance()->getSurface_TextBitMap("font-texts", ALIGN_CENTER, tmp));
@@ -847,9 +847,9 @@ void SceneMenu::changeUser(int i) {
 		char tmp_name[128];
 		
 		if (Users::GetInstance()->getCurrentUser()==NULL) {
-			sprintf(tmp_name, Language::GetInstance()->getText("nouser").c_str());
+			sprintf(tmp_name, "%s", Language::GetInstance()->getText("nouser").c_str());
 		} else {
-			sprintf(tmp_name, Users::GetInstance()->getCurrentUser()->getName().c_str());
+			sprintf(tmp_name, "%s", Users::GetInstance()->getCurrentUser()->getName().c_str());
 		}
 		
 		nameUser->changeFrameSurface(0, Fonts::GetInstance()->getSurface_TextBitMap("font-texts", ALIGN_CENTER, tmp_name));
@@ -878,7 +878,7 @@ void SceneMenu::createUserButtons() {
 		ButtonUser *bUser = new ButtonUser();
 		bUser->setIndex(i);
 		
-		sprintf(tmp, Users::GetInstance()->getUser()->getName().c_str());
+		sprintf(tmp, "%s", Users::GetInstance()->getUser()->getName().c_str());
 		
 		bUser->setTitle(tmp);
 		
