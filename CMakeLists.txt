@@ -1,5 +1,6 @@
-cmake_minimum_required(VERSION 2.8.9)
-project(nimuh)
+cmake_minimum_required(VERSION 3.0.0)
+project(nimuh VERSION 1.0.4)
+
 
 configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
 
@@ -19,7 +20,7 @@ add_executable(nimuh ${SOURCES})
 IF (MINGW)
     message(STATUS "Compiling for MINGW")
 
-    set(DIST "${PROJECT_SOURCE_DIR}/dist/nimuh/")
+    set(DIST "${PROJECT_SOURCE_DIR}/dist/nimuh-${nimuh_VERSION}/")
 
     set(DATA_DIR "./data/")
 
@@ -39,6 +40,8 @@ IF (MINGW)
     install(FILES /mingw64/bin/libmad-0.dll  DESTINATION ${DIST})
     install(FILES /mingw64/bin/zlib1.dll  DESTINATION ${DIST})
     install(FILES /mingw64/bin/liblzma-5.dll  DESTINATION ${DIST})
+    install(FILES /mingw64/bin/libvorbisfile-3.dll  DESTINATION ${DIST})
+
 ELSE()
     message(STATUS "Compiling for Linux")
     set(prefix "${CMAKE_INSTALL_PREFIX}")
@@ -55,3 +58,4 @@ ELSE()
     install(DIRECTORY data DESTINATION ${DATA_DIR}/../)
     install(FILES "nimuh.desktop" DESTINATION "${APPLICATIONS_DIR}")
 ENDIF (MINGW)
+configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
