@@ -386,8 +386,8 @@ namespace Martian {
 			if ( (saved_flags & SDL_SRCALPHA) == SDL_SRCALPHA ) {
 				SDL_SetAlpha(back, saved_flags, saved_alpha);
 			}
-			SDL_Rect o = {0, 0, (int)destiny->x2-(int)destiny->x1, (int)destiny->y2-(int)destiny->y1};
-			SDL_Rect d = {(int)destiny->x1, (int)destiny->y1, (int)destiny->x2-(int)destiny->x1, (int)destiny->y2-(int)destiny->y1};
+			SDL_Rect o = {0, 0, static_cast<Uint16>(destiny->x2-destiny->x1), static_cast<Uint16>(destiny->y2-destiny->y1)};
+			SDL_Rect d = {static_cast<Sint16>(destiny->x1), static_cast<Sint16>(destiny->y1), static_cast<Uint16>(destiny->x2-(int)destiny->x1), static_cast<Uint16>(destiny->y2-(int)destiny->y1)};
 			SDL_BlitSurface(front, &o, image, &d);
 			if ( (saved_flags & SDL_SRCALPHA) == SDL_SRCALPHA ) {
 				SDL_SetAlpha(back, saved_flags, saved_alpha);
@@ -773,7 +773,7 @@ namespace Martian {
 
 	void Frame::unLoad() {
 		glDeleteTextures( 1, &texture );
-		glBindTexture(GL_TEXTURE_2D,NULL); 
+		glBindTexture(GL_TEXTURE_2D,0); 
 	}
 
 	

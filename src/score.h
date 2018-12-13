@@ -40,7 +40,7 @@ namespace Martian {
         static Score * GetInstance ();
         void setNPlayers(int n) { nPlayers = n; }
         int getNPlayers() { return nPlayers; }
-        bool save();
+	void save();
 		~Score ();
 	private :
         static Score *instance;

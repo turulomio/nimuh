@@ -166,9 +166,9 @@ void Application::createStaticsElements_InScene () {
 	Scene::msg_bAccept->setRGB(0,255,0);
 	
 	if (Language::GetInstance()->getText("accept")!="-") {
-		sprintf(tmp, Language::GetInstance()->getText("accept").c_str());
+		sprintf(tmp, "%s", Language::GetInstance()->getText("accept").c_str());
 	} else {
-		sprintf(tmp, "Accept");
+		sprintf(tmp, "%s", "Accept");
 	}
 	Scene::msg_bAccept->imageOut(Fonts::GetInstance()->getSurface_TextBitMap(Fonts::GetInstance()->getDefaultFont(), ALIGN_CENTER, tmp));
 	Scene::msg_bAccept->setAnimation("out");
@@ -183,7 +183,7 @@ void Application::createStaticsElements_InScene () {
 	Scene::msg_bCancel->setRGB(255,0,0);
 	
 	if (Language::GetInstance()->getText("cancel")!="-") {
-		sprintf(tmp, Language::GetInstance()->getText("cancel").c_str());
+		sprintf(tmp, "%s", Language::GetInstance()->getText("cancel").c_str());
 	} else {
 		sprintf(tmp, "Cancel");
 	}

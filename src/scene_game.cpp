@@ -780,7 +780,7 @@ void SceneGame::load() {
 
 	bAccept->OnClick = bAccept_SceneGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("accept").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("accept").c_str());
 	bAccept->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bAccept->setAnimation("out");
 	
@@ -796,7 +796,7 @@ void SceneGame::load() {
 	
 	bCancel->OnClick = bCancel_SceneGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("cancel").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("cancel").c_str());
 	bCancel->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bCancel->setAnimation("out");
 	
@@ -819,7 +819,7 @@ void SceneGame::load() {
 
 	bAcceptInfo->OnClick = bAcceptInfo_SceneGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("accept").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("accept").c_str());
 	bAcceptInfo->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bAcceptInfo->setAnimation("out");
 	

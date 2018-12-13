@@ -997,7 +997,7 @@ void SceneEditGame::load() {
 
 	bIndex->OnClick = bIndex_SceneEditGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("index").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("index").c_str());
 	bIndex->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bIndex->setAnimation("out");
 	
@@ -1014,7 +1014,7 @@ void SceneEditGame::load() {
 
 	bPrevious->OnClick = bPrevious_SceneEditGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("previous").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("previous").c_str());
 	bPrevious->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bPrevious->setAnimation("out");
 	
@@ -1031,7 +1031,7 @@ void SceneEditGame::load() {
 
 	bNext->OnClick = bNext_SceneEditGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("next").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("next").c_str());
 	bNext->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bNext->setAnimation("out");
 	
@@ -1223,7 +1223,7 @@ void SceneEditGame::load() {
 
 	bAccept->OnClick = bAccept_SceneEditGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("accept").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("accept").c_str());
 	bAccept->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bAccept->setAnimation("out");
 	
@@ -1240,7 +1240,7 @@ void SceneEditGame::load() {
 	
 	bCancel->OnClick = bCancel_SceneEditGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("cancel").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("cancel").c_str());
 	bCancel->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bCancel->setAnimation("out");
 	
@@ -1742,7 +1742,7 @@ void SceneEditGame::load() {
 	
 	bCancelObjects->OnClick = bCancel_SceneEditGame_OnClick;
 	
-	sprintf(tmp, Language::GetInstance()->getText("cancel").c_str());
+	sprintf(tmp, "%s", Language::GetInstance()->getText("cancel").c_str());
 	bCancelObjects->imageOut(Fonts::GetInstance()->getSurface_TextBitMap("font-computer", ALIGN_CENTER, tmp));
 	bCancelObjects->setAnimation("out");
 	
