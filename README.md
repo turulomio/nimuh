@@ -32,29 +32,31 @@ Execute the game with:
 
 Installation in Windows
 =======================
-Download and execute the CMake Win32 Installer. Make sure to set the PATH variable during installation
 
-Windows:
+Go to the MSYS2 download page and download the installer. Run this installer and install to the default location. 
+When the installation is complete, start a MinGW shell. You can do this via the start menu, or by using the bat files in your MSYS2 installation directory. There 
+are two versions; one for 32-bit and one for 64-bit compilation. We'll use 64-bit one.
 
-    7 / 8 / 10
-    Visual Studio 2017
-        Desktop development with C++
-        Windows 10 SDK (10.0.14393.0)
-    SDL
-    SDL_mixer
-    yaml-cpp
+When the command prompt comes up for the first time, you need to install the required packages to build Nimuh. Simply paste the following into your command prompt 
+(via the right mouse button) and hit enter. 
 
-Compiling and running Windows:
-------------------------------
-    Check out the repository. This can be done using GitHub Desktop or other tools.
-    Install dependencies using vcpkg or use the nuget package.
-    Open a new Developer Command Prompt for VS 2017, then navigate to the repository (e.g. cd C:\GitHub\OpenRCT2).
-    Run msbuild openloco.sln
-    Run mklink /D bin\data ..\data or xcopy data bin\data /EIY
-    Run the game, bin\openloco
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL mingw-w64-x86_64-SDL_mixer \
+mingw-w64-x86_64-libxml2 mingw-w64-x86_64-libpng mingw-w64-x86_64-openal \
+mingw-w64-x86_64-libvorbis mingw-w64-x86_64-binutils mingw-w64-x86_64-freetype \
+mingw-w64-x86_64-libzip autoconf automake-wrapper git pkgconfig make \
+mingw-w64-x86_64-SDL_image cmake
 
+Clone the nimuh repository
 
+`mkdir build`
 
+`cd build`
+
+`cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..`
+
+`make`
+
+Move nimuh.exe to project root directory and execute it
 
 Code documentation
 ==================

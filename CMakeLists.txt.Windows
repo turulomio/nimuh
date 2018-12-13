@@ -1,0 +1,25 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(nimuh)
+
+set(prefix "${PROJECT_SOURCE_DIR}")
+set(exec_prefix "${PROJECT_SOURCE_DIR}")
+
+set(DATA_DIR "./data")
+configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
+
+include_directories(src)
+
+find_package(EXPAT)
+find_package(OpenGL)
+find_package(SDL_mixer REQUIRED)
+find_package(SDL REQUIRED)
+find_package(SDL_image REQUIRED)
+
+include_directories(${SDL_INCLUDE_DIR})
+
+file(GLOB SOURCES "src/*.cpp")
+add_executable(nimuh ${SOURCES})
+target_link_libraries(nimuh ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} ${GLBINDING_LIBRARIES} ${EXPAT_LIBRARIES} ${SDL_MIXER_LIBRARIES} -lopengl32)
+
+install(TARGETS nimuh DESTINATION ${exec_prefix})
+install(DIRECTORY data DESTINATION ${DATA_DIR}/../)
