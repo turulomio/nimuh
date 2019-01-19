@@ -1,7 +1,7 @@
 import os
-f=open("../config.h.in")
+f=open("../CMakeLists.txt")
 f.readline()
-__version__=f.readline().split('"')[1]
+__version__=f.readline().split(' VERSION ')[1][:-2]
 f.close()
 print(__version__)
 os.system("""sed -i -e "41d" Doxyfile""")#Delete line 41
