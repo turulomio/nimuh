@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(nimuh VERSION 1.0.4)
+project(nimuh VERSION 1.0.5)
 
 
 configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )

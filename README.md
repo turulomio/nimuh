@@ -56,7 +56,9 @@ Clone the nimuh repository
 
 `make`
 
-Move nimuh.exe to project root directory and execute it
+`make install`
+
+Move to dist/nimuh directory and execute nimuh.exe.
 
 Code documentation
 ==================
@@ -64,6 +66,12 @@ We have generated a [Doxygen code documentation](http://turulomio.users.sourcefo
 
 Changelog
 =========
+1.0.5
+-----
+- Removed compilation warnings.
+- Windows compilation and distribution.
+- Added icon to executable in Windows
+
 1.0.4
 -----
 - Added desktop file for UNIX installation in CMakeList.txt
