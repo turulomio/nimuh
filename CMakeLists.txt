@@ -14,7 +14,6 @@ include_directories(src)
 include_directories(${SDL_INCLUDE_DIR})
 
 file(GLOB SOURCES "src/*.cpp")
-add_executable(nimuh ${SOURCES})
 
 
 IF (MINGW)
@@ -24,6 +23,7 @@ IF (MINGW)
 
     set(DATA_DIR "./data/")
 
+    add_executable(nimuh ${SOURCES} "data/nimuh.rc")
     target_link_libraries(nimuh ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} ${EXPAT_LIBRARIES} ${SDL_MIXER_LIBRARIES} -lopengl32 -static -static-libgcc -static-libstdc++)
 
     install(TARGETS nimuh DESTINATION ${DIST})
@@ -52,10 +52,12 @@ ELSE()
 
     find_package(OpenGL)
 
+    add_executable(nimuh ${SOURCES})
     target_link_libraries(nimuh ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} ${OPENGL_LIBRARIES} ${EXPAT_LIBRARIES} ${SDL_MIXER_LIBRARIES})
 
     install(TARGETS nimuh DESTINATION ${exec_prefix})
     install(DIRECTORY data DESTINATION ${DATA_DIR}/../)
     install(FILES "nimuh.desktop" DESTINATION "${APPLICATIONS_DIR}")
+    
 ENDIF (MINGW)
 configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
