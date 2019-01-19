@@ -32,7 +32,9 @@ Execute the game with:
 
 Installation in Windows
 =======================
+
 Download nimuh-X.X.X.zip versión from releases
+
 Unzip it and execute nimuh.exe
 
 Compilation in Windows
