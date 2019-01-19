@@ -32,6 +32,11 @@ Execute the game with:
 
 Installation in Windows
 =======================
+Download nimuh-X.X.X.zip versión from releases
+Unzip it and execute nimuh.exe
+
+Compilation in Windows
+======================
 
 Go to the MSYS2 download page and download the installer. Run this installer and install to the default location. 
 When the installation is complete, start a MinGW shell. You can do this via the start menu, or by using the bat files in your MSYS2 installation directory. There 
