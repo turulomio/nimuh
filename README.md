@@ -40,16 +40,22 @@ Unzip it and execute nimuh.exe
 Compilation in Windows
 ======================
 
-Go to the MSYS2 download page and download the installer. Run this installer and install to the default location. 
-When the installation is complete, start a MinGW shell. You can do this via the start menu, or by using the bat files in your MSYS2 installation directory. There 
-are two versions; one for 32-bit and one for 64-bit compilation. We'll use 64-bit one.
+Go to the MSYS2 download page and download the installer for 64 bits. Run this installer and install to the default location. 
 
-When the command prompt comes up for the first time, you need to install the required packages to build Nimuh. Simply paste the following into your command prompt 
+Follow instructions in https://www.msys2.org
+
+After updating MSYS, you need to install packages needed to compile nimuh. Simply paste the following into your command prompt 
 (via the right mouse button) and hit enter. 
 
 `pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL mingw-w64-x86_64-SDL_mixer mingw-w64-x86_64-libxml2 mingw-w64-x86_64-libpng mingw-w64-x86_64-openal mingw-w64-x86_64-libvorbis mingw-w64-x86_64-binutils mingw-w64-x86_64-freetype mingw-w64-x86_64-libzip autoconf automake-wrapper git pkgconfig make mingw-w64-x86_64-SDL_image cmake`
 
-Clone the nimuh repository
+Sometimes compiler path is not found, so just type:
+
+`export PATH=$PATH:/mingw64/bin/`
+
+Clone the nimuh repository with:
+
+`git clone https://github.com/turulomio/nimuh/`
 
 `mkdir build`
 
