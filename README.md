@@ -67,7 +67,9 @@ Clone the nimuh repository with:
 
 `make install`
 
-Move to dist/nimuh directory and execute nimuh.exe.
+If you want to distribute it, just zip directory before running it, to avoid setting user preferences for everybody.
+
+If you just want to play, move to dist/nimuh directory and execute it
 
 Code documentation
 ==================
