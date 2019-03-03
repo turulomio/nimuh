@@ -12,6 +12,11 @@
 		<en value="The multi-language option doesn't support this information to be edited" />
 	</phrase>
 	
+	<phrase name="version">
+		<es value="Versión" />
+		<en value="Version" />
+	</phrase>
+	
 	<phrase name="loading">
 		<es value="Cargando..." />
 		<en value="Loading..." />
