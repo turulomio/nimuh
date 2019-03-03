@@ -1,6 +1,6 @@
 This is a procedure to make a new release:
-1) Change version in config.h.in
-2) Add Changelog in CMakeList.txt
+1) Change version in CMakeLists.txt
+2) Add Changelog in README.md
 3) git commit -am "nimuh-version"
 4) git push
  ) Update doxygen

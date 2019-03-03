@@ -73,6 +73,10 @@ We have generated a [Doxygen code documentation](http://turulomio.users.sourcefo
 
 Changelog
 =========
+1.0.6
+-----
+- Added version to menu scene
+
 1.0.5
 -----
 - Removed compilation warnings.
