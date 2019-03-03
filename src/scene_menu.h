@@ -140,6 +140,8 @@ private:
 	Element *titleUsers;
 
 	Element *nameUser;
+
+	Element *version;
 		
 	ListView *dataUsers;
 	

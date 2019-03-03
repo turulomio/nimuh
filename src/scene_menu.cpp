@@ -415,7 +415,7 @@ void SceneMenu::load() {
 
 	pb->setBg((string)DATA_DIR + "/title.png");
 	pb->setBgBar((string)DATA_DIR + "/bg_barprogress.png");
-    pb->setPositionBar(World::width/2, 300);
+	pb->setPositionBar(World::width/2, 300);
 	pb->setText("font-texts", Language::GetInstance()->getText("loading_user"));
 	pb->draw();
 	
@@ -770,6 +770,17 @@ void SceneMenu::load() {
 
 	nameUser->addFrameSurface(Fonts::GetInstance()->getSurface_TextBitMap("font-texts", ALIGN_CENTER, tmp));
 	
+	version = new Element();
+	version->setCurrentScale(0.85);
+	version->setAlign(ALIGN_LEFT);
+	version->setVAlign(VALIGN_CENTER);
+	version->setX(10);
+	version->setY(15);
+	version->hide();
+	sprintf(tmp, "%s %s", Language::GetInstance()->getText("version").c_str(), VERSION);
+
+	version->addFrameSurface(Fonts::GetInstance()->getSurface_TextBitMap("font-texts", ALIGN_CENTER, tmp));
+	
 	bChangeUser = new Button();	
 	bChangeUser->setSoundOn("click0");
 	bChangeUser->setScales(0.9, 0.94);
@@ -942,8 +953,10 @@ void SceneMenu::drawSceneMain () {
     if ( Chronometer::GetInstance()->verifyTime("intro_menu", 5600) ) {
         title->setMovementSmoothY(0);
 		nameUser->show();
+		version->show();
 		bChangeUser->show();
-        nameUser->setFadeIn(600);
+		nameUser->setFadeIn(600);
+		version->setFadeIn(600);
 		bChangeUser->setFadeIn(600);
 		bPlay->setSensitive(true);
 		bPreferences->setSensitive(true);
@@ -969,6 +982,9 @@ void SceneMenu::drawSceneMainByIndexZ(int z) {
 	}
 	if (nameUser->getIndexZ() == z) {
 		nameUser->draw();
+	}
+	if (version->getIndexZ() == z) {
+		version->draw();
 	}
 	if (earth->getIndexZ() == z) {
 		earth->draw();
@@ -1405,6 +1421,7 @@ void SceneMenu::unLoad() {
 	delete title;
 	delete earth;
 	delete nameUser;
+	delete version;
 	delete titleUsers;
 	
 	delete frameUp;
