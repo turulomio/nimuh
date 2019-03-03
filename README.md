@@ -47,11 +47,7 @@ are two versions; one for 32-bit and one for 64-bit compilation. We'll use 64-bi
 When the command prompt comes up for the first time, you need to install the required packages to build Nimuh. Simply paste the following into your command prompt 
 (via the right mouse button) and hit enter. 
 
-pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL mingw-w64-x86_64-SDL_mixer \
-mingw-w64-x86_64-libxml2 mingw-w64-x86_64-libpng mingw-w64-x86_64-openal \
-mingw-w64-x86_64-libvorbis mingw-w64-x86_64-binutils mingw-w64-x86_64-freetype \
-mingw-w64-x86_64-libzip autoconf automake-wrapper git pkgconfig make \
-mingw-w64-x86_64-SDL_image cmake
+`pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL mingw-w64-x86_64-SDL_mixer mingw-w64-x86_64-libxml2 mingw-w64-x86_64-libpng mingw-w64-x86_64-openal mingw-w64-x86_64-libvorbis mingw-w64-x86_64-binutils mingw-w64-x86_64-freetype mingw-w64-x86_64-libzip autoconf automake-wrapper git pkgconfig make mingw-w64-x86_64-SDL_image cmake`
 
 Clone the nimuh repository
 
