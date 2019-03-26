@@ -61,6 +61,8 @@ ELSE()
     install(TARGETS nimuh DESTINATION ${exec_prefix})
     install(DIRECTORY data DESTINATION ${DATA_DIR}/../)
     install(FILES "nimuh.desktop" DESTINATION "${APPLICATIONS_DIR}")
-    
+
+    add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake_uninstall.cmake)
+
 ENDIF (MINGW)
 configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
