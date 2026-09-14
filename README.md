@@ -10,25 +10,29 @@ It was developed originally by the people in AUTHORS. It's last versión was 1.0
 
 This fork was made to solve problems compiling in Linux and to recover this good game. If you like it, you can help improving this game.
 
-Installation in Linux
-=====================
+Compilation and Installation in Linux
+=====================================
 If you use Gentoo, you can use this [ebuild](https://github.com/Turulomio/myportage/blob/master/games-puzzle/nimuh).
 
-If you use other Linux distribution you must write on the code main directory and write:
+To compile and install on Linux, run the following commands from the project root directory:
 
-`mkdir build`
-
-`cd build`
-
-`cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..`
-
-`make`
-
-`make install`
+```bash
+cmake -B build -DCMAKE_INSTALL_PREFIX=/usr
+cmake --build build
+sudo cmake --install build
+```
 
 Execute the game with:
  
-`nimuh`
+```bash
+nimuh
+```
+
+To uninstall:
+
+```bash
+sudo cmake --build build --target uninstall
+```
 
 Installation in Windows
 =======================
