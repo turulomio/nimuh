@@ -20,7 +20,7 @@ help = "Compila e instala Nimuh en el directorio especificado desde Linux"
 args = [{ name = "prefix", positional = true, required = true, help = "Directorio de instalación (CMAKE_INSTALL_PREFIX)" }]
 sequence = [
     "cmake -B build -DCMAKE_INSTALL_PREFIX=${prefix} -DCMAKE_BUILD_TYPE=Release",
-    "cmake --build build",
+    "cmake --build build -j 8",
     "sudo cmake --install build",
 ]
 
@@ -29,7 +29,7 @@ sequence = [
 help = "Compila los binarios para Linux en el directorio build"
 sequence = [
     "cmake -B build -DCMAKE_BUILD_TYPE=Release",
-    "cmake --build build",
+    "cmake --build build -j 8",
 ]
 
 # 3. Binarios Windows (compilado desde Linux con MinGW)
@@ -37,7 +37,7 @@ sequence = [
 help = "Compila e instala los binarios para Windows desde Linux (cross-compilation con MinGW)"
 sequence = [
     "cmake -B build-win -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=x86_64-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release",
-    "cmake --build build-win",
+    "cmake --build build-win -j 8",
     "cmake --install build-win",
 ]
 
