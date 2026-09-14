@@ -20,6 +20,14 @@ Tasks are managed with [Poe the Poet](https://github.com/nat-n/poethepoet) (`poe
 pip install poethepoet
 ```
 
+### Requirements on Gentoo
+
+To build the standalone single-file package on Gentoo, install `makeself`:
+
+```bash
+emerge app-arch/makeself
+```
+
 ### Install from source
 
 To compile and install Nimuh to a specific directory prefix (such as `/usr`):
@@ -36,16 +44,16 @@ nimuh
 
 ### Compile standalone binaries for Linux
 
-To compile the Linux binary and copy all data and media files into `dist/binaries-linux/`:
+To compile the Linux binary, bundle all data and media files, and generate a single self-extracting executable (`dist/nimuh-<version>-linux.run`) using `makeself`:
 
 ```bash
 poe binaries-linux
 ```
 
-Execute the binary directly with:
+Execute the single-file package directly with:
 
 ```bash
-./dist/binaries-linux/nimuh
+./dist/nimuh-<version>-linux.run
 ```
 
 ### Uninstall

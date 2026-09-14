@@ -26,14 +26,18 @@ sequence = [
 
 # 2. Binarios Linux
 [tool.poe.tasks.binaries-linux]
-help = "Compila los binarios para Linux y los genera en dist/binaries-linux/"
-sequence = [
-    "cmake -B build -DCMAKE_BUILD_TYPE=Release -DDATA_DIR=./data/",
-    "cmake --build build -j 8",
-    "cmake -E make_directory dist/binaries-linux",
-    "cmake -E copy build/nimuh dist/binaries-linux/nimuh",
-    "cmake -E copy_directory data dist/binaries-linux/data",
-]
+help = "Compila y empaqueta los binarios para Linux con makeself"
+shell = """
+set -e
+VERSION=$(python3 -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
+cmake -B build -DCMAKE_BUILD_TYPE=Release -DDATA_DIR=./data/
+cmake --build build -j 8
+cmake -E make_directory dist/binaries-linux
+cmake -E copy build/nimuh dist/binaries-linux/nimuh
+cmake -E copy_directory data dist/binaries-linux/data
+makeself dist/binaries-linux "dist/nimuh-${VERSION}-linux.run" "Nimuh ${VERSION}" ./nimuh
+cmake -E rm -rf dist/binaries-linux
+"""
 
 # 3. Binarios Windows (compilado desde Linux con MinGW)
 [tool.poe.tasks.binaries-windows]
