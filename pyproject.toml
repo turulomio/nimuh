@@ -21,7 +21,7 @@ args = [{ name = "prefix", positional = true, required = true, help = "Directori
 sequence = [
     "cmake -B build -DCMAKE_INSTALL_PREFIX=${prefix} -DDATA_DIR=${prefix}/share/nimuh/data -DCMAKE_BUILD_TYPE=Release",
     "cmake --build build -j 8",
-    "sudo cmake --install build",
+    "cmake --install build",
 ]
 
 # 2. Binarios Linux
