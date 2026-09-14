@@ -10,16 +10,22 @@ It was developed originally by the people in AUTHORS. It's last versión was 1.0
 
 This fork was made to solve problems compiling in Linux and to recover this good game. If you like it, you can help improving this game.
 
-Compilation and Installation in Linux from source
-==================================================
+Compilation and Installation in Linux
+=====================================
 If you use Gentoo, you can use this [ebuild](https://github.com/turulomio/myportage/blob/master/games-puzzle/nimuh).
 
-To compile and install on Linux, run the following commands from the project root directory:
+Tasks are managed with [Poe the Poet](https://github.com/nat-n/poethepoet) (`poe`). If you don't have it installed, you can install it via pip:
 
 ```bash
-cmake -B build -DCMAKE_INSTALL_PREFIX=/usr
-cmake --build build
-sudo cmake --install build
+pip install poethepoet
+```
+
+### Install from source
+
+To compile and install Nimuh to a specific directory prefix (such as `/usr`):
+
+```bash
+poe sources-linux /usr
 ```
 
 Execute the game with:
@@ -28,50 +34,58 @@ Execute the game with:
 nimuh
 ```
 
-To uninstall:
+### Compile binaries without installing
+
+To compile the binaries for Linux into the `build` directory:
 
 ```bash
-sudo cmake --build build --target uninstall
+poe binaries-linux
 ```
+
+Execute the binary directly with:
+
+```bash
+./build/nimuh
+```
+
+### Uninstall
+
+To uninstall Nimuh from Linux:
+
+```bash
+poe uninstall
+```
+
+Compilation for Windows (cross-compilation from Linux)
+======================================================
+You can compile and package the Windows binaries directly from Linux using MinGW:
+
+```bash
+poe binaries-windows
+```
+
+This compiles the game and copies the executable and required DLLs into `dist/nimuh-<version>/`.
+
+Requirements for cross-compilation on Gentoo
+--------------------------------------------
+To cross-compile the Windows binaries on Gentoo, the following components are required:
+
+1. **MinGW-w64 toolchain**:
+   Install `dev-util/mingw64-toolchain` to obtain `x86_64-w64-mingw32-gcc`, `x86_64-w64-mingw32-g++`, and `x86_64-w64-mingw32-windres`:
+   ```bash
+   emerge dev-util/mingw64-toolchain
+   ```
+
+2. **Windows libraries and DLLs in `/mingw64`**:
+   The build requires MinGW-compiled development libraries and runtime DLLs available under `/mingw64`:
+   - Headers and libraries in `/mingw64/include` and `/mingw64/lib` for CMake dependencies (SDL, SDL_image, SDL_mixer, libexpat, etc.).
+   - Runtime DLLs in `/mingw64/bin/` (such as `SDL.dll`, `SDL_image.dll`, `libSDL_mixer-1-2-0.dll`, `libexpat-1.dll`, etc.) which are copied into the `dist/nimuh-<version>/` distribution directory.
+
 
 Installation in Windows from binaries
 ======================================
+1. Download the `nimuh-X.X.X.zip` version from releases.
+2. Unzip it.
+3. Execute `nimuh.exe`.
 
-Download nimuh-X.X.X.zip versión from releases
-
-Unzip it and execute nimuh.exe
-
-Compilation in Windows from sources
-====================================
-
-Go to the MSYS2 download page and download the installer for 64 bits. Run this installer and install to the default location. 
-
-Follow instructions in https://www.msys2.org
-
-After updating MSYS, you need to install packages needed to compile nimuh. Simply paste the following into your command prompt 
-(via the right mouse button) and hit enter. 
-
-`pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL mingw-w64-x86_64-SDL_mixer mingw-w64-x86_64-libxml2 mingw-w64-x86_64-libpng mingw-w64-x86_64-openal mingw-w64-x86_64-libvorbis mingw-w64-x86_64-binutils mingw-w64-x86_64-freetype mingw-w64-x86_64-libzip autoconf automake-wrapper git pkgconfig make mingw-w64-x86_64-SDL_image cmake`
-
-Sometimes compiler path is not found, so just type:
-
-`export PATH=$PATH:/mingw64/bin/`
-
-Clone the nimuh repository with:
-
-`git clone https://github.com/turulomio/nimuh/`
-
-`mkdir build`
-
-`cd build`
-
-`cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..`
-
-`make`
-
-`make install`
-
-If you want to distribute it, just zip directory before running it, to avoid setting user preferences for everybody.
-
-If you just want to play, move to dist/nimuh directory and execute it
 
