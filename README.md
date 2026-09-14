@@ -30,10 +30,14 @@ emerge app-arch/makeself
 
 ### Install from source
 
-To compile and install Nimuh to a specific directory prefix (such as `/usr`):
+To compile and install Nimuh to a specific directory prefix:
 
 ```bash
-poe sources-linux /usr
+# System-wide (e.g. /usr)
+sudo poe sources-linux /usr
+
+# User local directory (no root required)
+poe sources-linux ~/.local
 ```
 
 Execute the game with:

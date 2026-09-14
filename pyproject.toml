@@ -138,9 +138,9 @@ cmake -E rm -rf "dist/nimuh-${VERSION}"
 '''
 
 # 4. Desinstalación en Linux
-[tool.poe.tasks.uninstall]
+[tool.poe.tasks.sources-linux-uninstall]
 help = "Desinstala Nimuh previamente instalado en Linux"
-cmd = "sudo cmake --build build --target uninstall"
+cmd = "cmake --build build --target uninstall"
 
 # 5. Procedimiento para nueva release
 [tool.poe.tasks.procedure]
