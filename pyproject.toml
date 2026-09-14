@@ -1,0 +1,51 @@
+[project]
+name = "nimuh"
+version = "1.0.6"
+description = "Nimuh - Juego de puzzle"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+
+# 1. Instalación en /usr/local desde Linux
+[tool.poe.tasks.install]
+help = "Compila e instala Nimuh en /usr/local desde Linux"
+sequence = [
+    "cmake -B build -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Release",
+    "cmake --build build",
+    "sudo cmake --install build",
+]
+
+# 2. Binarios Linux
+[tool.poe.tasks.binaries-linux]
+help = "Compila los binarios para Linux en el directorio build"
+sequence = [
+    "cmake -B build -DCMAKE_BUILD_TYPE=Release",
+    "cmake --build build",
+]
+
+# 3. Binarios Windows (compilado desde Linux con MinGW)
+[tool.poe.tasks.binaries-windows]
+help = "Compila e instala los binarios para Windows desde Linux (cross-compilation con MinGW)"
+sequence = [
+    "cmake -B build-win -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=x86_64-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release",
+    "cmake --build build-win",
+    "cmake --install build-win",
+]
+
+# Aliases adicionales para mayor comodidad de uso
+[tool.poe.tasks.install-local]
+ref = "install"
+help = "Alias de 'install'"
+
+[tool.poe.tasks.build-linux]
+ref = "binaries-linux"
+help = "Alias de 'binaries-linux'"
+
+[tool.poe.tasks.build-windows]
+ref = "binaries-windows"
+help = "Alias de 'binaries-windows'"
