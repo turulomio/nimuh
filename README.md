@@ -70,7 +70,7 @@ poe uninstall
 
 Cross-compilation for Windows (from Linux / Gentoo)
 ===================================================
-You can compile and package the Windows binaries directly from Linux using the MinGW toolchain (`dev-util/mingw64-toolchain` on Gentoo).
+You can compile and package Windows binaries directly from Linux using the MinGW toolchain (`dev-util/mingw64-toolchain` on Gentoo, which includes both 64-bit `x86_64-w64-mingw32` and 32-bit `i686-w64-mingw32` compilers).
 
 ### 1. Requirements on Gentoo
 Install the MinGW-w64 toolchain:
@@ -78,32 +78,32 @@ Install the MinGW-w64 toolchain:
 emerge dev-util/mingw64-toolchain
 ```
 
-### 2. Build Windows package
-To compile and package the Windows version:
+### 2. Build Windows packages (64-bit and 32-bit)
+To compile and package both Windows versions:
 
 ```bash
 poe binaries-windows
 ```
 
 The `poe binaries-windows` task automatically:
-1. Checks for required Windows dependencies and downloads/unpacks them into `.mingw64/` without requiring root permissions.
-2. Cross-compiles `nimuh.exe` with MinGW and places it, along with all runtime DLLs and assets, into `dist/nimuh-<version>/`.
-3. Packages everything into a single standalone portable executable with the game's icon:
-   ```
-   dist/nimuh-<version>-windows-portable.exe
-   ```
-   *(When launched on Windows, it transparently unpacks into `%TEMP%\nimuh-<version>\` and starts the game).*
+1. Checks for required Windows dependencies and downloads/unpacks them into `.mingw64/` (64-bit) and `.mingw32/` (32-bit) without requiring root permissions.
+2. Cross-compiles `nimuh.exe` for both architectures (x64 and x86) with MinGW, including all runtime DLLs and assets.
+3. Packages everything into standalone portable executables with the game's icon:
+   - `dist/nimuh-<version>-windows-x64-portable.exe` (64-bit)
+   - `dist/nimuh-<version>-windows-x86-portable.exe` (32-bit)
+   *(When launched on Windows, they transparently unpack into `%TEMP%\nimuh-<version>-x64\` or `%TEMP%\nimuh-<version>-x86\` and start the game).*
+4. Cleans up intermediate build folders and temporary payload directories.
 
 ### Dependencies setup
-The `poe binaries-windows` task automatically manages all required dependencies locally inside `.mingw64/` without requiring root permissions.
+The `poe binaries-windows` task automatically manages all required dependencies locally inside `.mingw64/` and `.mingw32/` without requiring root permissions.
 
-If you prefer to install the Windows dependencies system-wide in `/mingw64`, you can download and unpack the MSYS2 MinGW64 packages (`*.pkg.tar.zst`) directly into `/` from the [MSYS2 MinGW64 Repository](https://repo.msys2.org/mingw/mingw64/).
+If you prefer to install the Windows dependencies system-wide in `/mingw64` or `/mingw32`, you can download and unpack the MSYS2 MinGW packages (`*.pkg.tar.zst`) directly into `/` from the [MSYS2 Repository](https://repo.msys2.org/mingw/).
 
 
 
 Installation in Windows from binaries
 ======================================
-1. Download `nimuh-<version>-windows-portable.exe` from releases.
-2. Execute `nimuh-<version>-windows-portable.exe` directly (no installation needed).
+1. Download `nimuh-<version>-windows-x64-portable.exe` (64-bit) or `nimuh-<version>-windows-x86-portable.exe` (32-bit) from releases.
+2. Execute the file directly (no installation needed).
 
 

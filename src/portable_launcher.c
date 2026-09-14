@@ -7,7 +7,15 @@
 #define PAYLOAD_RES_ID 100
 
 #ifndef NIMUH_VERSION_STR
-#define NIMUH_VERSION_STR "1.0.6"
+#error "NIMUH_VERSION_STR must be defined at compile time"
+#endif
+
+#ifndef NIMUH_ARCH_STR
+#if defined(_WIN64) || defined(__x86_64__)
+#define NIMUH_ARCH_STR "x64"
+#else
+#define NIMUH_ARCH_STR "x86"
+#endif
 #endif
 
 static void create_parent_dirs(char* filepath) {
@@ -124,7 +132,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         return 1;
     }
 
-    snprintf(targetDir, sizeof(targetDir), "%snimuh-%s", tempPath, NIMUH_VERSION_STR);
+    snprintf(targetDir, sizeof(targetDir), "%snimuh-%s-%s", tempPath, NIMUH_VERSION_STR, NIMUH_ARCH_STR);
     snprintf(exePath, sizeof(exePath), "%s\\nimuh.exe", targetDir);
 
     if (GetFileAttributesA(exePath) == INVALID_FILE_ATTRIBUTES) {
