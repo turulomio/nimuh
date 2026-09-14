@@ -87,7 +87,9 @@ else()
 
     include(GNUInstallDirs)
 
-    set(DATA_DIR "${CMAKE_INSTALL_FULL_DATADIR}/nimuh/data")
+    if(NOT DATA_DIR)
+        set(DATA_DIR "${CMAKE_INSTALL_FULL_DATADIR}/nimuh/data")
+    endif()
 
     find_package(OpenGL REQUIRED)
 

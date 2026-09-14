@@ -19,17 +19,20 @@ default_array_item_task_type = "cmd"
 help = "Compila e instala Nimuh en el directorio especificado desde Linux"
 args = [{ name = "prefix", positional = true, required = true, help = "Directorio de instalación (CMAKE_INSTALL_PREFIX)" }]
 sequence = [
-    "cmake -B build -DCMAKE_INSTALL_PREFIX=${prefix} -DCMAKE_BUILD_TYPE=Release",
+    "cmake -B build -DCMAKE_INSTALL_PREFIX=${prefix} -DDATA_DIR=${prefix}/share/nimuh/data -DCMAKE_BUILD_TYPE=Release",
     "cmake --build build -j 8",
     "sudo cmake --install build",
 ]
 
 # 2. Binarios Linux
 [tool.poe.tasks.binaries-linux]
-help = "Compila los binarios para Linux en el directorio build"
+help = "Compila los binarios para Linux y los genera en dist/binaries-linux/"
 sequence = [
-    "cmake -B build -DCMAKE_BUILD_TYPE=Release",
+    "cmake -B build -DCMAKE_BUILD_TYPE=Release -DDATA_DIR=./data/",
     "cmake --build build -j 8",
+    "cmake -E make_directory dist/binaries-linux",
+    "cmake -E copy build/nimuh dist/binaries-linux/nimuh",
+    "cmake -E copy_directory data dist/binaries-linux/data",
 ]
 
 # 3. Binarios Windows (compilado desde Linux con MinGW)

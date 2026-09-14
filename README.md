@@ -34,9 +34,9 @@ Execute the game with:
 nimuh
 ```
 
-### Compile binaries without installing
+### Compile standalone binaries for Linux
 
-To compile the binaries for Linux into the `build` directory:
+To compile the Linux binary and copy all data and media files into `dist/binaries-linux/`:
 
 ```bash
 poe binaries-linux
@@ -45,7 +45,7 @@ poe binaries-linux
 Execute the binary directly with:
 
 ```bash
-./build/nimuh
+./dist/binaries-linux/nimuh
 ```
 
 ### Uninstall
