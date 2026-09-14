@@ -9,13 +9,17 @@ requires-python = ">=3.8"
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poe]
+default_array_item_task_type = "cmd"
+
 [tool.poe.tasks]
 
-# 1. Instalación en /usr/local desde Linux
+# 1. Instalación en directorio especificado desde Linux
 [tool.poe.tasks.install]
-help = "Compila e instala Nimuh en /usr/local desde Linux"
+help = "Compila e instala Nimuh en el directorio especificado desde Linux"
+args = [{ name = "prefix", positional = true, required = true, help = "Directorio de instalación (CMAKE_INSTALL_PREFIX)" }]
 sequence = [
-    "cmake -B build -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Release",
+    "cmake -B build -DCMAKE_INSTALL_PREFIX=${prefix} -DCMAKE_BUILD_TYPE=Release",
     "cmake --build build",
     "sudo cmake --install build",
 ]
@@ -36,16 +40,3 @@ sequence = [
     "cmake --build build-win",
     "cmake --install build-win",
 ]
-
-# Aliases adicionales para mayor comodidad de uso
-[tool.poe.tasks.install-local]
-ref = "install"
-help = "Alias de 'install'"
-
-[tool.poe.tasks.build-linux]
-ref = "binaries-linux"
-help = "Alias de 'binaries-linux'"
-
-[tool.poe.tasks.build-windows]
-ref = "binaries-windows"
-help = "Alias de 'binaries-windows'"

@@ -10,9 +10,9 @@ It was developed originally by the people in AUTHORS. It's last versión was 1.0
 
 This fork was made to solve problems compiling in Linux and to recover this good game. If you like it, you can help improving this game.
 
-Compilation and Installation in Linux
-=====================================
-If you use Gentoo, you can use this [ebuild](https://github.com/Turulomio/myportage/blob/master/games-puzzle/nimuh).
+Compilation and Installation in Linux from source
+==================================================
+If you use Gentoo, you can use this [ebuild](https://github.com/turulomio/myportage/blob/master/games-puzzle/nimuh).
 
 To compile and install on Linux, run the following commands from the project root directory:
 
@@ -34,15 +34,15 @@ To uninstall:
 sudo cmake --build build --target uninstall
 ```
 
-Installation in Windows
-=======================
+Installation in Windows from binaries
+======================================
 
 Download nimuh-X.X.X.zip versión from releases
 
 Unzip it and execute nimuh.exe
 
-Compilation in Windows
-======================
+Compilation in Windows from sources
+====================================
 
 Go to the MSYS2 download page and download the installer for 64 bits. Run this installer and install to the default location. 
 
@@ -74,38 +74,4 @@ Clone the nimuh repository with:
 If you want to distribute it, just zip directory before running it, to avoid setting user preferences for everybody.
 
 If you just want to play, move to dist/nimuh directory and execute it
-
-Code documentation
-==================
-We have generated a [Doxygen code documentation](http://turulomio.users.sourceforge.net/doxygen/nimuh/index.html).
-
-Changelog
-=========
-1.0.6
------
-- Added version to menu scene
-
-1.0.5
------
-- Removed compilation warnings.
-- Windows compilation and distribution.
-- Added icon to executable in Windows
-
-1.0.4
------
-- Added desktop file for UNIX installation in CMakeList.txt
-
-1.0.3
------
-- Sourceforge project forket in GitHub
-- Changed autotools to CMake
-
-1.0.2
------
-- Solve problem with joystick
-- Solve error in the third level (english version)
-
-1.0.0
------
-- Stable version
 
