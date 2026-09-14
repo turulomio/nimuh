@@ -127,6 +127,14 @@ fi
 cmake -B build-win -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=x86_64-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release
 cmake --build build-win -j 8
 cmake --install build-win
+VERSION=$(python3 -c "import tomllib; print(tomllib.load(open('pyproject.toml', 'rb'))['project']['version'])")
+echo "Generando ejecutable portable dist/nimuh-${VERSION}-windows-portable.exe..."
+tar -czf dist/payload.tar.gz -C "dist/nimuh-${VERSION}" .
+printf '1 ICON "data/nimuh.ico"\n100 RCDATA "dist/payload.tar.gz"\n' > build-win/launcher.rc
+x86_64-w64-mingw32-windres build-win/launcher.rc -O coff -o build-win/launcher.res
+x86_64-w64-mingw32-gcc -mwindows -O2 -s -DNIMUH_VERSION_STR=\"${VERSION}\" -I.mingw64/mingw64/include src/portable_launcher.c build-win/launcher.res .mingw64/mingw64/lib/libz.a -o "dist/nimuh-${VERSION}-windows-portable.exe"
+rm -f dist/payload.tar.gz
+cmake -E rm -rf "dist/nimuh-${VERSION}"
 '''
 
 # 4. Desinstalación en Linux

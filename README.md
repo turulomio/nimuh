@@ -81,9 +81,14 @@ To compile and package the Windows version:
 poe binaries-windows
 ```
 
-The `poe binaries-windows` task automatically checks for the required Windows libraries (SDL 1.2, SDL_image, SDL_mixer, EXPAT, and runtime DLLs). If they are not already present in `/mingw64`, it will automatically download and unpack them into `.mingw64/` within the project root.
-
-The executable `nimuh.exe`, required DLLs, and data assets will be placed into `dist/nimuh-<version>/`.
+The `poe binaries-windows` task automatically:
+1. Checks for required Windows dependencies and downloads/unpacks them into `.mingw64/` without requiring root permissions.
+2. Cross-compiles `nimuh.exe` with MinGW and places it, along with all runtime DLLs and assets, into `dist/nimuh-<version>/`.
+3. Packages everything into a single standalone portable executable with the game's icon:
+   ```
+   dist/nimuh-<version>-windows-portable.exe
+   ```
+   *(When launched on Windows, it transparently unpacks into `%TEMP%\nimuh-<version>\` and starts the game).*
 
 ### Dependencies setup
 The `poe binaries-windows` task automatically manages all required dependencies locally inside `.mingw64/` without requiring root permissions.
@@ -94,8 +99,7 @@ If you prefer to install the Windows dependencies system-wide in `/mingw64`, you
 
 Installation in Windows from binaries
 ======================================
-1. Download the `nimuh-X.X.X.zip` version from releases.
-2. Unzip it.
-3. Execute `nimuh.exe`.
+1. Download `nimuh-<version>-windows-portable.exe` from releases.
+2. Execute `nimuh-<version>-windows-portable.exe` directly (no installation needed).
 
 
