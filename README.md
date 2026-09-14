@@ -10,98 +10,100 @@ It was developed originally by the people in AUTHORS. It's last versión was 1.0
 
 This fork was made to solve problems compiling in Linux and to recover this good game. If you like it, you can help improving this game.
 
-Installation in Linux
-=====================
-If you use Gentoo, you can use this [ebuild](https://github.com/Turulomio/myportage/blob/master/games-puzzle/nimuh).
+Compilation and Installation in Linux
+=====================================
+If you use Gentoo, you can use this [ebuild](https://github.com/turulomio/myportage/blob/master/games-puzzle/nimuh).
 
-If you use other Linux distribution you must write on the code main directory and write:
+Tasks are managed with [Poe the Poet](https://github.com/nat-n/poethepoet) (`poe`). If you don't have it installed, you can install it via pip:
 
-`mkdir build`
+```bash
+pip install poethepoet
+```
 
-`cd build`
+### Requirements on Gentoo
 
-`cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..`
+To build the standalone single-file package on Gentoo, install `makeself`:
 
-`make`
+```bash
+emerge app-arch/makeself
+```
 
-`make install`
+### Install from source
+
+To compile and install Nimuh to a specific directory prefix:
+
+```bash
+# System-wide (e.g. /usr)
+sudo poe sources-linux /usr
+
+# User local directory (no root required)
+poe sources-linux ~/.local
+```
 
 Execute the game with:
  
-`nimuh`
+```bash
+nimuh
+```
 
-Installation in Windows
-=======================
+### Compile standalone binaries for Linux
 
-Download nimuh-X.X.X.zip versión from releases
+To compile the Linux binary, bundle all data and media files, and generate a single self-extracting executable (`dist/nimuh-<version>-linux.run`) using `makeself`:
 
-Unzip it and execute nimuh.exe
+```bash
+poe binaries-linux
+```
 
-Compilation in Windows
-======================
+Execute the single-file package directly with:
 
-Go to the MSYS2 download page and download the installer for 64 bits. Run this installer and install to the default location. 
+```bash
+./dist/nimuh-<version>-linux.run
+```
 
-Follow instructions in https://www.msys2.org
+### Uninstall
 
-After updating MSYS, you need to install packages needed to compile nimuh. Simply paste the following into your command prompt 
-(via the right mouse button) and hit enter. 
+To uninstall Nimuh from Linux:
 
-`pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-SDL mingw-w64-x86_64-SDL_mixer mingw-w64-x86_64-libxml2 mingw-w64-x86_64-libpng mingw-w64-x86_64-openal mingw-w64-x86_64-libvorbis mingw-w64-x86_64-binutils mingw-w64-x86_64-freetype mingw-w64-x86_64-libzip autoconf automake-wrapper git pkgconfig make mingw-w64-x86_64-SDL_image cmake`
+```bash
+poe uninstall
+```
 
-Sometimes compiler path is not found, so just type:
+Cross-compilation for Windows (from Linux / Gentoo)
+===================================================
+You can compile and package Windows binaries directly from Linux using the MinGW toolchain (`dev-util/mingw64-toolchain` on Gentoo, which includes both 64-bit `x86_64-w64-mingw32` and 32-bit `i686-w64-mingw32` compilers).
 
-`export PATH=$PATH:/mingw64/bin/`
+### 1. Requirements on Gentoo
+Install the MinGW-w64 toolchain:
+```bash
+emerge dev-util/mingw64-toolchain
+```
 
-Clone the nimuh repository with:
+### 2. Build Windows packages (64-bit and 32-bit)
+To compile and package both Windows versions:
 
-`git clone https://github.com/turulomio/nimuh/`
+```bash
+poe binaries-windows
+```
 
-`mkdir build`
+The `poe binaries-windows` task automatically:
+1. Checks for required Windows dependencies and downloads/unpacks them into `.mingw64/` (64-bit) and `.mingw32/` (32-bit) without requiring root permissions.
+2. Cross-compiles `nimuh.exe` for both architectures (x64 and x86) with MinGW, including all runtime DLLs and assets.
+3. Packages everything into standalone portable executables with the game's icon:
+   - `dist/nimuh-<version>-windows-x64-portable.exe` (64-bit)
+   - `dist/nimuh-<version>-windows-x86-portable.exe` (32-bit)
+   *(When launched on Windows, they transparently unpack into `%TEMP%\nimuh-<version>-x64\` or `%TEMP%\nimuh-<version>-x86\` and start the game).*
+4. Cleans up intermediate build folders and temporary payload directories.
 
-`cd build`
+### Dependencies setup
+The `poe binaries-windows` task automatically manages all required dependencies locally inside `.mingw64/` and `.mingw32/` without requiring root permissions.
 
-`cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..`
+If you prefer to install the Windows dependencies system-wide in `/mingw64` or `/mingw32`, you can download and unpack the MSYS2 MinGW packages (`*.pkg.tar.zst`) directly into `/` from the [MSYS2 Repository](https://repo.msys2.org/mingw/).
 
-`make`
 
-`make install`
 
-If you want to distribute it, just zip directory before running it, to avoid setting user preferences for everybody.
+Installation in Windows from binaries
+======================================
+1. Download `nimuh-<version>-windows-x64-portable.exe` (64-bit) or `nimuh-<version>-windows-x86-portable.exe` (32-bit) from releases.
+2. Execute the file directly (no installation needed).
 
-If you just want to play, move to dist/nimuh directory and execute it
-
-Code documentation
-==================
-We have generated a [Doxygen code documentation](http://turulomio.users.sourceforge.net/doxygen/nimuh/index.html).
-
-Changelog
-=========
-1.0.6
------
-- Added version to menu scene
-
-1.0.5
------
-- Removed compilation warnings.
-- Windows compilation and distribution.
-- Added icon to executable in Windows
-
-1.0.4
------
-- Added desktop file for UNIX installation in CMakeList.txt
-
-1.0.3
------
-- Sourceforge project forket in GitHub
-- Changed autotools to CMake
-
-1.0.2
------
-- Solve problem with joystick
-- Solve error in the third level (english version)
-
-1.0.0
------
-- Stable version
 

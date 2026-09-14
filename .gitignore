@@ -1,0 +1,6 @@
+CMakeCache.txt
+CMakeFiles
+src/config.h
+build*
+dist
+.mingw*

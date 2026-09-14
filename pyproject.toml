@@ -1,0 +1,202 @@
+[project]
+name = "nimuh"
+description = "Nimuh - Juego de puzzle"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe]
+default_array_item_task_type = "cmd"
+
+[tool.poe.tasks]
+
+# 1. Instalación en directorio especificado desde Linux
+[tool.poe.tasks.sources-linux]
+help = "Compila e instala Nimuh en el directorio especificado desde Linux"
+args = [{ name = "prefix", positional = true, required = true, help = "Directorio de instalación (CMAKE_INSTALL_PREFIX)" }]
+sequence = [
+    "cmake -B build -DCMAKE_INSTALL_PREFIX=${prefix} -DDATA_DIR=${prefix}/share/nimuh/data -DCMAKE_BUILD_TYPE=Release",
+    "cmake --build build -j 8",
+    "cmake --install build",
+]
+
+# 2. Binarios Linux
+[tool.poe.tasks.binaries-linux]
+help = "Compila y empaqueta los binarios para Linux con makeself"
+shell = '''
+set -e
+VERSION=$(python3 -c "import re; print(re.search(r'project\s*\([^)]*VERSION\s+([0-9.]+)', open('CMakeLists.txt').read()).group(1))")
+cmake -B build -DCMAKE_BUILD_TYPE=Release -DDATA_DIR=./data/
+cmake --build build -j 8
+cmake -E make_directory dist/binaries-linux
+cmake -E copy build/nimuh dist/binaries-linux/nimuh
+cmake -E copy_directory data dist/binaries-linux/data
+makeself dist/binaries-linux "dist/nimuh-${VERSION}-linux.run" "Nimuh ${VERSION}" ./nimuh
+cmake -E rm -rf dist/binaries-linux
+'''
+
+# 3. Binarios Windows (compilado desde Linux con MinGW)
+[tool.poe.tasks.binaries-windows]
+help = "Compila e instala los binarios para Windows (x64 y x86) desde Linux (cross-compilation con MinGW)"
+shell = '''
+set -e
+VERSION=$(python3 -c "import re; print(re.search(r'project\s*\([^)]*VERSION\s+([0-9.]+)', open('CMakeLists.txt').read()).group(1))")
+
+python3 << 'EOF'
+import os
+import re
+import subprocess
+import urllib.parse
+import urllib.request
+
+PACKAGES = [
+    "expat", "SDL", "SDL_image", "SDL_mixer",
+    "libpng", "libjpeg-turbo", "libtiff", "libwebp",
+    "libvorbis", "libogg", "libmad", "zlib", "xz",
+    "flac", "libdeflate", "jbigkit", "lerc", "zstd",
+    "libwinpthread", "gcc-libs"
+]
+
+def natural_sort_key(s):
+    return [int(t) if t.isdigit() else t.lower() for t in re.split(r"(\d+)", s)]
+
+def is_valid_zstd(filepath):
+    if os.path.exists(filepath) and os.path.getsize(filepath) > 512:
+        try:
+            with open(filepath, "rb") as f:
+                return f.read(4) == b"(\xb5/\xfd"
+        except OSError:
+            return False
+    return False
+
+CONFIGS = [
+    ("x86_64", "https://repo.msys2.org/mingw/mingw64/", ".mingw64", "/mingw64/include"),
+    ("i686", "https://repo.msys2.org/mingw/mingw32/", ".mingw32", "/mingw32/include"),
+]
+
+for arch_prefix, base_url, dest_dir, sys_inc in CONFIGS:
+    if os.path.exists(sys_inc) or os.path.exists(os.path.join(dest_dir, ".installed")):
+        print(f"Dependencias de Windows para {arch_prefix} ya están listas.")
+        continue
+
+    print(f"Descargando dependencias de Windows ({arch_prefix}) en {dest_dir}...")
+    dest_root = os.path.abspath(dest_dir)
+    download_dir = os.path.join(dest_root, "download")
+    os.makedirs(download_dir, exist_ok=True)
+    os.makedirs(dest_root, exist_ok=True)
+
+    for fname in os.listdir(download_dir):
+        fpath = os.path.join(download_dir, fname)
+        if os.path.isfile(fpath) and not is_valid_zstd(fpath):
+            print(f"Eliminando archivo corrupto previo: {fname}")
+            os.remove(fpath)
+
+    print(f"Consultando repositorio MSYS2 ({base_url})...")
+    req = urllib.request.Request(base_url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        html = resp.read().decode("utf-8")
+
+    print(f"Descargando y extrayendo dependencias en {dest_root}...")
+    for pkg in PACKAGES:
+        pattern = re.compile(
+            rf'href=[\x22\x27](mingw-w64-{re.escape(arch_prefix)}-{re.escape(pkg)}-[0-9][^\x22\x27]+\.pkg\.tar\.zst)[\x22\x27]'
+        )
+        matches = pattern.findall(html)
+        if not matches:
+            raise RuntimeError(f"No se encontro paquete para {pkg} ({arch_prefix})")
+        latest_pkg = sorted(matches, key=natural_sort_key)[-1]
+        filename = urllib.parse.unquote(latest_pkg)
+        filepath = os.path.join(download_dir, filename)
+
+        if not is_valid_zstd(filepath):
+            if os.path.exists(filepath):
+                os.remove(filepath)
+            pkg_url = urllib.parse.urljoin(base_url, latest_pkg)
+            print(f"Descargando {filename}...")
+            pkg_req = urllib.request.Request(pkg_url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(pkg_req, timeout=60) as resp, open(filepath, "wb") as f:
+                while True:
+                    chunk = resp.read(65536)
+                    if not chunk:
+                        break
+                    f.write(chunk)
+
+        print(f"Extrayendo {filename}...")
+        subprocess.run(["tar", "--zstd", "-xf", filepath, "-C", dest_root], check=True)
+
+    with open(os.path.join(dest_root, ".installed"), "w") as f:
+        f.write("ok\n")
+    print(f"Dependencias de Windows ({arch_prefix}) instaladas con éxito.")
+EOF
+
+# 1. Compilación y empaquetado para Windows 64-bit (x64)
+echo "=== Compilando Nimuh para Windows x64 ==="
+ZLIB_64_PREFIX=".mingw64/mingw64"
+[ -d "/mingw64/include" ] && ZLIB_64_PREFIX="/mingw64"
+
+cmake -B build-win64 -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=x86_64-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release
+cmake --build build-win64 -j 8
+cmake --install build-win64
+
+echo "Generando ejecutable portable dist/nimuh-${VERSION}-windows-x64-portable.exe..."
+tar -czf dist/payload-x64.tar.gz -C "dist/nimuh-${VERSION}-x64" .
+printf '1 ICON "data/nimuh.ico"\n100 RCDATA "dist/payload-x64.tar.gz"\n' > build-win64/launcher.rc
+x86_64-w64-mingw32-windres build-win64/launcher.rc -O coff -o build-win64/launcher.res
+x86_64-w64-mingw32-gcc -mwindows -O2 -s -DNIMUH_VERSION_STR=\"${VERSION}\" -DNIMUH_ARCH_STR=\"x64\" -I"${ZLIB_64_PREFIX}/include" src/portable_launcher.c build-win64/launcher.res "${ZLIB_64_PREFIX}/lib/libz.a" -o "dist/nimuh-${VERSION}-windows-x64-portable.exe"
+rm -f dist/payload-x64.tar.gz
+cmake -E rm -rf "dist/nimuh-${VERSION}-x64"
+
+# 2. Compilación y empaquetado para Windows 32-bit (x86)
+echo "=== Compilando Nimuh para Windows x86 ==="
+ZLIB_32_PREFIX=".mingw32/mingw32"
+[ -d "/mingw32/include" ] && ZLIB_32_PREFIX="/mingw32"
+
+cmake -B build-win32 -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=i686-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=i686-w64-mingw32-g++ -DCMAKE_RC_COMPILER=i686-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release
+cmake --build build-win32 -j 8
+cmake --install build-win32
+
+echo "Generando ejecutable portable dist/nimuh-${VERSION}-windows-x86-portable.exe..."
+tar -czf dist/payload-x86.tar.gz -C "dist/nimuh-${VERSION}-x86" .
+printf '1 ICON "data/nimuh.ico"\n100 RCDATA "dist/payload-x86.tar.gz"\n' > build-win32/launcher.rc
+i686-w64-mingw32-windres build-win32/launcher.rc -O coff -o build-win32/launcher.res
+i686-w64-mingw32-gcc -mwindows -O2 -s -DNIMUH_VERSION_STR=\"${VERSION}\" -DNIMUH_ARCH_STR=\"x86\" -I"${ZLIB_32_PREFIX}/include" src/portable_launcher.c build-win32/launcher.res "${ZLIB_32_PREFIX}/lib/libz.a" -o "dist/nimuh-${VERSION}-windows-x86-portable.exe"
+rm -f dist/payload-x86.tar.gz
+cmake -E rm -rf "dist/nimuh-${VERSION}-x86"
+'''
+
+# 4. Desinstalación en Linux
+[tool.poe.tasks.sources-linux-uninstall]
+help = "Desinstala Nimuh previamente instalado en Linux"
+cmd = "cmake --build build --target uninstall"
+
+# 5. Procedimiento para nueva release
+[tool.poe.tasks.procedure]
+help = "Muestra el procedimiento para crear una nueva release"
+verbosity = -1
+cmd = """
+python3 -c "
+print('''This is a procedure to make a new release:
+1) git checkout master
+2) git pull
+3) Change version in CMakeLists.txt
+4) Add Changelog in README.md
+5) git commit -am \\\"nimuh-version\\\"
+6) git push
+7) Update doxygen
+8) Create a new tag in Github
+9) Update ebuild for Gentoo
+10) poe binaries-windows
+11) Compress dist directory and upload to Github release''')
+"
+"""
+
+
+
+
+

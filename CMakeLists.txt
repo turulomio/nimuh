@@ -1,68 +1,179 @@
-cmake_minimum_required(VERSION 3.0.0)
-project(nimuh VERSION 1.0.6)
+cmake_minimum_required(VERSION 4.3)
 
+project(nimuh
+    VERSION 1.0.6
+    LANGUAGES CXX
+)
 
-configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
+if(MINGW)
+    if(NOT WIN_ARCH)
+        if(CMAKE_SIZEOF_VOID_P EQUAL 4)
+            set(WIN_ARCH "x86")
+        else()
+            set(WIN_ARCH "x64")
+        endif()
+    endif()
 
+    if(WIN_ARCH STREQUAL "x86")
+        if(EXISTS "${PROJECT_SOURCE_DIR}/.mingw32/mingw32/include")
+            set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw32/mingw32")
+            set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw32/mingw32")
+        elseif(EXISTS "${PROJECT_SOURCE_DIR}/.mingw32/include")
+            set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw32")
+            set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw32")
+        elseif(EXISTS "/mingw32/include")
+            set(MINGW_PREFIX "/mingw32")
+            set(CMAKE_FIND_ROOT_PATH "/mingw32")
+        elseif(EXISTS "/usr/i686-w64-mingw32/usr")
+            set(MINGW_PREFIX "/usr/i686-w64-mingw32/usr")
+            set(CMAKE_FIND_ROOT_PATH "/usr/i686-w64-mingw32")
+        elseif(EXISTS "/usr/i686-w64-mingw32")
+            set(MINGW_PREFIX "/usr/i686-w64-mingw32")
+            set(CMAKE_FIND_ROOT_PATH "/usr/i686-w64-mingw32")
+        else()
+            set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw32/mingw32")
+            set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw32/mingw32")
+        endif()
+    else()
+        if(EXISTS "${PROJECT_SOURCE_DIR}/.mingw64/mingw64/include")
+            set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw64/mingw64")
+            set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw64/mingw64")
+        elseif(EXISTS "${PROJECT_SOURCE_DIR}/.mingw64/include")
+            set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw64")
+            set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw64")
+        elseif(EXISTS "/mingw64/include")
+            set(MINGW_PREFIX "/mingw64")
+            set(CMAKE_FIND_ROOT_PATH "/mingw64")
+        elseif(EXISTS "/usr/x86_64-w64-mingw32/usr")
+            set(MINGW_PREFIX "/usr/x86_64-w64-mingw32/usr")
+            set(CMAKE_FIND_ROOT_PATH "/usr/x86_64-w64-mingw32")
+        elseif(EXISTS "/usr/x86_64-w64-mingw32")
+            set(MINGW_PREFIX "/usr/x86_64-w64-mingw32")
+            set(CMAKE_FIND_ROOT_PATH "/usr/x86_64-w64-mingw32")
+        else()
+            set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw64/mingw64")
+            set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw64/mingw64")
+        endif()
+    endif()
+
+    set(CMAKE_PREFIX_PATH "${MINGW_PREFIX}" ${CMAKE_PREFIX_PATH})
+    set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+    set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+    set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+endif()
+
+# Dependencies
 find_package(EXPAT REQUIRED)
-find_package(SDL_mixer REQUIRED)
 find_package(SDL REQUIRED)
 find_package(SDL_image REQUIRED)
+find_package(SDL_mixer REQUIRED)
 
-include_directories(src)
-include_directories(${SDL_INCLUDE_DIR})
+# Source files
+file(GLOB SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 
-file(GLOB SOURCES "src/*.cpp")
+add_executable(nimuh ${SOURCES})
 
+# Target include directories
+target_include_directories(nimuh PRIVATE
+    src
+    ${SDL_INCLUDE_DIR}
+    ${SDL_IMAGE_INCLUDE_DIRS}
+    ${SDL_MIXER_INCLUDE_DIRS}
+    ${EXPAT_INCLUDE_DIRS}
+)
 
-IF (MINGW)
-    message(STATUS "Compiling for MINGW")
+# Common link libraries
+if(TARGET SDL::SDL)
+    target_link_libraries(nimuh PRIVATE SDL::SDL)
+else()
+    target_link_libraries(nimuh PRIVATE ${SDL_LIBRARY})
+endif()
 
-    set(DIST "${PROJECT_SOURCE_DIR}/dist/nimuh-${nimuh_VERSION}/")
+if(TARGET EXPAT::EXPAT)
+    target_link_libraries(nimuh PRIVATE EXPAT::EXPAT)
+else()
+    target_link_libraries(nimuh PRIVATE ${EXPAT_LIBRARIES})
+endif()
 
+target_link_libraries(nimuh PRIVATE
+    ${SDL_IMAGE_LIBRARIES}
+    ${SDL_MIXER_LIBRARIES}
+)
+
+if(MINGW)
+    message(STATUS "Compiling for MINGW (${WIN_ARCH})")
+
+    set(DIST "${PROJECT_SOURCE_DIR}/dist/nimuh-${nimuh_VERSION}-${WIN_ARCH}/")
     set(DATA_DIR "./data/")
 
-    add_executable(nimuh ${SOURCES} "data/nimuh.rc")
-    target_link_libraries(nimuh ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} ${EXPAT_LIBRARIES} ${SDL_MIXER_LIBRARIES} -lopengl32 -static -static-libgcc -static-libstdc++)
+    target_sources(nimuh PRIVATE "data/nimuh.rc")
+    target_link_libraries(nimuh PRIVATE -lopengl32 -static -static-libgcc -static-libstdc++)
 
     install(TARGETS nimuh DESTINATION ${DIST})
     install(DIRECTORY data DESTINATION ${DIST})
 
-    install(FILES /mingw64/bin/SDL.dll  DESTINATION ${DIST})    
-    install(FILES /mingw64/bin/libSDL_mixer-1-2-0.dll DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libjpeg-8.dll DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libpng16-16.dll DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libtiff-5.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/SDL_image.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libexpat-1.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libwebp-7.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libmad-0.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/zlib1.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/liblzma-5.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libogg-0.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libvorbis-0.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libvorbisenc-2.dll  DESTINATION ${DIST})
-    install(FILES /mingw64/bin/libvorbisfile-3.dll  DESTINATION ${DIST})
+    file(GLOB RUNTIME_DLLS
+        "${MINGW_PREFIX}/bin/*SDL*.dll"
+        "${MINGW_PREFIX}/bin/libexpat*.dll"
+        "${MINGW_PREFIX}/bin/libjpeg*.dll"
+        "${MINGW_PREFIX}/bin/libturbojpeg*.dll"
+        "${MINGW_PREFIX}/bin/libpng*.dll"
+        "${MINGW_PREFIX}/bin/libtiff*.dll"
+        "${MINGW_PREFIX}/bin/libwebp*.dll"
+        "${MINGW_PREFIX}/bin/libsharpyuv*.dll"
+        "${MINGW_PREFIX}/bin/libmad*.dll"
+        "${MINGW_PREFIX}/bin/*zlib*.dll"
+        "${MINGW_PREFIX}/bin/liblzma*.dll"
+        "${MINGW_PREFIX}/bin/libogg*.dll"
+        "${MINGW_PREFIX}/bin/libvorbis*.dll"
+        "${MINGW_PREFIX}/bin/libFLAC*.dll"
+        "${MINGW_PREFIX}/bin/libdeflate*.dll"
+        "${MINGW_PREFIX}/bin/libjbig*.dll"
+        "${MINGW_PREFIX}/bin/libLerc*.dll"
+        "${MINGW_PREFIX}/bin/libzstd*.dll"
+        "${MINGW_PREFIX}/bin/libwinpthread*.dll"
+        "${MINGW_PREFIX}/bin/libgcc_s*.dll"
+        "${MINGW_PREFIX}/bin/libstdc++*.dll"
+    )
+    if(RUNTIME_DLLS)
+        install(FILES ${RUNTIME_DLLS} DESTINATION ${DIST})
+    endif()
 
-ELSE()
+    add_custom_target(uninstall
+        COMMAND ${CMAKE_COMMAND} -E rm -rf "${PROJECT_SOURCE_DIR}/dist/nimuh-${PROJECT_VERSION}-${WIN_ARCH}/"
+        COMMENT "Uninstalling nimuh on Windows..."
+    )
+else()
     message(STATUS "Compiling for Linux")
-    set(prefix "${CMAKE_INSTALL_PREFIX}")
-    set(exec_prefix "${CMAKE_INSTALL_PREFIX}/bin")
 
-    set(DATA_DIR "${CMAKE_INSTALL_PREFIX}/share/nimuh/data")
-    set(APPLICATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/applications")
+    include(GNUInstallDirs)
 
-    find_package(OpenGL)
+    if(NOT DATA_DIR)
+        set(DATA_DIR "${CMAKE_INSTALL_FULL_DATADIR}/nimuh/data")
+    endif()
 
-    add_executable(nimuh ${SOURCES})
-    target_link_libraries(nimuh ${SDL_LIBRARY} ${SDLIMAGE_LIBRARY} ${OPENGL_LIBRARIES} ${EXPAT_LIBRARIES} ${SDL_MIXER_LIBRARIES})
+    find_package(OpenGL REQUIRED)
 
-    install(TARGETS nimuh DESTINATION ${exec_prefix})
-    install(DIRECTORY data DESTINATION ${DATA_DIR}/../)
-    install(FILES "nimuh.desktop" DESTINATION "${APPLICATIONS_DIR}")
+    if(TARGET OpenGL::GL)
+        target_link_libraries(nimuh PRIVATE OpenGL::GL)
+    else()
+        target_link_libraries(nimuh PRIVATE ${OPENGL_LIBRARIES})
+    endif()
 
-    add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} -P ${CMAKE_CURRENT_SOURCE_DIR}/cmake_uninstall.cmake)
+    install(TARGETS nimuh DESTINATION ${CMAKE_INSTALL_BINDIR})
+    install(DIRECTORY data DESTINATION "${CMAKE_INSTALL_DATADIR}/nimuh")
+    install(FILES "nimuh.desktop" DESTINATION "${CMAKE_INSTALL_DATADIR}/applications")
 
-ENDIF (MINGW)
-configure_file( config.h.in ${PROJECT_SOURCE_DIR}/src/config.h )
+    add_custom_target(uninstall
+        COMMAND ${CMAKE_COMMAND} -E rm -f "${CMAKE_INSTALL_FULL_BINDIR}/nimuh"
+        COMMAND ${CMAKE_COMMAND} -E rm -f "${CMAKE_INSTALL_FULL_DATADIR}/applications/nimuh.desktop"
+        COMMAND ${CMAKE_COMMAND} -E rm -rf "${CMAKE_INSTALL_FULL_DATADIR}/nimuh"
+        COMMENT "Uninstalling nimuh..."
+    )
+endif()
+
+configure_file(config.h.in "${PROJECT_SOURCE_DIR}/src/config.h" @ONLY)
