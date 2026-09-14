@@ -42,11 +42,92 @@ cmake -E rm -rf dist/binaries-linux
 # 3. Binarios Windows (compilado desde Linux con MinGW)
 [tool.poe.tasks.binaries-windows]
 help = "Compila e instala los binarios para Windows desde Linux (cross-compilation con MinGW)"
-sequence = [
-    "cmake -B build-win -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=x86_64-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release",
-    "cmake --build build-win -j 8",
-    "cmake --install build-win",
+shell = '''
+set -e
+if [ ! -d "/mingw64/include" ] && [ ! -f ".mingw64/.installed" ]; then
+    echo "Descargando dependencias de Windows en .mingw64..."
+    python3 << 'EOF'
+import os
+import re
+import subprocess
+import urllib.parse
+import urllib.request
+
+BASE_URL = "https://repo.msys2.org/mingw/mingw64/"
+PACKAGES = [
+    "expat", "SDL", "SDL_image", "SDL_mixer",
+    "libpng", "libjpeg-turbo", "libtiff", "libwebp",
+    "libvorbis", "libogg", "libmad", "zlib", "xz",
+    "flac", "libdeflate", "jbigkit", "lerc", "zstd",
+    "libwinpthread", "gcc-libs"
 ]
+
+def natural_sort_key(s):
+    return [int(t) if t.isdigit() else t.lower() for t in re.split(r"(\d+)", s)]
+
+def is_valid_zstd(filepath):
+    if os.path.exists(filepath) and os.path.getsize(filepath) > 512:
+        try:
+            with open(filepath, "rb") as f:
+                return f.read(4) == b"(\xb5/\xfd"
+        except OSError:
+            return False
+    return False
+
+dest_root = os.path.abspath(".mingw64")
+download_dir = os.path.join(dest_root, "download")
+os.makedirs(download_dir, exist_ok=True)
+os.makedirs(dest_root, exist_ok=True)
+
+for fname in os.listdir(download_dir):
+    fpath = os.path.join(download_dir, fname)
+    if os.path.isfile(fpath) and not is_valid_zstd(fpath):
+        print(f"Eliminando archivo corrupto previo: {fname}")
+        os.remove(fpath)
+
+print(f"Consultando repositorio MSYS2 ({BASE_URL})...")
+req = urllib.request.Request(BASE_URL, headers={"User-Agent": "Mozilla/5.0"})
+with urllib.request.urlopen(req, timeout=30) as resp:
+    html = resp.read().decode("utf-8")
+
+print(f"Descargando y extrayendo dependencias en {dest_root}...")
+for pkg in PACKAGES:
+    pattern = re.compile(
+        rf'href=[\x22\x27](mingw-w64-x86_64-{re.escape(pkg)}-[0-9][^\x22\x27]+\.pkg\.tar\.zst)[\x22\x27]'
+    )
+    matches = pattern.findall(html)
+    if not matches:
+        raise RuntimeError(f"No se encontro paquete para {pkg}")
+    latest_pkg = sorted(matches, key=natural_sort_key)[-1]
+    filename = urllib.parse.unquote(latest_pkg)
+    filepath = os.path.join(download_dir, filename)
+
+    if not is_valid_zstd(filepath):
+        if os.path.exists(filepath):
+            os.remove(filepath)
+        pkg_url = urllib.parse.urljoin(BASE_URL, latest_pkg)
+        print(f"Descargando {filename}...")
+        pkg_req = urllib.request.Request(pkg_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(pkg_req, timeout=60) as resp, open(filepath, "wb") as f:
+            while True:
+                chunk = resp.read(65536)
+                if not chunk:
+                    break
+                f.write(chunk)
+
+    print(f"Extrayendo {filename}...")
+    subprocess.run(["tar", "--zstd", "-xf", filepath, "-C", dest_root], check=True)
+
+with open(os.path.join(dest_root, ".installed"), "w") as f:
+    f.write("ok\n")
+
+print("Dependencias de Windows instaladas con éxito.")
+EOF
+fi
+cmake -B build-win -DCMAKE_SYSTEM_NAME=Windows -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ -DCMAKE_RC_COMPILER=x86_64-w64-mingw32-windres -DCMAKE_BUILD_TYPE=Release
+cmake --build build-win -j 8
+cmake --install build-win
+'''
 
 # 4. Desinstalación en Linux
 [tool.poe.tasks.uninstall]
@@ -73,6 +154,8 @@ print('''This is a procedure to make a new release:
 11) Compress dist directory and upload to Github release''')
 "
 """
+
+
 
 
 

@@ -9,6 +9,33 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+if(MINGW)
+    if(EXISTS "/mingw64/include")
+        set(MINGW_PREFIX "/mingw64")
+        set(CMAKE_FIND_ROOT_PATH "/mingw64")
+    elseif(EXISTS "${PROJECT_SOURCE_DIR}/.mingw64/mingw64/include")
+        set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw64/mingw64")
+        set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw64/mingw64")
+    elseif(EXISTS "${PROJECT_SOURCE_DIR}/.mingw64/include")
+        set(MINGW_PREFIX "${PROJECT_SOURCE_DIR}/.mingw64")
+        set(CMAKE_FIND_ROOT_PATH "${PROJECT_SOURCE_DIR}/.mingw64")
+    elseif(EXISTS "/usr/x86_64-w64-mingw32/usr")
+        set(MINGW_PREFIX "/usr/x86_64-w64-mingw32/usr")
+        set(CMAKE_FIND_ROOT_PATH "/usr/x86_64-w64-mingw32")
+    elseif(EXISTS "/usr/x86_64-w64-mingw32")
+        set(MINGW_PREFIX "/usr/x86_64-w64-mingw32")
+        set(CMAKE_FIND_ROOT_PATH "/usr/x86_64-w64-mingw32")
+    else()
+        set(MINGW_PREFIX "/mingw64")
+        set(CMAKE_FIND_ROOT_PATH "/mingw64")
+    endif()
+
+    set(CMAKE_PREFIX_PATH "${MINGW_PREFIX}" ${CMAKE_PREFIX_PATH})
+    set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+    set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+    set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+endif()
+
 # Dependencies
 find_package(EXPAT REQUIRED)
 find_package(SDL REQUIRED)
@@ -59,24 +86,32 @@ if(MINGW)
     install(TARGETS nimuh DESTINATION ${DIST})
     install(DIRECTORY data DESTINATION ${DIST})
 
-    install(FILES
-        /mingw64/bin/SDL.dll
-        /mingw64/bin/libSDL_mixer-1-2-0.dll
-        /mingw64/bin/libjpeg-8.dll
-        /mingw64/bin/libpng16-16.dll
-        /mingw64/bin/libtiff-5.dll
-        /mingw64/bin/SDL_image.dll
-        /mingw64/bin/libexpat-1.dll
-        /mingw64/bin/libwebp-7.dll
-        /mingw64/bin/libmad-0.dll
-        /mingw64/bin/zlib1.dll
-        /mingw64/bin/liblzma-5.dll
-        /mingw64/bin/libogg-0.dll
-        /mingw64/bin/libvorbis-0.dll
-        /mingw64/bin/libvorbisenc-2.dll
-        /mingw64/bin/libvorbisfile-3.dll
-        DESTINATION ${DIST}
+    file(GLOB RUNTIME_DLLS
+        "${MINGW_PREFIX}/bin/*SDL*.dll"
+        "${MINGW_PREFIX}/bin/libexpat*.dll"
+        "${MINGW_PREFIX}/bin/libjpeg*.dll"
+        "${MINGW_PREFIX}/bin/libturbojpeg*.dll"
+        "${MINGW_PREFIX}/bin/libpng*.dll"
+        "${MINGW_PREFIX}/bin/libtiff*.dll"
+        "${MINGW_PREFIX}/bin/libwebp*.dll"
+        "${MINGW_PREFIX}/bin/libsharpyuv*.dll"
+        "${MINGW_PREFIX}/bin/libmad*.dll"
+        "${MINGW_PREFIX}/bin/*zlib*.dll"
+        "${MINGW_PREFIX}/bin/liblzma*.dll"
+        "${MINGW_PREFIX}/bin/libogg*.dll"
+        "${MINGW_PREFIX}/bin/libvorbis*.dll"
+        "${MINGW_PREFIX}/bin/libFLAC*.dll"
+        "${MINGW_PREFIX}/bin/libdeflate*.dll"
+        "${MINGW_PREFIX}/bin/libjbig*.dll"
+        "${MINGW_PREFIX}/bin/libLerc*.dll"
+        "${MINGW_PREFIX}/bin/libzstd*.dll"
+        "${MINGW_PREFIX}/bin/libwinpthread*.dll"
+        "${MINGW_PREFIX}/bin/libgcc_s_seh*.dll"
+        "${MINGW_PREFIX}/bin/libstdc++*.dll"
     )
+    if(RUNTIME_DLLS)
+        install(FILES ${RUNTIME_DLLS} DESTINATION ${DIST})
+    endif()
 
     add_custom_target(uninstall
         COMMAND ${CMAKE_COMMAND} -E rm -rf "${PROJECT_SOURCE_DIR}/dist/nimuh-${PROJECT_VERSION}/"

@@ -64,30 +64,32 @@ To uninstall Nimuh from Linux:
 poe uninstall
 ```
 
-Compilation for Windows (cross-compilation from Linux)
-======================================================
-You can compile and package the Windows binaries directly from Linux using MinGW:
+Cross-compilation for Windows (from Linux / Gentoo)
+===================================================
+You can compile and package the Windows binaries directly from Linux using the MinGW toolchain (`dev-util/mingw64-toolchain` on Gentoo).
+
+### 1. Requirements on Gentoo
+Install the MinGW-w64 toolchain:
+```bash
+emerge dev-util/mingw64-toolchain
+```
+
+### 2. Build Windows package
+To compile and package the Windows version:
 
 ```bash
 poe binaries-windows
 ```
 
-This compiles the game and copies the executable and required DLLs into `dist/nimuh-<version>/`.
+The `poe binaries-windows` task automatically checks for the required Windows libraries (SDL 1.2, SDL_image, SDL_mixer, EXPAT, and runtime DLLs). If they are not already present in `/mingw64`, it will automatically download and unpack them into `.mingw64/` within the project root.
 
-Requirements for cross-compilation on Gentoo
---------------------------------------------
-To cross-compile the Windows binaries on Gentoo, the following components are required:
+The executable `nimuh.exe`, required DLLs, and data assets will be placed into `dist/nimuh-<version>/`.
 
-1. **MinGW-w64 toolchain**:
-   Install `dev-util/mingw64-toolchain` to obtain `x86_64-w64-mingw32-gcc`, `x86_64-w64-mingw32-g++`, and `x86_64-w64-mingw32-windres`:
-   ```bash
-   emerge dev-util/mingw64-toolchain
-   ```
+### Dependencies setup
+The `poe binaries-windows` task automatically manages all required dependencies locally inside `.mingw64/` without requiring root permissions.
 
-2. **Windows libraries and DLLs in `/mingw64`**:
-   The build requires MinGW-compiled development libraries and runtime DLLs available under `/mingw64`:
-   - Headers and libraries in `/mingw64/include` and `/mingw64/lib` for CMake dependencies (SDL, SDL_image, SDL_mixer, libexpat, etc.).
-   - Runtime DLLs in `/mingw64/bin/` (such as `SDL.dll`, `SDL_image.dll`, `libSDL_mixer-1-2-0.dll`, `libexpat-1.dll`, etc.) which are copied into the `dist/nimuh-<version>/` distribution directory.
+If you prefer to install the Windows dependencies system-wide in `/mingw64`, you can download and unpack the MSYS2 MinGW64 packages (`*.pkg.tar.zst`) directly into `/` from the [MSYS2 MinGW64 Repository](https://repo.msys2.org/mingw/mingw64/).
+
 
 
 Installation in Windows from binaries

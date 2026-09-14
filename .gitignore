@@ -2,4 +2,6 @@ CMakeCache.txt
 CMakeFiles
 src/config.h
 build
+build-win
 dist
+.mingw64
